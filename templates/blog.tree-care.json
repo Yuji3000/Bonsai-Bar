@@ -1,0 +1,160 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "6dc2c7bd-d1ab-41af-99a5-e37f03c9e6d7": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14814507139153__6dc2c7bd-d1ab-41af-99a5-e37f03c9e6d7-1679406914c0d77f8d-0": {
+          "type": "image",
+          "settings": {
+            "title": "Caring for your trees",
+            "title_size": 50,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/BlogHeader-1_2.png",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14814507139153__6dc2c7bd-d1ab-41af-99a5-e37f03c9e6d7-1679406914c0d77f8d-0"
+      ],
+      "custom_css": [
+        ".hero-natural--template--14834677842001__6dc2c7bd-d1ab-41af-99a5-e37f03c9e6d7 {height: 0; padding-bottom: 22%;}"
+      ],
+      "settings": {
+        "section_height": "natural",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "4e3eca00-5c44-4e14-a589-53e352b5e5ae": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14834677842001__4e3eca00-5c44-4e14-a589-53e352b5e5ae-1680885863bf2f55ef-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Schedule a Tree-iage Session!"
+          }
+        },
+        "fe16ffd0-14c6-4491-ab4e-e29b43d0990a": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<ul><li>Not able to find answers in our Care Guides below? </li><li>Need someone to take a look at your tree? </li><li>Need a tree replacement?</li></ul><p>Schedule a 15-min Tree-iage appointment with one of our teachers.</p>"
+          }
+        },
+        "6fb31250-c7d9-4e5f-aa64-be1e708e981e": {
+          "type": "button",
+          "settings": {
+            "link": "https://meetings.hubspot.com/bonsai-bar/tree-care-meeting-schduler",
+            "link_text": "Schedule a Tree-Care Consultation"
+          }
+        }
+      },
+      "block_order": [
+        "template--14834677842001__4e3eca00-5c44-4e14-a589-53e352b5e5ae-1680885863bf2f55ef-0",
+        "fe16ffd0-14c6-4491-ab4e-e29b43d0990a",
+        "6fb31250-c7d9-4e5f-aa64-be1e708e981e"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "b319b279-6f83-4a93-a418-921467f70dda": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14851964436561__b319b279-6f83-4a93-a418-921467f70dda-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Care guides"
+          }
+        }
+      },
+      "block_order": [
+        "template--14851964436561__b319b279-6f83-4a93-a418-921467f70dda-heading-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "featured_video_HDEJEH": {
+      "type": "featured-video",
+      "name": "t:sections.featured-video.presets.video.name",
+      "settings": {
+        "title": "Watering Your Bonsai",
+        "video_url": "https://youtu.be/nwtIW4tk-0k",
+        "divider": false
+      }
+    },
+    "main": {
+      "type": "blog-template",
+      "disabled": true,
+      "settings": {
+        "blog_show_tag_filter": false,
+        "blog_show_rss": false,
+        "blog_show_tags": false,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false
+      }
+    },
+    "3be0d7af-7842-420e-ace8-439228d88b99": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "",
+        "blog": "tree-care",
+        "post_limit": 12,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "45afbe1e-c295-4176-be89-7a492169e83f": {
+      "type": "blog-posts",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "blog": "tree-care",
+        "post_limit": 12,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": true,
+        "view_all": false,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "6dc2c7bd-d1ab-41af-99a5-e37f03c9e6d7",
+    "4e3eca00-5c44-4e14-a589-53e352b5e5ae",
+    "featured_video_HDEJEH",
+    "b319b279-6f83-4a93-a418-921467f70dda",
+    "main",
+    "3be0d7af-7842-420e-ace8-439228d88b99",
+    "45afbe1e-c295-4176-be89-7a492169e83f"
+  ]
+}

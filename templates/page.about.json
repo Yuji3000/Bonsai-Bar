@@ -1,0 +1,456 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "211d3f63-596e-4a04-a21a-145c73479e36": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14814507663441__211d3f63-596e-4a04-a21a-145c73479e36-16806389771974410c-0": {
+          "type": "image",
+          "settings": {
+            "title": "About Us",
+            "title_size": 50,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/BB-Team.jpg",
+            "image_mobile": "shopify://shop_images/BB-Team.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "top center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14814507663441__211d3f63-596e-4a04-a21a-145c73479e36-16806389771974410c-0"
+      ],
+      "custom_css": [
+        ".parallax-container {position: absolute; top: 0%; left: 0; height: 100%; width: 100%;}"
+      ],
+      "settings": {
+        "section_height": "natural",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "rich_text_3Xj8Rm": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wwh8Xz": {
+          "type": "heading",
+          "settings": {
+            "title": "Making it easy to learn the art of bonsai"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wwh8Xz"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "advanced_content_MPcLmd": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_yayCKH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Tim-Arsenault_Founder-BonsaiBar.png",
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "liquid_9Bjdra": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Meet Tim. <p>He’s obsessed with tiny trees.</h2><p>\nAt our heart, we’re a family-owned and operated company. We lead with this because, well, our family now includes you—welcome to the wonderful world of Bonsai Bar!</p>\nIn 2021, as small breweries reopened, Tim launched Bonsai Bar—a solo project blending his day job as a programmer with a newfound obsession: bonsai. By night, he drove to breweries, leading workshops on crafting tiny trees.</p>\nAs demand grew, Tim enlisted his brothers, realizing attendees craved more than trees—they sought connection, new skills, and the joy of pairing creativity with local brews.\n</p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "liquid_wX97LC": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Nature is healing. Nature is powerful. <p>Nature is… tiny trees in a bar?</h2><p>\nBonsai Bar was founded with a simple yet powerful vision: to combine the calming, creative process of bonsai cultivation with a fun, educational experience that brings people together across generations.<p>Welcome to Bonsai Bar. Let’s grow something extraordinary together.",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_yayCKH",
+        "liquid_9Bjdra",
+        "liquid_wX97LC"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "faq_mqMr7e": {
+      "type": "faq",
+      "blocks": {
+        "question_wMzADW": {
+          "type": "question",
+          "settings": {
+            "title": "We’re a small American business.",
+            "text": "<p>We offer workshops in 12 states and 16 markets, but we’re still a small business at heart. Our team juggles business operations by day and then we head out to teach workshops in the evenings. It’s a team effort fueled by passion and a commitment to sharing the art of bonsai and making sure our guests have a joy filled experience.</p>"
+          }
+        },
+        "question_qYEkPX": {
+          "type": "question",
+          "settings": {
+            "title": "We're on a mission to get your hands dirty.",
+            "text": "<p>Our mission involves hauling <em>vanfuls</em> (yes, that’s a unit of measurement now) of tiny trees across the country, lovingly caring for them in backyard greenhouses and nurseries until it’s time for Shrub Norris, Notorious B. I. Tree, Mini Groot, Sir Bonsai-a-Lot, or Bonsaizilla to find their forever homes with you. Our mission is to share with you the calming, creative process of bonsai cultivation with a FUN and educational experience. We hope you have a wonderful new hobby.</p>"
+          }
+        },
+        "question_kiPHTU": {
+          "type": "question",
+          "settings": {
+            "title": "We can bring Peace to Your Workplace!",
+            "text": "<p>Bonsai Bar is a fantastic <a href=\"https://bonsaibar.com/pages/private-events\"><span style=\"text-decoration:underline\">corporate retreat and team-building</span></a> experience. Nothing brings a team together like turning tiny trees into masterpieces—or engaging in a spirited debate over the “right” way to prune a ficus while armed with small, sharp tools. It’s collaborative, therapeutic, and just the right amount of wholesome and quirky. We'd love to do a workshop for your team.</p>"
+          }
+        },
+        "question_Rx6wWe": {
+          "type": "question",
+          "settings": {
+            "title": "We mostly hang out at breweries, wineries, and rad kombucha joints.",
+            "text": "<p>Hosting our classes in these spaces helps small American businesses thrive on slower nights. Plus, we’re all about creating an atmosphere where people can sip, prune, and bond with friends, family, or that random guy named Dave who just <em>really</em> likes bonsai.</p>"
+          }
+        },
+        "question_bYAejN": {
+          "type": "question",
+          "settings": {
+            "title": "In 2024, we hosted 30,000+ guests for beginner workshops.",
+            "text": "<p>If you put all the bonsai stock end to end, that's approximately:</p><ul><li>150,000 Subway Sandwiches</li><li>7,500 King-Sized Beds</li><li>375,000 Donuts</li><li>6 Million Post-It Notes</li></ul><p>Or enough Legos to cover 25 Million <em>brick-sized</em> regrets.</p>"
+          }
+        },
+        "question_idajXd": {
+          "type": "question",
+          "settings": {
+            "title": "Crazy humblebrag, but here goes....",
+            "text": "<p>We're told, so we're willing to believe it, that Bonsai Bar has taught the most beginner bonsai workshops in the world. If we're mistaken, please let us know. In the meantime, our marketing folks have called the Guinness World Records people to fact check that. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_wMzADW",
+        "question_qYEkPX",
+        "question_kiPHTU",
+        "question_Rx6wWe",
+        "question_bYAejN",
+        "question_idajXd"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "Some stuff we’re proud of"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "text_columns_y3fQ7c": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_NTEfER": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Tim-Arsenault-Grow-light.jpg",
+            "image_width": 500,
+            "title": "Tim Arsenault",
+            "text": "<p><strong>Founder, CEO, Bonsai Bar Instructor</strong><br/>Homebase: Rhode Island</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_zh6AAz": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Matt_Profile_Pic.jpg",
+            "image_width": 650,
+            "title": "Matt Arsenault",
+            "text": "<p><strong>CTO, Webmaster, General Tech & Support, Bonsai Bar Instructor<br/></strong>Homebase: New Hampshire</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_JpEjG9": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/ben.ainsworth.directorofoperations.png",
+            "image_width": 650,
+            "title": "Ben Ainsworth",
+            "text": "<p><strong>Director of Operations, Plant Scientist, Bonsai Bar Instructor</strong><br/>Homebase: Rhode Island</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_NTEfER",
+        "text_block_zh6AAz",
+        "text_block_JpEjG9"
+      ],
+      "settings": {
+        "title": "Meet our team",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "text_columns_kqbHCM": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_4ey8yU": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/tshirt_posts-1.jpg",
+            "image_width": 500,
+            "title": "Josh Allen-Silvia",
+            "text": "<p><strong>Bonsai Bar Director of Horticulture, Ceramicist, Bonsai Bar Instructor</strong><br/>Homebase: Connecticut</p>",
+            "button_label": "Josh on Instagram",
+            "button_link": "https://www.instagram.com/jas.pots"
+          }
+        },
+        "text_block_449fUC": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Screenshot_2025-01-22_at_5.24.19_PM.png",
+            "image_width": 650,
+            "title": "Steven Evans",
+            "text": "<p><strong>North East Regional Director, Venue Coordinator, Bonsai Bar Instructor<br/></strong>Homebase: Massachusetts</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_ajyxT7": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Jessi_Photo_Cropped.jpg",
+            "image_width": 650,
+            "title": "Jessi Jaramillo",
+            "text": "<p><strong>Bonsai Bar Instructor<br/></strong>Homebase: New Hampshire</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_4ey8yU",
+        "text_block_449fUC",
+        "text_block_ajyxT7"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "text_columns_LxciUP": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_UHBJVe": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Tory_Rose.jpg",
+            "image_width": 500,
+            "title": "Tori Rose Weaver",
+            "text": "<p>Brand Manager, Bonsai Barbie<br/>Homebase: Rhode Island</p>",
+            "button_label": "@BonsaiBarbie",
+            "button_link": "https://www.instagram.com/bonsaibarbie"
+          }
+        },
+        "text_block_NJnB7R": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Ben_Kegel.jpg",
+            "image_width": 650,
+            "title": "Ben Kegel",
+            "text": "<p><strong>California Regional Director, Venue Coordinator, Bonsai Bar Instructor<br/></strong>Homebase: S. California</p>",
+            "button_label": "@benkegel",
+            "button_link": "https://www.instagram.com/benkegel/"
+          }
+        },
+        "text_block_yUAMpf": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image": "shopify://shop_images/Caitlin_Jewell-Bonsai_Bar.jpg",
+            "image_width": 650,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "https://www.instagram.com/caitjewell.art.beer/"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_UHBJVe",
+        "text_block_NJnB7R",
+        "text_block_yUAMpf"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "text_columns_H7W9aE": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_ygF7w7": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Aaron_Taube-Bonsai-Bar.jpg",
+            "image_width": 500,
+            "title": "Aaron Taube",
+            "text": "<p><strong>New Jersey Regional Director, <br/>Bonsai Bar Instructor</strong><br/>Homebase: New Jersey</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_YHCq9c": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Mark-Bamber.png",
+            "image_width": 650,
+            "title": "Mark Bamber",
+            "text": "<p><strong>Chief Financial Officer<br/></strong>Homebase: New York</p>",
+            "button_label": "@BonsaiBamber",
+            "button_link": "https://www.instagram.com/bonsaibamber/"
+          }
+        },
+        "text_block_BhxW9j": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Ben_Arsenault.jpg",
+            "image_width": 650,
+            "title": "Ben Arsenault",
+            "text": "<p><strong>Regional Director, Bonsai Bar Instructor</strong><br/>Homebase: New Hampshire<br/>Coming soon: Denver!</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_ygF7w7",
+        "text_block_YHCq9c",
+        "text_block_BhxW9j"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "text_columns_VwAQaJ": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_UdDU47": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Connor_Reever.jpg",
+            "image_width": 500,
+            "title": "Connor Reever",
+            "text": "<p><strong>New Orleans Regional Director, Creative Director, Bonsai Bar Instructor</strong><br/>Homebase: New Orleans</p>",
+            "button_label": "@BONSAI_DAT",
+            "button_link": "https://www.instagram.com/bonsai_dat/"
+          }
+        },
+        "text_block_A8aRtm": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Dash_Collins_-_Bonsai_Bar.jpg",
+            "image_width": 650,
+            "title": "Dash Collins",
+            "text": "<p><strong>Texas Regional Director, Bonsai Bar Instructor</strong><br/>Homebase: Texas</p>",
+            "button_label": "@DASH.DOES",
+            "button_link": ""
+          }
+        },
+        "text_block_wr4yNV": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/Jessica_NYC.jpg",
+            "image_width": 650,
+            "title": "Jessica Cauttero",
+            "text": "<p><strong>NYC Regional Director, Bonsai Bar Instructor</strong><br/>Homebase: New York</p>",
+            "button_label": "@bonsaibar_nyc",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_UdDU47",
+        "text_block_A8aRtm",
+        "text_block_wr4yNV"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "text_and_image_aNDgRA": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/Ben_Arsenault_Teaching.jpg",
+        "image2": "shopify://shop_images/Ben-At-Brewery.png",
+        "image_width": 700,
+        "subtitle": "get your hands dirty,",
+        "title": "Join our team",
+        "text": "<p>If you’re passionate about bonsai and bringing joy to others, and you excel at commanding a room while carefully handling delicate plants and ceramic pots, we’d love to meet you.</p>",
+        "button_label": "Tell us your story",
+        "button_link": "shopify://pages/jobs",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "211d3f63-596e-4a04-a21a-145c73479e36",
+    "rich_text_3Xj8Rm",
+    "advanced_content_MPcLmd",
+    "faq_mqMr7e",
+    "main",
+    "text_columns_y3fQ7c",
+    "text_columns_kqbHCM",
+    "text_columns_H7W9aE",
+    "text_columns_VwAQaJ",
+    "text_columns_LxciUP",
+    "text_and_image_aNDgRA"
+  ]
+}

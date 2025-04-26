@@ -1,0 +1,228 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "div {background-color: black;}"
+      ],
+      "settings": {}
+    },
+    "slideshow_irnnKe": {
+      "type": "slideshow",
+      "blocks": {
+        "image_8xqeXH": {
+          "type": "image",
+          "settings": {
+            "title": "Choose \nyour state",
+            "title_size": 40,
+            "subheading": "Make Tiny Trees with us!",
+            "link": "",
+            "link_text": "",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/DJO4-1.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "bottom center"
+          }
+        }
+      },
+      "block_order": [
+        "image_8xqeXH"
+      ],
+      "settings": {
+        "section_height": "natural",
+        "mobile_height": "250px",
+        "parallax": true,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "rich_text_BNbmbC": {
+      "type": "rich-text",
+      "blocks": {
+        "text_ByX68G": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Join our <strong>Beginner Bonsai Workshops</strong> for a hands-on experience that teaches you the basics of bonsai care, pruning, and styling. Create your own tree, gain expert tips, and leave with the skills to keep your bonsai thriving while learning from expert instructors. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_ByX68G"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "featured_collections_ehCn78": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_kVrD6N": {
+          "type": "collection",
+          "settings": {
+            "collection": "norcal",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_n9Ydbp": {
+          "type": "collection",
+          "settings": {
+            "collection": "socal",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_zEtKKf": {
+          "type": "collection",
+          "settings": {
+            "collection": "colorado",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_Y763iK": {
+          "type": "collection",
+          "settings": {
+            "collection": "florida",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_yETtrh": {
+          "type": "collection",
+          "settings": {
+            "collection": "collection-ct",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_nWxzfb": {
+          "type": "collection",
+          "settings": {
+            "collection": "collection-la",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_FPzR4A": {
+          "type": "collection",
+          "settings": {
+            "collection": "collection-ma",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_DfQ7Vm": {
+          "type": "collection",
+          "settings": {
+            "collection": "collection-me",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_4fTzBm": {
+          "type": "collection",
+          "settings": {
+            "collection": "collection-nh",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_ANwHLw": {
+          "type": "collection",
+          "settings": {
+            "collection": "collection-nj",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_c8xxbT": {
+          "type": "collection",
+          "settings": {
+            "collection": "nyc-collection",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_QWyYfL": {
+          "type": "collection",
+          "settings": {
+            "collection": "collection-ny-state",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_xjbNjy": {
+          "type": "collection",
+          "settings": {
+            "collection": "collection-pa",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_rDyDUE": {
+          "type": "collection",
+          "settings": {
+            "collection": "collection-ri",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_Pdmkb8": {
+          "type": "collection",
+          "settings": {
+            "collection": "collection-tx",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        }
+      },
+      "block_order": [
+        "collection_kVrD6N",
+        "collection_n9Ydbp",
+        "collection_zEtKKf",
+        "collection_Y763iK",
+        "collection_yETtrh",
+        "collection_nWxzfb",
+        "collection_FPzR4A",
+        "collection_DfQ7Vm",
+        "collection_4fTzBm",
+        "collection_ANwHLw",
+        "collection_c8xxbT",
+        "collection_QWyYfL",
+        "collection_xjbNjy",
+        "collection_rDyDUE",
+        "collection_Pdmkb8"
+      ],
+      "custom_css": [
+        "h2 {font-family: arial; font-size: medium;}"
+      ],
+      "settings": {
+        "title": "",
+        "divider": false,
+        "enable_gutter": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_irnnKe",
+    "rich_text_BNbmbC",
+    "featured_collections_ehCn78"
+  ]
+}

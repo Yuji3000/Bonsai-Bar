@@ -1,0 +1,12 @@
+{% comment %} Workshop Details Snippet {% endcomment %}
+<div class="workshop-info">
+  {% for variant in product.variants %}
+    {% assign parts = variant.title | split: " / " %}
+    {% assign event_date = parts[0] %}
+    {% assign species = parts[1] %}
+
+    <p class="workshop-date">📅 <strong>Date:</strong> {{ event_date }}</p>
+    <p class="workshop-species">🌱 <strong>Species:</strong> {{ species }}</p>
+
+  {% endfor %}
+</div>

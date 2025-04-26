@@ -1,0 +1,40 @@
+<div id="filters">
+  <h3>Filter by Tree</h3>
+
+  {% assign tree_values = "" %}
+  {% for product in collection.products %}
+    {% if product.metafields.custom.tree %}
+      {% assign tree_values = tree_values | append: product.metafields.custom.tree | append: "," %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign unique_trees = tree_values | split: "," | uniq %}
+
+  <button class="filter-btn" data-filter="all">All</button>
+  {% for tree in unique_trees %}
+    <button class="filter-btn" data-filter="{{ tree }}">{{ tree }}</button>
+  {% endfor %}
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  let filterButtons = document.querySelectorAll(".filter-btn");
+
+  filterButtons.forEach(button => {
+    button.addEventListener("click", function() {
+      let selectedFilter = this.getAttribute("data-filter");
+      let products = document.querySelectorAll(".product-item");
+
+      products.forEach(product => {
+        let productTree = product.getAttribute("data-tree");
+
+        if (selectedFilter === "all" || productTree === selectedFilter) {
+          product.style.display = "block";
+        } else {
+          product.style.display = "none";
+        }
+      });
+    });
+  });
+});
+</script>
