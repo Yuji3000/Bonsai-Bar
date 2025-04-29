@@ -1,13 +1,39 @@
 <style>
-  .list-item .grid__item.grid-product.medium-up--one-half.aos-init.aos-animate {
-     float: left !important;
-     width: 50% !important;
- }
-  .list-item .grid__item.grid-product.medium-up--one-quarter.aos-init.aos-animate {
-     float: left !important;
-     width: 25% !important;
- }
   
+ {% comment %} Grid styling to align event cards below  {% endcomment %}
+div.grid.grid--uniform {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+/* each card */
+div.grid.grid--uniform > div.grid__item {
+  display: flex;
+  flex-direction: column;
+}
+
+/* make the inner content stretch */
+div.grid.grid--uniform > div.grid__item > .grid-product__content,
+div.grid.grid--uniform > div.grid__item > .skrim__item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ensure link itself flexes */
+div.grid-product__link {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+{% comment %} End {% endcomment %}
+
+ .list-item .grid__item.grid-product.medium-up--one-half.aos-init.aos-animate {
+    float: left !important;
+    width: 50% !important;
+}
+
 .list-item .grid-product__content {
     float: left;
     width: 100%;
