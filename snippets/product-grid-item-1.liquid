@@ -1,8 +1,16 @@
 {% comment %} {%- if collection.products.first.type == "Ticket" -%} {% endcomment %}
+  {%- liquid
+    # If no grid width was passed in, default to:
+    # - small: full-width (1 col)
+    # - medium: full-width (1 col)
+    # - large: one-quarter (4 cols)
+    unless grid_item_width
+      assign grid_item_width = 'small--one-whole medium-up--one-whole large-up--one-quarter'
+    endunless
+  -%}
     <style>
       /*.pagination{display:none;}*/
     </style>    
-        
         {% assign fruits2 ='' %}
         {% assign fruits4 ='' %}
         
@@ -191,7 +199,14 @@
           {% for item in variantNumbers %}
     
           
-    <div class="grid__item grid-product {{ startDates[i] }} {{ grid_item_width }}{% if settings.quick_shop_enable %} grid-product__has-quick-shop{% endif %}" data-aos="row-of-{{ per_row }}" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
+    <div
+      class="grid__item grid-product {{ startDates[i] }} {{ grid_item_width }}{% if settings.quick_shop_enable %} grid-product__has-quick-shop{% endif %}"
+      data-grid-width="{{ grid_item_width }}"
+      data-grid-index="{{ forloop.index0 }}"
+      data-product-handle="{{ product.handle }}"
+      data-product-id="{{ product.id }}"
+      data-aos="row-of-{{ per_row }}"
+    >
       <div class="grid-product__content">
         {%- if has_custom_label -%}
           <div class="grid-product__tag grid-product__tag--custom">
@@ -394,6 +409,18 @@
         {%- endif -%}
       {%- endunless -%}
     </div>
+    {% comment %} <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const items = Array.from(document.querySelectorAll('.grid__item'));
+        console.log('🏷︎ total grid__item count:', items.length);
+        console.log('🏷︎ index → data-grid-width map:', 
+          items.map(el => ({
+            index: el.dataset.gridIndex,
+            width: el.dataset.gridWidth
+          }))
+        );
+      });
+    </script> {% endcomment %}
     {% assign i = i | plus: 1 %}
       
     {% endfor %}
