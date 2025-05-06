@@ -168,7 +168,7 @@
             data-aos="row-of-{{ per_row }}"
           >
       <div class="grid-product__content">
-        {%- if has_custom_label -%}
+        {% comment %} {%- if has_custom_label -%}
           <div class="grid-product__tag grid-product__tag--custom">
             {{ custom_label }}
           </div>
@@ -179,12 +179,22 @@
             <div class="grid-product__tag grid-product__tag--sold-out">
               {{ 'products.product.sold_out' | t }}
             </div>
-          {%- endif -%}
-          {%- unless product.available -%}
-           <!-- <div class="grid-product__tag grid-product__tag--sold-out">
+          {%- endif -%} {% endcomment %}
+        {%- if has_custom_label -%}
+          <div class="grid-product__tag grid-product__tag--custom">
+            {{ custom_label }}
+          </div>
+        {%- endif -%}
+       
+          
+          {% assign tickets = available_tickets[i] | plus: 0 %}
+          {% comment %} {%- if tickets <= 0 -%}
+            <div class="grid-product__tag grid-product__tag--sold-out"
+              
+            >
               {{ 'products.product.sold_out' | t }}
-            </div>-->
-          {%- endunless -%}
+            </div> {% endcomment %}
+
           {%- if on_sale and product.available -%}
             {%- if settings.product_save_amount -%}
               <div class="grid-product__tag grid-product__tag--sale">
@@ -198,7 +208,7 @@
               
             {%- endif -%}
           {%- endif -%}
-        {%- endif -%}
+        {% comment %} {%- endif -%} {% endcomment %}
         {%- if settings.quick_shop_enable -%}
           <div class="quick-product__btn quick-product__btn--not-ready js-modal-open-quick-modal-{{ product.id }} small--hide">
             <span class="quick-product__label">{{ settings.quick_shop_text }}</span>
@@ -213,19 +223,35 @@
         -%}
     
         
+        
     
         <a href="{{ urls[i] }}" class="grid-product__link">
-          <div class="grid-product__image-mask">
-            <div class="grid-product__tag grid-product__tag--sale"> {{ day_of_week[i] }}</div>
+          {%- if tickets <= 0 -%}
+            <div class="grid-product__tag grid-product__tag--sold-out sold-out-center">
+              {{ 'products.product.sold_out' | t }}
+            </div>
+          {%- endif -%}
+          <div class="grid-product__image-mask"
+            style="{% if tickets <= 0 %}opacity: 0.5;{% endif %}">
+            {% assign datefortag = date_time_titles[i] | split: '-' | first | strip %}
+
+            <div class="grid-product__tag grid-product__tag date-tag"> 
+              
+            {{ day_of_week[i] }}
+            {{ datefortag }}
+
+            </div>
             {%- if fixed_aspect_ratio -%}
               <div
+                
                 class="grid__image-ratio grid__image-ratio--{{ settings.product_grid_image_size }}">
                 <img class="lazyload{% unless settings.product_grid_image_fill %} grid__image-contain{% endunless %}"
-                    data-src="{{ cities[i] }}"
-                    data-widths="[360, 540, 720, 900, 1080]"
-                    data-aspectratio="{{ preview_image.aspect_ratio }}"
-                    data-sizes="auto"
-                    alt="{{ preview_image.alt | escape }}">
+                  data-src="{{ cities[i] }}"
+                  data-widths="[360, 540, 720, 900, 1080]"
+                  data-aspectratio="{{ preview_image.aspect_ratio }}"
+                  data-sizes="auto"
+                  alt="{{ preview_image.alt | escape }}"
+                >
               </div>
             {%- else -%}
               <div class="image-wrap"
@@ -233,15 +259,19 @@
                 >
                 {%- assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                 <img class="grid-product__image lazyload"
-                    data-src="{{ img_url }}"
-                    data-widths="[180, 360, 540, 720, 900, 1080]"
-                    data-aspectratio="{{ preview_image.aspect_ratio }}"
-                    data-sizes="auto"
-                    alt="{{ preview_image.alt | escape }}">
+                  data-src="{{ img_url }}"
+                  data-widths="[180, 360, 540, 720, 900, 1080]"
+                  data-aspectratio="{{ preview_image.aspect_ratio }}"
+                  data-sizes="auto"
+                  alt="{{ preview_image.alt | escape }}"
+                  
+                >
                 <noscript>
                   <img class="grid-product__image lazyloaded"
                     src="{{ preview_image | img_url: '400x' }}"
-                    alt="{{ preview_image.alt | escape }}">
+                    alt="{{ preview_image.alt | escape }}"
+                    style="opacity: 0.5"  
+                  >
                 </noscript>
               </div>
             {%- endif -%}
