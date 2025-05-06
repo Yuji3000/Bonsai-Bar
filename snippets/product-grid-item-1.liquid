@@ -195,6 +195,7 @@
                 {%- endif -%}
                 {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
               </div>
+              
             {%- endif -%}
           {%- endif -%}
         {%- endif -%}
@@ -215,6 +216,7 @@
     
         <a href="{{ urls[i] }}" class="grid-product__link">
           <div class="grid-product__image-mask">
+            <div class="grid-product__tag grid-product__tag--sale"> {{ day_of_week[i] }}</div>
             {%- if fixed_aspect_ratio -%}
               <div
                 class="grid__image-ratio grid__image-ratio--{{ settings.product_grid_image_size }}">
