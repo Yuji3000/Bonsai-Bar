@@ -232,25 +232,29 @@
             </div>
           {%- endif -%}
           <div class="grid-product__image-mask"
-            style="{% if tickets <= 0 %}opacity: 0.5;{% endif %}">
-            {% assign datefortag = date_time_titles[i] | split: '-' | first | strip %}
-
-            <div class="grid-product__tag grid-product__tag date-tag"> 
+            style="{% if tickets <= 0 %}opacity: 0.4;{% endif %}"
+          >
+            {% assign datefortag = date_time_titles[i] | split: '-' | first | strip %}        
               
-            {{ day_of_week[i] }}
-            {{ datefortag }}
-
+            <div class="grid-product__tag date-tag">
+              <div class="date-tag__day">{{ day_of_week[i] }}</div>
+              <hr class="date-tag__divider">
+              <div class="date-tag__date">{{ datefortag }}</div>
             </div>
+
+            
             {%- if fixed_aspect_ratio -%}
               <div
                 
-                class="grid__image-ratio grid__image-ratio--{{ settings.product_grid_image_size }}">
+                class="grid__image-ratio grid__image-ratio--{{ settings.product_grid_image_size }}"
+                >
                 <img class="lazyload{% unless settings.product_grid_image_fill %} grid__image-contain{% endunless %}"
                   data-src="{{ cities[i] }}"
                   data-widths="[360, 540, 720, 900, 1080]"
                   data-aspectratio="{{ preview_image.aspect_ratio }}"
                   data-sizes="auto"
                   alt="{{ preview_image.alt | escape }}"
+                  
                 >
               </div>
             {%- else -%}
@@ -293,61 +297,65 @@
           </div>
 
           <div class="grid-product__meta item-1">
-            <div class="grid-product__title">{{ titles[i] }}</div>
-            <div>{{ day_of_week[i] }}</div>
-            {% comment %} <script> console.log("day of the week:{{ day_of_week[i] }}" )</script> {% endcomment %}
-            
-            <div class="grid-product__title location">{{ city_states[i] | replace: "-", "," }}</div>
-         {% assign vt5 = date_time_titles[i] | split: "/" %}
-        {% assign vt6 = vt5[0] %}
-        <div class="location_meta 1"><b>{{ vt6 | replace: "-", "," }} </b></div>
+            <div class="title-price-wrapper" style="display: flex; justify-content: space-between; align-items: center;">
+              <div class="grid-product__title">{{ titles[i] }}</div>
 
-             {% assign tree = vt5[1] %}
+              <div class="grid-product__price">
+                {% if product.metafields.custom.tree %}
+                  <div class="tree_meta">
+                    {{ product.metafields.custom.tree }}
+                  </div>
+                {% endif %}
+                
+                {{ images[i] }}
+                {%- if on_sale -%}
+                  {%- assign compare = product.compare_at_price | money -%}
+                  <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+                  <span class="grid-product__price--original">{{ compare }}</span>
+                  <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
+                {%- endif -%}
+                
+                {%- if product.price_varies -%}
+                  {%- assign price = product.price_min | money -%}
+                  <span {% if on_sale %}class="sale-price"{% endif %}>
+                    {{ images[i] }}
+                  </span>
+                {%- else -%}
+                  <span {% if on_sale %}class="sale-price"{% endif %}>
+                    {{ product.price  | money }}
+                  </span>
+                {%- endif -%}
+                
+                {%- assign product_variant = product.selected_or_first_available_variant -%}
+                {%- if product_variant.unit_price_measurement -%}
+                  <div class="product__unit-price">
+                    {%- capture unit_price_base_unit -%}
+                      {%- if product_variant.unit_price_measurement -%}
+                        {%- if product_variant.unit_price_measurement.reference_value != 1 -%}
+                          {{ product_variant.unit_price_measurement.reference_value }}
+                        {%- endif -%}
+                        {{ product_variant.unit_price_measurement.reference_unit }}
+                      {%- endif -%}
+                    {%- endcapture -%}
+                  </div>
+                {%- endif -%}
+              </div>
+            </div>
+            
+          <div class="grid-product__title location"
+            style="width: 80%;">
+            {{ city_states[i] | replace: "-", "," }}
+          </div>
+
+          {% assign vt5 = date_time_titles[i] | split: "/" %}
+          {% assign vt6 = vt5[0] %}
+
+          <div class="location_meta 1"><b>{{ vt6 | replace: "-", "," }}</b></div>
+
+            {% assign tree = vt5[1] %}
             {%- if tree %}
               <div class="location_meta 3">Tree: {{ tree }}</div>
             {% endif %} 
-            <div class="grid-product__price">
-              {% if product.metafields.custom.tree %}
-  <div class="tree_meta">
-    {{ product.metafields.custom.tree }}
-  </div>
-{% endif %}
-
-         {{ images[i] }}
-              {%- if on_sale -%}
-                {%- assign compare = product.compare_at_price | money -%}
-                {% comment %} <script>console.log({{product|json}});</script> {% endcomment %}
-                <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
-                <span class="grid-product__price--original">{{ compare }}</span>
-                <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
-              {%- endif -%}
-              {%- if product.price_varies -%}
-                {%- assign price = product.price_min | money -%}
-                <span {% if on_sale %}class="sale-price"{% endif %}>
-                  {{ images[i] }}
-                </span>
-              {%- else -%}
-                <span {% if on_sale %}class="sale-price"{% endif %}>
-                  {{ product.price  | money }}
-                </span>
-              {%- endif -%}
-    
-              {%- assign product_variant = product.selected_or_first_available_variant -%}
-              {%- if product_variant.unit_price_measurement -%}
-                <div class="product__unit-price">
-                  {%- capture unit_price_base_unit -%}
-                    {%- if product_variant.unit_price_measurement -%}
-                      {%- if product_variant.unit_price_measurement.reference_value != 1 -%}
-                        {{ product_variant.unit_price_measurement.reference_value }}
-                      {%- endif -%}
-                      {{ product_variant.unit_price_measurement.reference_unit }}
-                    {%- endif -%}
-                  {%- endcapture -%}
-    
-                
-                </div>
-              {%- endif -%}
-            </div>
           </div>
         </a>
         {%- if settings.enable_swatches -%}
