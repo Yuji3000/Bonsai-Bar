@@ -227,7 +227,7 @@
     
         <a href="{{ urls[i] }}" class="grid-product__link">
           {%- if tickets <= 0 -%}
-            <div class="grid-product__tag grid-product__tag--sold-out sold-out-center">
+            <div class="grid-product__tag grid-product__tag--sold-out sold-out-center.faded">
               {{ 'products.product.sold_out' | t }}
             </div>
           {%- endif -%}
@@ -300,7 +300,10 @@
             <div class="title-price-wrapper" style="display: flex; justify-content: space-between; align-items: center;">
               <div class="grid-product__title">{{ titles[i] }}</div>
 
-              <div class="grid-product__price">
+              <div 
+                class="grid-product__price"
+                
+              >
                 {% if product.metafields.custom.tree %}
                   <div class="tree_meta">
                     {{ product.metafields.custom.tree }}
@@ -339,12 +342,12 @@
                     {%- endcapture -%}
                   </div>
                 {%- endif -%}
+                
               </div>
             </div>
-            
-          <div class="grid-product__title location"
-            style="width: 80%;">
-            {{ city_states[i] | replace: "-", "," }}
+          <div 
+            class="grid-product__title location"
+            style="width: 80%;">{{ city_states[i] | replace: "-", "," }}
           </div>
 
           {% assign vt5 = date_time_titles[i] | split: "/" %}
