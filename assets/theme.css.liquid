@@ -8526,10 +8526,11 @@ html[dir=rtl] .grid-product__content{
 
 @media only screen and (min-width:590px){
 
-.grid-product__title{
-    font-size:calc(var(--typeBaseSize)*1.18)
-}
+  .grid-product__title{
+    font-size:calc(var(--typeBaseSize)*1.2);
+    padding-right: 60px;
   }
+}
 
 .grid-product__vendor{
   font-family:var(--typeBasePrimary),var(--typeBaseFallback);
@@ -8556,7 +8557,10 @@ html[dir=rtl] .grid-product__content{
 @media only screen and (min-width:590px){
 
 .grid-product__price{
-    font-size:calc(var(--typeBaseSize)*0.9);
+    font-size:calc(var(--typeBaseSize)*1.18);
+    position: absolute;
+    top: 0;
+    right: 5px;
 }
   }
 
@@ -8564,6 +8568,11 @@ html[dir=rtl] .grid-product__content{
   text-decoration:line-through;
   margin-right:5px;
 }
+
+.title-price-wrapper {
+  position: relative;
+  
+} 
 
 .grid-product__tag{
   font-family:var(--typeBasePrimary),var(--typeBaseFallback);
