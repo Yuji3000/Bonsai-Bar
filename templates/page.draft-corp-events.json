@@ -146,18 +146,18 @@
     "faq_aRb6Rg": {
       "type": "faq",
       "blocks": {
-        "question_WHdfRX": {
-          "type": "question",
-          "settings": {
-            "title": "Can I have a private event at my house? Where will you go for an event?",
-            "text": "<p>If your home is within one of our Bonsai Bar regions, hosting a private event could be an amazing idea!</p><p>With 20 to 30 friends, you can turn your backyard, patio, or living room into the ultimate pop-up bonsai bar — complete with drinks, laughs, and tiny trees. It's a party <em>and</em> everyone leaves with a wonderful little tree they made themselves. 🌱</p><p>Private events do require a minimum booking of 20 guests, but trust us — once you start inviting, you’ll be surprised how fast your guest list grows. Our team can help you plan the perfect night and make it ridiculously easy — all you need to do is clear a little space and pop the corks.</p>"
-          }
-        },
         "question_JQAtPU": {
           "type": "question",
           "settings": {
             "title": "Can you do a Zoom Bonsai Class! My team is WFH and my company is spread out.",
             "text": "<p>We’ll ship everything your team needs for the class, then log in together for a live, interactive workshop led by our expert instructors. Breakout sessions provide personalized guidance, making it a memorable and engaging shared experience.</p>"
+          }
+        },
+        "question_WHdfRX": {
+          "type": "question",
+          "settings": {
+            "title": "Can I have a private event at my house? Where will you go for an event?",
+            "text": "<p>If your home is within one of our Bonsai Bar regions, hosting a private event could be an amazing idea!</p><p>With 20 to 30 friends, you can turn your backyard, patio, or living room into the ultimate pop-up bonsai bar — complete with drinks, laughs, and tiny trees. It's a party <em>and</em> everyone leaves with a wonderful little tree they made themselves. 🌱</p><p>Private events do require a minimum booking of 20 guests, but trust us — once you start inviting, you’ll be surprised how fast your guest list grows. Our team can help you plan the perfect night and make it ridiculously easy — all you need to do is clear a little space and pop the corks.</p>"
           }
         },
         "question_ckrREi": {
@@ -218,8 +218,8 @@
         }
       },
       "block_order": [
-        "question_WHdfRX",
         "question_JQAtPU",
+        "question_WHdfRX",
         "question_ckrREi",
         "question_UzTxpT",
         "question_wM8tT3",
@@ -397,95 +397,35 @@
         "space_around": false
       }
     },
-    "slideshow_qApmLq": {
-      "type": "slideshow",
+    "advanced_content_gfMzE9": {
+      "type": "advanced-content",
       "blocks": {
-        "image_DAD8GJ": {
+        "image_h7JnqH": {
           "type": "image",
           "settings": {
-            "title": "Endless\npossibilities.",
-            "title_size": 80,
-            "subheading": "Bring your brand to life",
+            "image": "shopify://shop_images/Virtual-Class_07.jpg",
             "link": "",
-            "link_text": "Optional button",
-            "text_align": "vertical-bottom horizontal-left",
-            "parallax_direction": "top",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
+            "width": "50%",
+            "alignment": "center"
           }
         },
-        "image_Ga8Yrj": {
-          "type": "image",
+        "liquid_7QjU3G": {
+          "type": "liquid",
           "settings": {
-            "title": "Two line\nslide titles.",
-            "title_size": 80,
-            "subheading": "And big, beautiful imagery",
-            "link": "",
-            "link_text": "Optional button",
-            "text_align": "vertical-bottom horizontal-left",
-            "parallax_direction": "top",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "image_L839tn": {
-          "type": "image",
-          "settings": {
-            "title": "Two line\nslide title.",
-            "title_size": 80,
-            "subheading": "And an optional subheading",
-            "link": "",
-            "link_text": "Optional button",
-            "text_align": "vertical-bottom horizontal-left",
-            "parallax_direction": "top",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "image_Ee3pia": {
-          "type": "image",
-          "settings": {
-            "title": "Two line\nslide title.",
-            "title_size": 80,
-            "subheading": "And an optional subheading",
-            "link": "",
-            "link_text": "Optional button",
-            "text_align": "vertical-bottom horizontal-left",
-            "parallax_direction": "top",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "image_fi8GGp": {
-          "type": "image",
-          "settings": {
-            "title": "Two line\nslide title.",
-            "title_size": 80,
-            "subheading": "And an optional subheading",
-            "link": "",
-            "link_text": "Optional button",
-            "text_align": "vertical-bottom horizontal-left",
-            "parallax_direction": "top",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
+            "code": "<h2>Virtually amazing bonsai zoom teambuilders for 20+ guests!</h2><p>At Bonsai Bar, we’ve had the honor of facilitating some truly unique virtual bonsai team-building workshops for companies with teams spread across the country. 🌱\n\nHere’s how it works: First, we ship our beginner bonsai kits directly to your participants, ensuring everyone has what they need for the big day. Then, we coordinate with your in-house tech team to make sure the virtual experience runs smoothly. On the day of the workshop, our expert instructors can teach live from your HQ for in-person attendees or broadcast from our studio for fully remote teams.\n\nWe keep it interactive, with multiple team members facilitating breakout sessions to ensure everyone gets personalized guidance. And just like in our in-person classes, each participant’s tree is covered by our Beginner Tree Guarantee, so they can feel confident about their new bonsai journey.\n\nPerfect for groups of 20 to 60 participants.",
+            "width": "50%",
+            "alignment": "center"
           }
         }
       },
       "block_order": [
-        "image_DAD8GJ",
-        "image_Ga8Yrj",
-        "image_L839tn",
-        "image_Ee3pia",
-        "image_fi8GGp"
+        "image_h7JnqH",
+        "liquid_7QjU3G"
       ],
-      "name": "t:sections.slideshow.presets.hero_optional_slideshow.name",
+      "name": "t:sections.advanced-content.presets.custom_content.name",
       "settings": {
-        "section_height": "650px",
-        "mobile_height": "auto",
-        "parallax": true,
-        "style": "arrows",
-        "autoplay": true,
-        "autoplay_speed": 5
+        "full_width": false,
+        "space_around": true
       }
     }
   },
@@ -503,6 +443,6 @@
     "rich_text_XyBM79",
     "a31d695d-f15a-49b3-a990-2e5772f840a8",
     "cc8c0487-2291-4984-b775-702d3e91a886",
-    "slideshow_qApmLq"
+    "advanced_content_gfMzE9"
   ]
 }
