@@ -60,30 +60,17 @@ div.grid-product__link {
 
 .list-item .grid-product__content .grid-product__tag.grid-product__tag--sold-out {
   position: absolute;
-  
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: clamp(12px, 2vw, 18px); /* responsive font size */
-  font-weight: 700;
-  white-space: normal;
-  {% comment %} background-color: #FFFFFF80; {% endcomment %}
+  font-weight: 800;
+  background: none;
   color: black;
-  {% comment %} font-size:calc(var(--typeBaseSize)); {% endcomment %}
+  font-size:calc(var(--typeBaseSize)* 1.2);
   font-weight: 700;
-  background: radial-gradient(
-    closest-side,
-    rgba(255, 255, 255, 1) 30%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  white-space: nowrap;
 }
 
-{% comment %} .list-item .grid-product__content .grid-product__tag.date-tag {
-  border: 2px solid red;
-  border-bottom-left-radius: 6px !important;
-  border-bottom-right-radius: 6px;
-
-} {% endcomment %}
 
 .date-tag {
   text-align: center;
