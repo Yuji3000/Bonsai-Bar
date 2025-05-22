@@ -35,9 +35,10 @@ div.grid-product__link {
 }
 
 .list-item .grid-product__content {
-    float: left;
-    width: 100%;
-    margin-bottom: 20px;
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .list-item a.grid-product__link {
@@ -48,41 +49,52 @@ div.grid-product__link {
 }
 
 .list-item a.grid-product__link .grid-product__image-mask {
-    float: left;
-    width: 30%;
+  float: left;
+  width: 30%;
 }
 
 .list-item a.grid-product__link .grid-product__meta {
     float: left;
     width: 70%;
     padding-left: 16px;
+    padding-right: 10px;
 }
 
-.list-item .grid-product__content .grid-product__tag.grid-product__tag--sold-out {
+.list-item .grid-product__content .grid-product__tag--sold-out {
   position: absolute;
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-weight: 800;
-  background: none;
-  color: black;
-  font-size:calc(var(--typeBaseSize)* 1.2);
   font-weight: 700;
-  white-space: nowrap;
+  font-size: calc(var(--typeBaseSize) * 1.2);
+  color: black;
+  text-align: center;
+  padding: 6px 12px;
+  max-width: 90%;
+  margin: 0;
+  box-sizing: border-box;
+  background: none;
+  flex: 1;
+  {% comment %} min-width: 0; {% endcomment %}
 }
 
 
-.date-tag {
+.list-item .grid-product__content .grid-product__tag.grid-product__tag--date-tag {
+  top: 0;
+  margin-left: 10px;
+  right: auto;
   text-align: center;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   padding: 4px 8px;
-  right: 1vw;
+  
 }
 
 .date-tag__day,
 .date-tag__date {
   margin: 0;
+  font-size: calc(var(--typeBaseSize)*.7);
+
 }
 
 .date-tag__divider {
