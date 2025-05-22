@@ -16,6 +16,12 @@
     "rich_text_KN3WXc": {
       "type": "rich-text",
       "blocks": {
+        "heading_6xCGfm": {
+          "type": "heading",
+          "settings": {
+            "title": "Make the most of your mame"
+          }
+        },
         "heading_yMi9zN": {
           "type": "heading",
           "settings": {
@@ -31,6 +37,7 @@
         }
       },
       "block_order": [
+        "heading_6xCGfm",
         "heading_yMi9zN",
         "text_yMYJKJ"
       ],
