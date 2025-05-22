@@ -13,6 +13,23 @@
       "type": "main-page",
       "settings": {}
     },
+    "text_and_image_4DyXzg": {
+      "type": "text-and-image",
+      "name": "t:sections.text-and-image.presets.image_with_text.name",
+      "settings": {
+        "image": "shopify://shop_images/ben_teaching_b8febe8d-c8f4-440a-8f11-e10d03c9f65b.jpg",
+        "image_width": 460,
+        "subtitle": "",
+        "title": "bonsai with us!",
+        "text": "<p>Use code 'GoogleMame' at checkout  for 25% off a  full length, beginner bonsai workshop</p>",
+        "button_label": "Apply Code",
+        "button_link": "",
+        "button_style": "secondary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
     "rich_text_KN3WXc": {
       "type": "rich-text",
       "blocks": {
@@ -22,24 +39,17 @@
             "title": "Make the most of your mame"
           }
         },
-        "heading_yMi9zN": {
-          "type": "heading",
-          "settings": {
-            "title": "Hungry for more?"
-          }
-        },
-        "text_yMYJKJ": {
+        "text_c3Rhh6": {
           "type": "text",
           "settings": {
-            "enlarge_text": false,
-            "text": "<p>Use code 'GoogleMame' for 25% off any full length beginner bonsai workshop</p>"
+            "enlarge_text": true,
+            "text": "<p>Place in full sun<br/>Water 2-3x/week. Let dry fully between waterings.<br/>Wait 2 weeks before applying fertilizer of choice. Follow instructions on package.</p><p></p>"
           }
         }
       },
       "block_order": [
         "heading_6xCGfm",
-        "heading_yMi9zN",
-        "text_yMYJKJ"
+        "text_c3Rhh6"
       ],
       "name": "t:sections.rich-text.presets.rich_text.name",
       "settings": {
@@ -51,6 +61,7 @@
   },
   "order": [
     "main",
+    "text_and_image_4DyXzg",
     "rich_text_KN3WXc"
   ]
 }
