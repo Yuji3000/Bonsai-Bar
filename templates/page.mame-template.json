@@ -21,7 +21,7 @@
           "type": "image",
           "settings": {
             "title": "Bite Sized Bonsai",
-            "title_size": 80,
+            "title_size": 100,
             "subheading": "A mame-making workshop for google family days",
             "link": "",
             "link_text": "",
@@ -73,92 +73,21 @@
         "divider": false
       }
     },
-    "advanced_content_GQbDMz": {
-      "type": "advanced-content",
-      "blocks": {
-        "image_Tb7eT7": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1.jpg",
-            "link": "",
-            "width": "25%",
-            "alignment": "center"
-          }
-        },
-        "liquid_9NCyeh": {
-          "type": "liquid",
-          "settings": {
-            "code": "<h2>Place in full sun</h2><p>Seriously! These plants can't get enough and want to live in your sunniest window.</p>",
-            "width": "50%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "image_Tb7eT7",
-        "liquid_9NCyeh"
-      ],
-      "name": "t:sections.advanced-content.presets.custom_content.name",
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
-    },
-    "advanced_content_74DaBc": {
-      "type": "advanced-content",
-      "blocks": {
-        "image_3TbwmR": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/2.jpg",
-            "link": "",
-            "width": "25%",
-            "alignment": "center"
-          }
-        },
-        "liquid_yTFhGg": {
-          "type": "liquid",
-          "settings": {
-            "code": "<h2>Water 2-3 times a week</h2><p> Allow to dry fully between waterings. </p>",
-            "width": "50%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "image_3TbwmR",
-        "liquid_yTFhGg"
-      ],
-      "name": "t:sections.advanced-content.presets.custom_content.name",
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
-    },
     "advanced_content_efjRym": {
       "type": "advanced-content",
       "blocks": {
         "image_HDJTGm": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/3.jpg",
+            "image": "shopify://shop_images/Icons.png",
             "link": "",
-            "width": "25%",
-            "alignment": "center"
-          }
-        },
-        "liquid_TKhj8K": {
-          "type": "liquid",
-          "settings": {
-            "code": "<h2>Fertilize After 2 Weeks</h2><p>Apply fertilizer of choice. Follow fertilizer instructions. </p>",
-            "width": "50%",
+            "width": "100%",
             "alignment": "center"
           }
         }
       },
       "block_order": [
-        "image_HDJTGm",
-        "liquid_TKhj8K"
+        "image_HDJTGm"
       ],
       "name": "t:sections.advanced-content.presets.custom_content.name",
       "settings": {
@@ -169,6 +98,14 @@
     "advanced_content_cmmtPD": {
       "type": "advanced-content",
       "blocks": {
+        "liquid_LhLntc": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Thanks for letting us share our love of bonsai </h2><p> We hope our workshop inspires a passion for  </p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
         "image_dwi398": {
           "type": "image",
           "settings": {
@@ -177,19 +114,11 @@
             "width": "50%",
             "alignment": "center"
           }
-        },
-        "liquid_LhLntc": {
-          "type": "liquid",
-          "settings": {
-            "code": "<h2>Thanks for letting us share our love of bonsai </h2><p> We hope our workshop inspires a passion for  </p>",
-            "width": "50%",
-            "alignment": "center"
-          }
         }
       },
       "block_order": [
-        "image_dwi398",
-        "liquid_LhLntc"
+        "liquid_LhLntc",
+        "image_dwi398"
       ],
       "name": "t:sections.advanced-content.presets.custom_content.name",
       "settings": {
@@ -204,7 +133,7 @@
           "type": "image",
           "settings": {
             "title": "Keep the fun going",
-            "title_size": 80,
+            "title_size": 100,
             "subheading": "Use code 'google mame' for 25% off a full length beginner workshop",
             "link": "https://bonsaibar.com/discount/GOOGLEMAME",
             "link_text": "Apply Code",
@@ -235,8 +164,6 @@
     "main",
     "slideshow_hFWHtm",
     "rich_text_tpDfhE",
-    "advanced_content_GQbDMz",
-    "advanced_content_74DaBc",
     "advanced_content_efjRym",
     "advanced_content_cmmtPD",
     "slideshow_Pddfik"
