@@ -149,19 +149,159 @@
         "question_EbyJXF",
         "question_FPGYFA"
       ],
+      "disabled": true,
       "settings": {
         "title": ""
       }
     },
-    "featured_collection_switcher_zhTy3M": {
-      "type": "featured-collection-switcher",
+    "rich_text_tpDfhE": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4eCJmd": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text"
+          }
+        },
+        "text_qtL3cY": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4eCJmd",
+        "text_qtL3cY"
+      ],
+      "name": "t:sections.rich-text.presets.rich_text.name",
       "settings": {
-        "title": "I'm in my bonsai era. What else do you have?",
-        "collection1": "bonsai",
-        "collection2": "online-store",
-        "per_row": 4,
-        "view_all": true,
+        "align_text": "center",
+        "narrow_column": true,
         "divider": false
+      }
+    },
+    "slideshow_Pddfik": {
+      "type": "slideshow",
+      "blocks": {
+        "image_aryefY": {
+          "type": "image",
+          "settings": {
+            "title": "Endless\npossibilities.",
+            "title_size": 80,
+            "subheading": "Bring your brand to life",
+            "link": "",
+            "link_text": "Optional button",
+            "text_align": "vertical-bottom horizontal-left",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "image_6G9Xw9": {
+          "type": "image",
+          "settings": {
+            "title": "Two line\nslide titles.",
+            "title_size": 80,
+            "subheading": "And big, beautiful imagery",
+            "link": "",
+            "link_text": "Optional button",
+            "text_align": "vertical-bottom horizontal-left",
+            "parallax_direction": "top",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_aryefY",
+        "image_6G9Xw9"
+      ],
+      "name": "t:sections.slideshow.presets.hero_optional_slideshow.name",
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "advanced_content_GQbDMz": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_Tb7eT7": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "liquid_9NCyeh": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Custom content</h2><p>Use this advanced section to build your own layouts or to add custom HTML, Liquid, or scripts.</p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_Tb7eT7",
+        "liquid_9NCyeh"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "text_and_image_akt9bg": {
+      "type": "text-and-image",
+      "name": "t:sections.text-and-image.presets.image_with_text.name",
+      "settings": {
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "advanced_content_74DaBc": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_3TbwmR": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "liquid_yTFhGg": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Custom content</h2><p>Use this advanced section to build your own layouts or to add custom HTML, Liquid, or scripts.</p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_3TbwmR",
+        "liquid_yTFhGg"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": false,
+        "space_around": true
       }
     }
   },
@@ -169,6 +309,10 @@
     "main",
     "slideshow_hFWHtm",
     "faq",
-    "featured_collection_switcher_zhTy3M"
+    "rich_text_tpDfhE",
+    "slideshow_Pddfik",
+    "advanced_content_GQbDMz",
+    "advanced_content_74DaBc",
+    "text_and_image_akt9bg"
   ]
 }
