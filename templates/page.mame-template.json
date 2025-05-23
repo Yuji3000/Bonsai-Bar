@@ -160,14 +160,14 @@
         "heading_4eCJmd": {
           "type": "heading",
           "settings": {
-            "title": "Congrats on your new bonsai!"
+            "title": "Congrats on your new Mame tree"
           }
         },
         "text_qtL3cY": {
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>With simple care, you can enjoy this tiny tree for decades</p>"
+            "text": "<p>With simple care, you can enjoy this tiny tree for decades!</p>"
           }
         }
       },
