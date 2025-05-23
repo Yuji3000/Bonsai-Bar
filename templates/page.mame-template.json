@@ -288,6 +288,7 @@
             "link_text": "Apply code",
             "text_align": "vertical-bottom horizontal-left",
             "image": "shopify://shop_images/ben_teaching_b8febe8d-c8f4-440a-8f11-e10d03c9f65b.jpg",
+            "image_mobile": "shopify://shop_images/BONSAIBAR_5.5.25_STILLS_58.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0,
             "focal_point": "center center"
@@ -296,7 +297,7 @@
         "image_6G9Xw9": {
           "type": "image",
           "settings": {
-            "title": "Join us for more!",
+            "title": "Keep the fun going",
             "title_size": 80,
             "subheading": "Use code 'google mame' for 25% off a full length beginner workshop",
             "link": "",
