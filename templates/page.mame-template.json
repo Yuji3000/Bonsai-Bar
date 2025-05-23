@@ -26,6 +26,7 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-left",
+            "image": "{{ page.metafields.custom.background_image_banner.value }}",
             "parallax_direction": "top",
             "overlay_opacity": 0,
             "focal_point": "center center"
@@ -159,14 +160,14 @@
         "heading_4eCJmd": {
           "type": "heading",
           "settings": {
-            "title": "Thanks for joining us!"
+            "title": "Congrats on your new bonsai!"
           }
         },
         "text_qtL3cY": {
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>Congratulations  on your new Mame bonsai tree! <br/>With simple care, you can enjoy this tiny tree for decades</p>"
+            "text": "<p>With simple care, you can enjoy this tiny tree for decades</p>"
           }
         }
       },
