@@ -304,6 +304,7 @@
             "link_text": "Apply Code",
             "text_align": "vertical-bottom horizontal-left",
             "image": "shopify://shop_images/ben_teaching_b8febe8d-c8f4-440a-8f11-e10d03c9f65b.jpg",
+            "image_mobile": "shopify://shop_images/BONSAIBAR_5.5.25_STILLS_58.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0,
             "focal_point": "center center"
