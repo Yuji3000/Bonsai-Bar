@@ -95,37 +95,6 @@
         "space_around": true
       }
     },
-    "advanced_content_cmmtPD": {
-      "type": "advanced-content",
-      "blocks": {
-        "liquid_LhLntc": {
-          "type": "liquid",
-          "settings": {
-            "code": "<h2>Thanks for letting us share our love of bonsai </h2><p> We hope our workshop inspires a passion for  </p>",
-            "width": "50%",
-            "alignment": "center"
-          }
-        },
-        "image_dwi398": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/BONSAIBAR_5.5.25_STILLS_58.jpg",
-            "link": "",
-            "width": "50%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "liquid_LhLntc",
-        "image_dwi398"
-      ],
-      "name": "t:sections.advanced-content.presets.custom_content.name",
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
-    },
     "slideshow_Pddfik": {
       "type": "slideshow",
       "blocks": {
@@ -158,6 +127,69 @@
         "autoplay": true,
         "autoplay_speed": 5
       }
+    },
+    "advanced_content_cmmtPD": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_LhLntc": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Thanks for letting us share our love of bonsai </h2><p> We hope our workshop inspires a passion for  </p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "image_dwi398": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BONSAIBAR_5.5.25_STILLS_58.jpg",
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_LhLntc",
+        "image_dwi398"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "newsletter_XRRLty": {
+      "type": "newsletter",
+      "blocks": {
+        "title_nNUa6U": {
+          "type": "title",
+          "settings": {
+            "title": "Stay in touch",
+            "icon_enable": true
+          }
+        },
+        "text_Tx8gmf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>"
+          }
+        },
+        "form_xy4DHw": {
+          "type": "form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title_nNUa6U",
+        "text_Tx8gmf",
+        "form_xy4DHw"
+      ],
+      "name": "t:sections.newsletter.presets.email_signup.name",
+      "settings": {
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
     }
   },
   "order": [
@@ -165,7 +197,8 @@
     "slideshow_hFWHtm",
     "rich_text_tpDfhE",
     "advanced_content_efjRym",
+    "slideshow_Pddfik",
     "advanced_content_cmmtPD",
-    "slideshow_Pddfik"
+    "newsletter_XRRLty"
   ]
 }
