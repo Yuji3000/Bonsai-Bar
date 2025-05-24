@@ -128,51 +128,85 @@
         "autoplay_speed": 5
       }
     },
-    "advanced_content_cmmtPD": {
-      "type": "advanced-content",
+    "rich_text_LTFJpH": {
+      "type": "rich-text",
       "blocks": {
-        "liquid_LhLntc": {
-          "type": "liquid",
+        "heading_cAAcyN": {
+          "type": "heading",
           "settings": {
-            "code": "<h2>Thanks for letting us share our love of bonsai </h2><p> We hope our workshop inspires a passion for  </p>",
-            "width": "50%",
-            "alignment": "center"
+            "title": "Stay in touch 🫶"
           }
         },
-        "image_dwi398": {
-          "type": "image",
+        "text_qCt46f": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/BONSAIBAR_5.5.25_STILLS_58.jpg",
-            "link": "",
-            "width": "50%",
-            "alignment": "center"
+            "enlarge_text": true,
+            "text": "<p>We love to see how our trees are doing in their new homes—Tag us! </p>"
           }
         }
       },
       "block_order": [
-        "liquid_LhLntc",
-        "image_dwi398"
+        "heading_cAAcyN",
+        "text_qCt46f"
       ],
-      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "name": "t:sections.rich-text.presets.rich_text.name",
       "settings": {
-        "full_width": false,
-        "space_around": true
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "text_with_icons_q8kjy8": {
+      "type": "text-with-icons",
+      "blocks": {
+        "text_block_ayrkpB": {
+          "type": "text_block",
+          "settings": {
+            "icon": "charity",
+            "title": "",
+            "text": "<p>Instagram</p>"
+          }
+        },
+        "text_block_frQXnq": {
+          "type": "text_block",
+          "settings": {
+            "icon": "trophy",
+            "title": "",
+            "text": "<p>Tag us in a post on LinkedIn</p>"
+          }
+        },
+        "text_block_4YgLrM": {
+          "type": "text_block",
+          "settings": {
+            "icon": "thumbs-up",
+            "title": "",
+            "text": "<p>Leave us a 5 Star Google Review</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_ayrkpB",
+        "text_block_frQXnq",
+        "text_block_4YgLrM"
+      ],
+      "name": "Text columns with icons",
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000",
+        "button_label": "",
+        "button_link": "",
+        "divider": false
       }
     },
     "newsletter_XRRLty": {
       "type": "newsletter",
       "blocks": {
-        "title_nNUa6U": {
-          "type": "title",
-          "settings": {
-            "title": "Stay in touch 🫶",
-            "icon_enable": true
-          }
-        },
         "text_Tx8gmf": {
           "type": "text",
           "settings": {
-            "text": "<p>Don't miss out! Sign up for our newsletter to get the scoop on new workshops & score special discounts!</p>"
+            "text": "<p>Want sweet discounts & news about product launches? Sign up for our newsletter</p>"
           }
         },
         "form_xy4DHw": {
@@ -181,7 +215,6 @@
         }
       },
       "block_order": [
-        "title_nNUa6U",
         "text_Tx8gmf",
         "form_xy4DHw"
       ],
@@ -198,7 +231,8 @@
     "rich_text_tpDfhE",
     "advanced_content_efjRym",
     "slideshow_Pddfik",
-    "advanced_content_cmmtPD",
+    "rich_text_LTFJpH",
+    "text_with_icons_q8kjy8",
     "newsletter_XRRLty"
   ]
 }
