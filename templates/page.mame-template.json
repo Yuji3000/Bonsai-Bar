@@ -156,47 +156,48 @@
         "divider": false
       }
     },
-    "text_with_icons_q8kjy8": {
-      "type": "text-with-icons",
+    "logo_list_w7qWgV": {
+      "type": "logo-list",
       "blocks": {
-        "text_block_ayrkpB": {
-          "type": "text_block",
+        "logo_image_WbYGJp": {
+          "type": "logo_image",
           "settings": {
-            "icon": "charity",
-            "title": "",
-            "text": "<p>Instagram</p>"
+            "image": "shopify://shop_images/instagramlogo.png",
+            "link": "https://www.instagram.com/thebonsaibar/"
           }
         },
-        "text_block_frQXnq": {
-          "type": "text_block",
+        "logo_image_aAtCEy": {
+          "type": "logo_image",
           "settings": {
-            "icon": "trophy",
-            "title": "",
-            "text": "<p>Tag us in a post on<a href=\"https://www.linkedin.com/company/77640350/admin/dashboard/\" target=\"_blank\" title=\"LinkedIn\"> LinkedIn</a></p>"
+            "image": "shopify://shop_images/Linkedin.png",
+            "link": "https://www.linkedin.com/company/77640350/admin/dashboard/"
           }
         },
-        "text_block_4YgLrM": {
-          "type": "text_block",
+        "logo_image_raCm6i": {
+          "type": "logo_image",
           "settings": {
-            "icon": "thumbs-up",
-            "title": "",
-            "text": "<p>Leave us a 5 Star Google Review</p>"
+            "image": "shopify://shop_images/transparent-social-media-1713858561643.webp",
+            "link": "https://www.tiktok.com/@thebonsaibar"
+          }
+        },
+        "logo_image_Key3My": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/review_logo.jpg",
+            "link": "https://www.google.com/search?q=bonsai+bar+reviews&sca_esv=1e384605af789f3f&rlz=1C5CHFA_enUS965US965&ei=thAxaMTiKq7e5NoP1rTROQ&oq=bonsai+bar+&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2JvbnNhaSBiYXIgKgIIATIFEAAYgAQyBRAAGIAEMggQABiABBjJAzIOEAAYgAQYkQIYkgMYigUyCxAAGIAEGJECGIoFMg4QLhiABBjHARiOBRivATIFEAAYgAQyExAuGIAEGEMYxwEYigUYjgUYrwEyChAAGIAEGEMYigUyBRAAGIAESOscUABYzwtwAHgAkAEAmAGEAaAB-wmqAQQwLjExuAEByAEA-AEBmAILoAK_CsICCxAuGIAEGLEDGIMBwgIOEC4YgAQYsQMYgwEYigXCAhEQLhiABBixAxjRAxiDARjHAcICBRAuGIAEwgINEC4YgAQYQxjlBBiKBcICCBAuGIAEGLEDwgIOEAAYgAQYsQMYgwEYigXCAhEQLhiABBjUAhjHARiOBRivAcICEBAAGIAEGLEDGEMYgwEYigXCAg0QABiABBixAxhDGIoFwgINEC4YgAQYsQMYQxiKBcICERAuGIAEGLEDGMcBGI4FGK8BwgILEC4YgAQYxwEYrwHCAhAQLhiABBixAxhDGOUEGIoFwgIREC4YgAQYkQIYxwEYigUYrwGYAwCSBwQwLjExoAeNnQGyBwQwLjExuAe_Cg&sclient=gws-wiz-serp&lqi=ChJib25zYWkgYmFyIHJldmlld3MiAjgBSInuxMDnsoCACFoUEAAQARgAGAEiCmJvbnNhaSBiYXKSARVib25zYWlfcGxhbnRfc3VwcGxpZXKqAVIKDS9nLzExbDY1cnIzMTQQASoOIgpib25zYWkgYmFyKAAyHxABIhtZKjlaYhjFcweBCExgBFwGdQ7Z5XWeRIigXHoyDhACIgpib25zYWkgYmFy4AEA#rlimm=8124300594983752563&lrd=0xa7d9bbe7a0338eef:0x70bf5058c4805373,3,,,,"
           }
         }
       },
       "block_order": [
-        "text_block_ayrkpB",
-        "text_block_frQXnq",
-        "text_block_4YgLrM"
+        "logo_image_WbYGJp",
+        "logo_image_aAtCEy",
+        "logo_image_raCm6i",
+        "logo_image_Key3My"
       ],
-      "name": "Text columns with icons",
+      "name": "t:sections.logo-list.presets.logo_list.name",
       "settings": {
         "title": "",
-        "align_text": "center",
-        "desktop_columns_per_row": 3,
-        "icon_color": "#000",
-        "button_label": "",
-        "button_link": "",
+        "logo_opacity": 76,
         "divider": false
       }
     },
@@ -232,7 +233,7 @@
     "advanced_content_efjRym",
     "slideshow_Pddfik",
     "rich_text_LTFJpH",
-    "text_with_icons_q8kjy8",
+    "logo_list_w7qWgV",
     "newsletter_XRRLty"
   ]
 }
