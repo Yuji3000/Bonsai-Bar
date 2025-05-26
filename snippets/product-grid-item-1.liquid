@@ -219,8 +219,14 @@
             <div class="grid-product__tag grid-product__tag--date-tag">
               <div class="date-tag__day">{{ day_of_week[i] }}</div>
               <hr class="date-tag__divider">
-              <div class="date-tag__date">{{ datefortag }}</div>
-              <script> console.log("date for tag: {{ datefortag }}")</script>
+              
+              {% assign splitDate =  datefortag | split: " " %}
+              {% assign month =  splitDate[0] %}
+              {% assign day =  splitDate[1] %}
+              {%- if month.size > 5 -%}
+                {% assign month = month | slice: 0, 3 %}
+              {%- endif -%}
+              <div class="date-tag__date">{{ month }} {{  day }}</div>
             </div>
 
             
