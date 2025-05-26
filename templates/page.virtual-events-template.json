@@ -15,13 +15,13 @@
         "template--14833082302545__6ce2c482-8447-4fcf-ad57-f4940505dc8c-1680702544a22f437b-0": {
           "type": "image",
           "settings": {
-            "title": "Grow Together",
+            "title": "Zoom and Virtual",
             "title_size": 60,
-            "subheading": "Corporate & Private Events",
+            "subheading": "Live Bonsai Workshops",
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/Notion_TorchCrown9.jpg",
+            "image": "shopify://shop_images/LIVE-WORKSHOP-GRAPHIC.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0,
             "focal_point": "center center"
@@ -32,7 +32,7 @@
           "settings": {
             "title": "tiny tree zen",
             "title_size": 80,
-            "subheading": "Team bonding with bonsai",
+            "subheading": "Bonsai direct to your door",
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-left",
@@ -41,27 +41,11 @@
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
-        },
-        "4f3cf763-04b0-41b5-8f66-820bb726a9d4": {
-          "type": "image",
-          "settings": {
-            "title": "Stress Free Planning",
-            "title_size": 80,
-            "subheading": "Let us handle the dirty work",
-            "link": "",
-            "link_text": "",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/Bonsai-Bar-Daugher_Dad.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
         }
       },
       "block_order": [
         "template--14833082302545__6ce2c482-8447-4fcf-ad57-f4940505dc8c-1680702544a22f437b-0",
-        "38c004ce-6f20-4824-996c-a371bfc677e2",
-        "4f3cf763-04b0-41b5-8f66-820bb726a9d4"
+        "38c004ce-6f20-4824-996c-a371bfc677e2"
       ],
       "custom_css": [
         ".parallax-container {position: absolute; top: 0%; left: 0; height: 100%; width: 100%;}"
@@ -88,53 +72,6 @@
         "subtitle": "strong roots",
         "title": "Team Builders, Corporate Events and Virtual Events",
         "text": "<p>Hosting a Bonsai Bar class gives your guests a meaningful experience that nurtures well-being and reduces stress. Our events promote healing, joy, and a positive impact on employees. Partnering with us connects your brand to wellness, mindfulness, and authentic connection.</p>",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "right",
-        "divider": false
-      }
-    },
-    "advanced_content_VQMBAy": {
-      "type": "advanced-content",
-      "blocks": {
-        "image_YgtGwW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/PARLEAUX-25.jpg",
-            "link": "",
-            "width": "50%",
-            "alignment": "center"
-          }
-        },
-        "liquid_pCrBhG": {
-          "type": "liquid",
-          "settings": {
-            "code": "<h2>Bonsai ... anywhere!</h2><p>Bring Bonsai Bar’s expert instructors anywhere for a unique and impactful brand activation! Whether it’s to your office, your company's back lawn, or your countryside retreat —our team is ready to elevate your event. With coverage in 13 states and 16 markets (and counting), we can travel to bring our exciting, hands-on experience to your next event, product launch or activation. Let us create a memorable experience that leaves your audience feeling relaxed, inspired, and connected—no matter where you are!</p>",
-            "width": "50%",
-            "alignment": "top-middle"
-          }
-        }
-      },
-      "block_order": [
-        "image_YgtGwW",
-        "liquid_pCrBhG"
-      ],
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
-    },
-    "text_and_image_PiKtBP": {
-      "type": "text-and-image",
-      "settings": {
-        "image": "shopify://shop_images/BonsaiBar_AdStills-25.png",
-        "image2": "shopify://shop_images/PARLEAUX-3.jpg",
-        "image_width": 680,
-        "subtitle": "bonsai 101",
-        "title": "FUN for all",
-        "text": "<p>Bonsai Bar events are fun, inclusive and beginner-friendly. Each 90-minute workshop includes expert instruction, high-quality trees, and all necessary tools. Designed for success, our events also maintain an eco-friendly footprint. Group sessions typically accommodate 24 - 48 participants.</p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
@@ -174,6 +111,36 @@
         "space_around": true
       }
     },
+    "advanced_content_VQMBAy": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_YgtGwW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Virtual-Class_05.jpg",
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "liquid_pCrBhG": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Bonsai ... anywhere!</h2><p>Let’s face it—work has changed, so why shouldn’t team building change too? Bonsai Bar brings our expert instructors straight to your remote team's screens for a live, 2-hour interactive workshop designed to spark creativity and lift spirits.\n\nOur instructors lead the session virtually, guiding participants step-by-step through the art of bonsai. With breakout rooms, live chat support, and plenty of hands-on encouragement, your team will connect, unwind, and grow something meaningful—together.</p>",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "image_YgtGwW",
+        "liquid_pCrBhG"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
     "faq_aRb6Rg": {
       "type": "faq",
       "blocks": {
@@ -187,8 +154,8 @@
         "question_WHdfRX": {
           "type": "question",
           "settings": {
-            "title": "Can I have a private event at my house? Where will you go for an event?",
-            "text": "<p>If your home is within one of our Bonsai Bar regions, hosting a private event could be an amazing idea!</p><p>With 20 to 30 friends, you can turn your backyard, patio, or living room into the ultimate pop-up bonsai bar — complete with drinks, laughs, and tiny trees. It's a party <em>and</em> everyone leaves with a wonderful little tree they made themselves. 🌱</p><p>Private events do require a minimum booking of 20 guests, but trust us — once you start inviting, you’ll be surprised how fast your guest list grows. Our team can help you plan the perfect night and make it ridiculously easy — all you need to do is clear a little space and pop the corks.</p>"
+            "title": "Times",
+            "text": "<p>Answer</p>"
           }
         },
         "question_ckrREi": {
@@ -433,9 +400,8 @@
     "6ce2c482-8447-4fcf-ad57-f4940505dc8c",
     "main",
     "text_and_image_HXw8dw",
-    "advanced_content_VQMBAy",
-    "text_and_image_PiKtBP",
     "advanced_content_gfMzE9",
+    "advanced_content_VQMBAy",
     "faq_aRb6Rg",
     "051634a5-4e3e-4d7c-82c7-1290c849dcda",
     "42066751-0bf7-4161-be10-23662ccbf9bf",
