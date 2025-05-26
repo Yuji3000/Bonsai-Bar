@@ -64,22 +64,6 @@
       "disabled": true,
       "settings": {}
     },
-    "text_and_image_HXw8dw": {
-      "type": "text-and-image",
-      "settings": {
-        "image": "shopify://shop_images/Bonsai_Bar_Corporate_Events.jpg",
-        "image_width": 700,
-        "subtitle": "strong roots",
-        "title": "Team Builders, Corporate Events and Virtual Events",
-        "text": "<p>Hosting a Bonsai Bar class gives your guests a meaningful experience that nurtures well-being and reduces stress. Our events promote healing, joy, and a positive impact on employees. Partnering with us connects your brand to wellness, mindfulness, and authentic connection.</p>",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "right",
-        "divider": false
-      }
-    },
     "advanced_content_gfMzE9": {
       "type": "advanced-content",
       "blocks": {
@@ -95,7 +79,7 @@
         "liquid_7QjU3G": {
           "type": "liquid",
           "settings": {
-            "code": "<h2>bonsai zoom teambuilders for 20+ guests!</h2><p>At Bonsai Bar, we’ve had the honor of facilitating some truly unique virtual bonsai team-building workshops for companies with teams spread across the country. 🌱\n\nHere’s how it works: First, we ship our beginner bonsai kits directly to your participants, ensuring everyone has what they need for the big day. Then, we coordinate with your in-house tech team to make sure the virtual experience runs smoothly. On the day of the workshop, our expert instructors can teach live from your HQ for in-person attendees or broadcast from our studio for fully remote teams.\n\nWe keep it interactive, with multiple team members facilitating breakout sessions to ensure everyone gets personalized guidance. And just like in our in-person classes, each participant’s tree is covered by our Beginner Tree Guarantee, so they can feel confident about their new bonsai journey.\n\nPerfect for groups of 20 to 60 participants.",
+            "code": "<h2>WFH STaff? Hybrid? No problem! </h2><p>\n\nHere’s how it works: First, we ship our beginner bonsai kits directly to your participants, ensuring everyone has what they need for the big day. Then, we coordinate with your in-house tech team to make sure the virtual experience runs smoothly. On the day of the workshop, our expert instructors can teach live from your HQ for in-person attendees or broadcast from our studio for fully remote teams.\n\nWe keep it interactive, with multiple team members facilitating breakout sessions to ensure everyone gets personalized guidance. And just like in our in-person classes, each participant’s tree is covered by our Beginner Tree Guarantee, so they can feel confident about their new bonsai journey.\n\nPerfect for groups of 20 to 60 participants.",
             "width": "50%",
             "alignment": "center"
           }
@@ -154,43 +138,36 @@
         "question_WHdfRX": {
           "type": "question",
           "settings": {
-            "title": "Times",
+            "title": "Timezones",
             "text": "<p>Answer</p>"
           }
         },
         "question_ckrREi": {
           "type": "question",
           "settings": {
-            "title": "Would you host a small group of us for a private event?",
+            "title": "Shipping the trees",
             "text": "<p>If your stock portfolio is booming and you’re dreaming of a super intimate night with a few friends or co-workers— we can totally do that!<br/><br/>However, our private events have a minimum billing based on <strong>20 guests</strong>, so it might be a little more <em>platinum card</em> than you were hoping.</p><p>In that case, we highly recommend buying six tickets to one of our public classes instead. Make a night of it: take your crew out to dinner first, then arrive early enough to snag six seats together.<br/><br/>With a little advance planning, our Bonsai Bar team can even help coordinate the seating — and maybe even keep the whole thing a surprise. (We love a good surprise.)</p>"
           }
         },
         "question_UzTxpT": {
           "type": "question",
           "settings": {
-            "title": "Will you do a Bar Mitzvah/Bat Mitzvah for an anime-obsessed kid?",
+            "title": "Cameras on",
             "text": "<p>Please. We would LOVE this.  Our teachers would have the greatest rock, paper, scissors tournament in history to win the opportunity to teach your class. </p>"
           }
         },
         "question_wM8tT3": {
           "type": "question",
           "settings": {
-            "title": "Will you come to our office?",
+            "title": "Will you come to our office for some of us?",
             "text": "<p>Yes! This is exactly what we do during the day — plan events, teach corporate classes, water our trees, and soak up some sunlight with them. Please invite us to your office! </p><p>Ask for our brochure — it's packed with all the big fancy names, companies and institutions that keep inviting us back for more bonsai magic.</p>"
           }
         },
         "question_46EgNa": {
           "type": "question",
           "settings": {
-            "title": "What if I’m outside of the regions you serve?",
+            "title": "International staff",
             "text": "<p>Let’s talk travel fees! We’ll hop on a plane — tiny trees love to fly! ✈️ We'll just need a little extra for travel expenses on top of our usual fees, because trees (and Bonsai instructors) love a good adventure.</p>"
-          }
-        },
-        "question_zrAhrq": {
-          "type": "question",
-          "settings": {
-            "title": "Can you do the class in the park behind our office?",
-            "text": "<p>Absolutely! We just need tables and chairs for everyone. Don’t worry — we bring fancy tablecloths to class up even the most battle-worn Costco tables.</p>"
           }
         },
         "question_rtFqXH": {
@@ -206,13 +183,6 @@
             "title": "What if I want to host a corporate event for more than 50 people?",
             "text": "<p>Ask us about our new ‘Bite-Size Bonsai’ event — perfect for big groups! We just launched it, and big companies are already loving it. Great for kids too! Minimum group size is 50, and we require at least 60 days' notice to book.</p>"
           }
-        },
-        "question_8HkngL": {
-          "type": "question",
-          "settings": {
-            "title": "What about a Bonsai Event for my school?",
-            "text": "<p><strong>Bite-Size Bonsai: A New Life Science Enrichment Opportunity</strong></p><p>We are excited to offer a new program designed to support Life Science education through a hands-on, creative experience.</p><p>Ideal for students ages 8 and up, this one-hour activity introduces key concepts in plant biology and sustainability, while encouraging creativity and engagement.<br/><br/>Programs require a minimum of 60 days’ lead time to schedule.</p><p>When we connect, we’ll review your school’s purchase order process, discuss your educational goals, and ensure our program is aligned to meet the needs of diverse learners.</p><p>We would be honored to help enrich your Life Science curriculum with this memorable and meaningful experience.</p>"
-          }
         }
       },
       "block_order": [
@@ -222,10 +192,8 @@
         "question_UzTxpT",
         "question_wM8tT3",
         "question_46EgNa",
-        "question_zrAhrq",
         "question_rtFqXH",
-        "question_UAGCiK",
-        "question_8HkngL"
+        "question_UAGCiK"
       ],
       "name": "t:sections.faq.presets.faq.name",
       "settings": {
@@ -262,73 +230,6 @@
         "narrow_column": true
       }
     },
-    "be6542ff-1662-4bd4-9e94-2087fc1ebdb4": {
-      "type": "text-and-image",
-      "settings": {
-        "image": "shopify://shop_images/042823_2015.jpg",
-        "image_width": 330,
-        "subtitle": "",
-        "title": "Greens are good for you!",
-        "text": "<p>Plants purify their environments and are good for our mental health! Studies show that caring for  house plants reduces stress and anxiety. </p><p>Send each team member home  with a new way to care and connect with nature. Our classes even include tree followup care.  </p>",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "left",
-        "divider": false
-      }
-    },
-    "4d09e01a-57de-4ff4-af5a-e22eee49d64a": {
-      "type": "text-columns",
-      "blocks": {
-        "template--14866561794129__4d09e01a-57de-4ff4-af5a-e22eee49d64a-168735385374485d4f-0": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify://shop_images/PARLEAUX-15.jpg",
-            "image_width": 650,
-            "title": "Say cheese!",
-            "text": "<p>Those instagrammable smiles for miles. Low pressure. good tunes. Great Vibes.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "template--14866561794129__4d09e01a-57de-4ff4-af5a-e22eee49d64a-168735385374485d4f-1": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify://shop_images/Repot_Kit.jpg",
-            "image_width": 400,
-            "title": "A hobby for life",
-            "text": "<p>Optional add-ons are available to enhance your class, providing  keepsakes for your guests!</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "template--14866561794129__4d09e01a-57de-4ff4-af5a-e22eee49d64a-168735385374485d4f-2": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify://shop_images/042823_1448_3745fa81-a18b-45e2-aa25-9b8fcbf6c006.jpg",
-            "image_width": 650,
-            "title": "A traveling forest",
-            "text": "<p>Our planning staff will help you select from more than 200 Venues—or bring the adventure straight to you!</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--14866561794129__4d09e01a-57de-4ff4-af5a-e22eee49d64a-168735385374485d4f-0",
-        "template--14866561794129__4d09e01a-57de-4ff4-af5a-e22eee49d64a-168735385374485d4f-1",
-        "template--14866561794129__4d09e01a-57de-4ff4-af5a-e22eee49d64a-168735385374485d4f-2"
-      ],
-      "settings": {
-        "title": "",
-        "align_text": "center",
-        "divider": false
-      }
-    },
     "rich_text_XyBM79": {
       "type": "rich-text",
       "blocks": {
@@ -342,7 +243,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>We're proud to offer top-tier Team Building, Corporate, and Brand Activation events. Let’s connect to bring the magic of bonsai to your next event. We’d love to get tiny trees into your hands and create a memorable experience together!</p>"
+            "text": "<p>We're proud to offer top-tier Team Building, Corporate, and Virtual events. Let’s connect to bring the magic of bonsai to your next event.</p>"
           }
         }
       },
@@ -362,7 +263,7 @@
         "template--14866561794129__a31d695d-f15a-49b3-a990-2e5772f840a8-16872854109e7e9131-0": {
           "type": "heading",
           "settings": {
-            "title": "Give us some details!"
+            "title": "Give us as many details as possible."
           }
         }
       },
@@ -399,14 +300,11 @@
   "order": [
     "6ce2c482-8447-4fcf-ad57-f4940505dc8c",
     "main",
-    "text_and_image_HXw8dw",
     "advanced_content_gfMzE9",
     "advanced_content_VQMBAy",
     "faq_aRb6Rg",
     "051634a5-4e3e-4d7c-82c7-1290c849dcda",
     "42066751-0bf7-4161-be10-23662ccbf9bf",
-    "be6542ff-1662-4bd4-9e94-2087fc1ebdb4",
-    "4d09e01a-57de-4ff4-af5a-e22eee49d64a",
     "rich_text_XyBM79",
     "a31d695d-f15a-49b3-a990-2e5772f840a8",
     "cc8c0487-2291-4984-b775-702d3e91a886"
