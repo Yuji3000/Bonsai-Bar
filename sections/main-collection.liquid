@@ -61,21 +61,12 @@ div.grid-product__link {
 }
 
 .list-item .grid-product__content .grid-product__tag--sold-out {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: 700;
-  font-size: calc(var(--typeBaseSize) * 1.2);
-  color: black;
-  text-align: center;
-  padding: 6px 12px;
-  max-width: 90%;
-  margin: 0;
-  box-sizing: border-box;
-  background: none;
-  flex: 1;
-  {% comment %} min-width: 0; {% endcomment %}
+    top: 0;
+    left: auto;
+    right: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-size: calc(var(--typeBaseSize)*.8);
 }
 
 
@@ -94,7 +85,6 @@ div.grid-product__link {
 .date-tag__date {
   margin: 0;
   font-size: calc(var(--typeBaseSize)*.7);
-
 }
 
 .date-tag__divider {
@@ -110,20 +100,6 @@ div.grid-product__link {
 
 @media only screen and (max-width:768px){
 
-  .list-item .grid-product__content .grid-product__tag--sold-out {
-  {% comment %} position: absolute; {% endcomment %}
-  top: 30%;
-  {% comment %} left: 50%; {% endcomment %}
-  transform: translate(-50%, -50%);
-  {% comment %} font-weight: 700; {% endcomment %}
-  font-size: calc(var(--typeBaseSize) * 1.2);
-  white-space: nowrap;
-  {% comment %} padding: 6px 12px;
-  max-width: 90%;
-  margin: 0;
-  box-sizing: border-box;
-  background: none; {% endcomment %}
-  {% comment %} flex: 1; {% endcomment %}
 }
 
 .list-item .grid-product__content .grid-product__tag.grid-product__tag--date-tag {

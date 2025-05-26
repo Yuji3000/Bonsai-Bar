@@ -69,8 +69,7 @@
           {% assign everything11 = everything10 | append: "////" %}
           {% assign everything12 = everything11 | append: price %}
           {% assign everything13 = everything12 | append: "////" %}
-          {% assign price =  product.price | money %}  
-             
+          {% assign price = product.price | money | remove: '.00' %}
            
           {% assign dt2 = variant.title | replace: ",", "-" %}
           {% assign everything14 = everything13 | append: dt2 %}
@@ -168,32 +167,13 @@
             data-aos="row-of-{{ per_row }}"
           >
       <div class="grid-product__content">
-        {% comment %} {%- if has_custom_label -%}
-          <div class="grid-product__tag grid-product__tag--custom">
-            {{ custom_label }}
-          </div>
-        {%- else -%}
-          
-          {% assign tickets = available_tickets[i] | plus: 0 %}
-          {%- if tickets <= 0 -%}
-            <div class="grid-product__tag grid-product__tag--sold-out">
-              {{ 'products.product.sold_out' | t }}
-            </div>
-          {%- endif -%} {% endcomment %}
         {%- if has_custom_label -%}
           <div class="grid-product__tag grid-product__tag--custom">
             {{ custom_label }}
           </div>
         {%- endif -%}
        
-          
           {% assign tickets = available_tickets[i] | plus: 0 %}
-          {% comment %} {%- if tickets <= 0 -%}
-            <div class="grid-product__tag grid-product__tag--sold-out"
-              
-            >
-              {{ 'products.product.sold_out' | t }}
-            </div> {% endcomment %}
 
           {%- if on_sale and product.available -%}
             {%- if settings.product_save_amount -%}
@@ -208,7 +188,7 @@
               
             {%- endif -%}
           {%- endif -%}
-        {% comment %} {%- endif -%} {% endcomment %}
+
         {%- if settings.quick_shop_enable -%}
           <div class="quick-product__btn quick-product__btn--not-ready js-modal-open-quick-modal-{{ product.id }} small--hide">
             <span class="quick-product__label">{{ settings.quick_shop_text }}</span>
@@ -236,11 +216,11 @@
           >
             {% assign datefortag = date_time_titles[i] | split: '-' | first | strip %}        
               
-            {% comment %} <div class="grid-product__tag date-tag"> {% endcomment %}
             <div class="grid-product__tag grid-product__tag--date-tag">
               <div class="date-tag__day">{{ day_of_week[i] }}</div>
               <hr class="date-tag__divider">
               <div class="date-tag__date">{{ datefortag }}</div>
+              <script> console.log("date for tag: {{ datefortag }}")</script>
             </div>
 
             
@@ -298,10 +278,7 @@
 
           <div class="grid-product__meta item-1">
             <div class="title-price-wrapper">
-              <div 
-                class="grid-product__title"
-                
-              >{{ titles[i] }}
+              <div class="grid-product__title">{{ titles[i] }}
             </div>
               <div class="grid-product__price">
                 {% if product.metafields.custom.tree %}
