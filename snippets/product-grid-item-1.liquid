@@ -1,35 +1,27 @@
 {% comment %} {%- if collection.products.first.type == "Ticket" -%} {% endcomment %}
   {%- liquid
-    # If no grid width was passed in, default to:
-    # - small: full-width (1 col)
-    # - medium: full-width (1 col)
-    # - large: one-quarter (4 cols)
     unless grid_item_width
       assign grid_item_width = 'small--one-whole medium-up--one-whole large-up--one-quarter'
     endunless
   -%}
-    <style>
-      /*.pagination{display:none;}*/
-    </style>    
-        {% assign fruits2 ='' %}
-        {% assign fruits4 ='' %}
-        
-        {% assign newTagList = '' %}
-        {% assign newTagList1 = '' %}
-        {% assign variantNumbers = '' %}
-        {% assign startDates = '' %}
-        {% assign titles = '' %}
-        {% assign cities = '' %}
-        {% assign levels = '' %}
-        {% assign trees = '' %}
-        {% assign urls = '' %}
-        {% assign images = '' %}
-        {% assign dateTimeTitles = '' %}
-        {% assign cityStates = '' %}
-        {% assign availableTickets = '' %}
-        
-        
-        {% assign t = 0 %}
+   
+    {% assign fruits2 ='' %}
+    {% assign fruits4 ='' %}
+    {% assign new_tag_list = '' %}
+    {% assign new_tag_list1 = '' %}
+    {% assign variant_numbers = '' %}
+    {% assign start_dates = '' %}
+    {% assign titles = '' %}
+    {% assign cities = '' %}
+    {% assign levels = '' %}
+    {% assign trees = '' %}
+    {% assign urls = '' %}
+    {% assign images = '' %}
+    {% assign date_time_titles = '' %}
+    {% assign city_states = '' %}
+    {% assign available_tickets = '' %}
+    {% assign day_of_week = '' %}
+    {% assign t = 0 %}
         
         {% for product in collection.products %}
           {% for variant in product.variants %}
@@ -39,111 +31,86 @@
                 assign on_sale = true
               endif
             -%}
-          {% assign day = variant.metafields.custom.day_of_the_week %}
-           {% assign vt = variant.title | split: "/" %}
-           {% assign startdate = vt[0] | date: '%s' %}
-            
-           {% assign mydate = 'now' | date: '%s' %}
+            {% assign vt = variant.title | split: "/" %}
+            {% assign startdate = vt[0] | date: '%s' %}
+            {% assign day_of_week = vt[0] | date: '%a' %}
+            {% assign mydate = 'now' | date: '%s' %}
           
-           {% if mydate < startdate %}
-            
-           {% assign t = i | plus: 1 %}
-             
-            {% assign newTagList = newTagList | append: ',' | append: startdate %}
+          {% if mydate < startdate %}
+            {% assign new_tag_list = new_tag_list | append: ',' | append: startdate %}
             {% assign filename = "////" | append: variant.id %}
         
         {% if fruits4 contains startdate %}
-             {% assign fruits21 = startdate | append: '_1' %}
-           {% if fruits4 contains fruits21 %}
-             {% assign everything = startdate | append: '_1' | append: '_1' | append: filename %}
-              {% else %}
-           {% assign fruits4 = fruits4 | append: '?' | append: startdate | append: '_1' %}
-             {% assign everything = startdate | append: '_1' | append: filename %}
-              {% endif %}
+              {% assign fruits21 = startdate | append: '_1' %}
+            {% if fruits4 contains fruits21 %}
+              {% assign everything = startdate | append: '_1' | append: '_1' | append: filename %}
             {% else %}
-           
-            {% assign fruits4 = fruits4 | append: '?' | append: startdate %}
+              {% assign fruits4 = fruits4 | append: '?' | append: startdate | append: '_1' %}
+              {% assign everything = startdate | append: '_1' | append: filename %}
+            {% endif %}
+        {% else %}
+          {% assign fruits4 = fruits4 | append: '?' | append: startdate %}
           {% assign everything = startdate | append: filename %}
-             
-             {% endif %}
+        {% endif %}
+
+          {% assign everything1 = everything | append: "////" %}
+          {% assign everything2 = everything1 | append: product.title %}
+          {% assign everything3 = everything2 | append: "////" %}
+          {%-assign img_url = product.featured_image | img_url: '600x600'  -%}
+          {% assign everything4 = everything3 | append: img_url %}
+          {% assign everything5 = everything4 | append: "////" %}
+          {% assign everything6 = everything5 | append: product.metafields.custom.level %}
+          {% assign everything7 = everything6 | append: "////" %}
+          {% assign everything8 = everything7 | append: product.metafields.custom.tree %}
+          {% assign everything9 = everything8 | append: "////" %}
+          {% assign everything10 = everything9 | append: variant.url %}
           
-        
-              
+          {% assign price =  product.price | money %} 
+          {% assign everything11 = everything10 | append: "////" %}
+          {% assign everything12 = everything11 | append: price %}
+          {% assign everything13 = everything12 | append: "////" %}
+          {% assign price = product.price | money | remove: '.00' %}
            
-            {% assign everything1 = everything | append: "////" %}
-            {% assign everything2 = everything1 | append: product.title %}
-            {% assign everything3 = everything2 | append: "////" %}
-            {%-assign img_url = product.featured_image | img_url: '600x600'  -%}
-            {% assign everything4 = everything3 | append: img_url %}
-            {% assign everything5 = everything4 | append: "////" %}
-            {% assign everything6 = everything5 | append: product.metafields.custom.level %}
-            {% assign everything7 = everything6 | append: "////" %}
-            {% assign everything8 = everything7 | append: product.metafields.custom.tree %}
-            {% assign everything9 = everything8 | append: "////" %}
-            {% assign everything10 = everything9 | append: variant.url %}
+          {% assign dt2 = variant.title | replace: ",", "-" %}
+          {% assign everything14 = everything13 | append: dt2 %}
+          {% assign everything15 = everything14 | append: "////" %}
+          {% assign dt3 = product.metafields.custom.city_state | replace: ",", "-" %}
+          {% assign everything16 = everything15 | append: dt3 %}
+          {% assign qty  =variant.inventory_quantity %}
+          {% assign everything17 = everything16 | append: "////" %}
+          {% assign everything18 = everything17 | append: qty %}
+          {% assign everything19 = everything18 | append: "////" | append: day_of_week %}
+          {% assign new_tag_list1 = new_tag_list1 | append: ',' | append: everything19  %}
           
-           {% assign price =  product.price | money %} 
-            {% assign everything11 = everything10 | append: "////" %}
-            {% assign everything12 = everything11 | append: price %}
-            {% assign everything13 = everything12 | append: "////" %}
-            {% assign price =  product.price | money %}  
-             
-           
-            {% assign dt2 = variant.title | replace: ",", "-" %}
-            {% assign everything14 = everything13 | append: dt2 %}
-            {% assign everything15 = everything14 | append: "////" %}
-            {% assign dt3 = product.metafields.custom.city_state | replace: ",", "-" %}
-            {% assign everything16 = everything15 | append: dt3 %}
-             
-            {% assign qty  =variant.inventory_quantity %}
-            {% assign everything17 = everything16 | append: "////" %}
-            {% assign everything18 = everything17 | append: qty %}
-            {% assign everything19 = everything18 | append: day %}
-            {% assign newTagList1 = newTagList1 | append: ',' | append: everything19  %}
-          
-           {%- endif -%}
+          {%- endif -%}
           {%- endfor -%}
-         
-         {%- endfor -%}
-         
-         
-          {% assign newTagList = newTagList | remove_first: ',' | split: ',' %}
-          {% assign newTagList1 = newTagList1 | remove_first: ',' | split: ',' %}
-        
-         {% assign newTagList41 = newTagList | sort %}
-        
-        
-        
+        {%- endfor -%}
+
+        {% assign new_tag_list = new_tag_list | remove_first: ',' | split: ',' %}
+        {% assign new_tag_list1 = new_tag_list1 | remove_first: ',' | split: ',' %}
+        {% assign new_tag_list41 = new_tag_list | sort %}
         {% assign fruits2 ='' %}
         
-        {% for item in newTagList41 %}
-         
+        {% for item in new_tag_list41 %}
           {% if fruits2 contains item %}
-            
-           {% assign fruits21 = item | append: '_1' %}
+            {% assign fruits21 = item | append: '_1' %}
             {% if fruits2 contains fruits21 %}
               {% assign fruits2 = fruits2 | append: ',' | append: item | append: '_1' | append: '_1' %}
-              {% else %}
-            {% assign fruits2 = fruits2 | append: ',' | append: item | append: '_1' %}
-            {% endif %}
             {% else %}
-           
+              {% assign fruits2 = fruits2 | append: ',' | append: item | append: '_1' %}
+            {% endif %}
+          {% else %}
             {% assign fruits2 = fruits2 | append: ',' | append: item %}
-             
-             {% endif %}
-          
-          {% endfor %}
+          {% endif %}
+        {% endfor %}
         
-        {% assign newTagList4 = fruits2 | remove_first: ',' | split: ',' %}
+        {% assign new_tag_list4 = fruits2 | remove_first: ',' | split: ',' %}
         
-        
-          {% for item in newTagList4 %}
-            
-            
-          {% for j in (0..3500) %}
-            
-            {% assign zcode = newTagList1[j] | split: "////" %}  
-            
+        {% for item in new_tag_list4 %}
+          {% assign last_index = new_tag_list1.size | minus: 1 %}
+
+          {% for j in (0..last_index) %}
+            {% assign zcode = new_tag_list1[j] | split: "////" %}  
             {% assign sd = zcode[0] %}
             {% assign vd = zcode[1] %}
             {% assign title = zcode[2] %}
@@ -153,78 +120,61 @@
             {% assign url = zcode[6] %}
             {% assign image1 = zcode[7] %}
             {% assign dt1 = zcode[8] %}
-            
-             {% assign vti1 = zcode[9] %}
+            {% assign vti1 = zcode[9] %}
             {% assign vqty = zcode[10] %}
+            {% assign dayofweek = zcode[11] %}
             
-          {% if item == sd %}
-            
-            
-            
-            {% assign startDates = startDates | append: ',' | append: sd %}
-            {% assign variantNumbers = variantNumbers | append: ',' | append: vd %}
-            {% assign titles = titles | append: ',' | append: title %}
-            {% assign cities = cities | append: ',' | append: city %}
-            {% assign levels = levels | append: ',' | append: level %}
-            {% assign trees = trees | append: ',' | append: tree %}
-            {% assign urls = urls | append: ',' | append: url %}
-            {% assign images = images | append: ',' | append: image1 %}
-            {% assign dateTimeTitles = dateTimeTitles | append: ',' | append: dt1 %}
-             {% assign cityStates = cityStates | append: ',' | append: vti1 %}
-              {% assign availableTickets = availableTickets | append: ',' | append: vqty %}
-            
-            {% break %}
-          
-          {% endif %}
-        {% endfor %}
-            
-            
-          
+            {% if item == sd %}
+              {% assign start_dates = start_dates | append: ',' | append: sd %}
+              {% assign variant_numbers = variant_numbers | append: ',' | append: vd %}
+              {% assign titles = titles | append: ',' | append: title %}
+              {% assign cities = cities | append: ',' | append: city %}
+              {% assign levels = levels | append: ',' | append: level %}
+              {% assign trees = trees | append: ',' | append: tree %}
+              {% assign urls = urls | append: ',' | append: url %}
+              {% assign images = images | append: ',' | append: image1 %}
+              {% assign date_time_titles = date_time_titles | append: ',' | append: dt1 %}
+              {% assign city_states = city_states | append: ',' | append: vti1 %}
+              {% assign available_tickets = available_tickets | append: ',' | append: vqty %}
+              {% assign day_of_week = day_of_week | append: ',' | append: dayofweek %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
         {% endfor %}
         
-          
-         {% assign variantNumbers = variantNumbers | remove_first: ',' | split: ',' %}
-         {% assign startDates= startDates | remove_first: ',' | split: ',' %}
-          {% assign titles= titles | remove_first: ',' | split: ',' %}
-           {% assign cities= cities | remove_first: ',' | split: ',' %}
-            {% assign levels= levels | remove_first: ',' | split: ',' %}
-             {% assign trees= trees | remove_first: ',' | split: ',' %}
-              {% assign urls= urls | remove_first: ',' | split: ',' %}
-               {% assign images= images | remove_first: ',' | split: ',' %}
-                {% assign dateTimeTitles= dateTimeTitles | remove_first: ',' | split: ',' %}
-                 {% assign cityStates= cityStates | remove_first: ',' | split: ',' %}
-                 {% assign availableTickets= availableTickets | remove_first: ',' | split: ',' %}
         
-          {% assign i = 0 %}
-          {% for item in variantNumbers %}
-    
-          
-    <div
-      class="grid__item grid-product {{ startDates[i] }} {{ grid_item_width }}{% if settings.quick_shop_enable %} grid-product__has-quick-shop{% endif %}"
-      data-grid-width="{{ grid_item_width }}"
-      data-grid-index="{{ forloop.index0 }}"
-      data-product-handle="{{ product.handle }}"
-      data-product-id="{{ product.id }}"
-      data-aos="row-of-{{ per_row }}"
-    >
+        {% assign variant_numbers = variant_numbers | remove_first: ',' | split: ',' %}
+        {% assign start_dates= start_dates | remove_first: ',' | split: ',' %}
+        {% assign titles= titles | remove_first: ',' | split: ',' %}
+        {% assign cities= cities | remove_first: ',' | split: ',' %}
+        {% assign levels= levels | remove_first: ',' | split: ',' %}
+        {% assign trees= trees | remove_first: ',' | split: ',' %}
+        {% assign urls= urls | remove_first: ',' | split: ',' %}
+        {% assign images= images | remove_first: ',' | split: ',' %}
+        {% assign date_time_titles= date_time_titles | remove_first: ',' | split: ',' %}
+        {% assign city_states= city_states | remove_first: ',' | split: ',' %}
+        {% assign available_tickets= available_tickets | remove_first: ',' | split: ',' %}
+        {% assign day_of_week = day_of_week | remove_first: ',' | split: ',' %}
+        {% assign i = 1 %}
+        
+        {% for item in variant_numbers %}
+          <div
+            class="grid__item grid-product {{ start_dates[i] }} {{ grid_item_width }}{% if settings.quick_shop_enable %} grid-product__has-quick-shop{% endif %}"
+            data-grid-width="{{ grid_item_width }}"
+            data-grid-index="{{ forloop.index0 }}"
+            data-product-handle="{{ product.handle }}"
+            data-product-id="{{ product.id }}"
+            data-aos="row-of-{{ per_row }}"
+          >
       <div class="grid-product__content">
         {%- if has_custom_label -%}
           <div class="grid-product__tag grid-product__tag--custom">
             {{ custom_label }}
           </div>
-        {%- else -%}
-          
-          {% assign tickets = availableTickets[i] | plus: 0 %}
-          {%- if tickets <= 0 -%}
-            <div class="grid-product__tag grid-product__tag--sold-out">
-              {{ 'products.product.sold_out' | t }}
-            </div>
-          {%- endif -%}
-          {%- unless product.available -%}
-           <!-- <div class="grid-product__tag grid-product__tag--sold-out">
-              {{ 'products.product.sold_out' | t }}
-            </div>-->
-          {%- endunless -%}
+        {%- endif -%}
+       
+          {% assign tickets = available_tickets[i] | plus: 0 %}
+
           {%- if on_sale and product.available -%}
             {%- if settings.product_save_amount -%}
               <div class="grid-product__tag grid-product__tag--sale">
@@ -235,9 +185,10 @@
                 {%- endif -%}
                 {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
               </div>
+              
             {%- endif -%}
           {%- endif -%}
-        {%- endif -%}
+
         {%- if settings.quick_shop_enable -%}
           <div class="quick-product__btn quick-product__btn--not-ready js-modal-open-quick-modal-{{ product.id }} small--hide">
             <span class="quick-product__label">{{ settings.quick_shop_text }}</span>
@@ -252,18 +203,39 @@
         -%}
     
         
+        
+        {%- if tickets <= 0 -%}
+          <div class="grid-product__tag grid-product__tag--sold-out sold-out-center">
+            {{ 'products.product.sold_out' | t }}
+          </div>
+        {%- endif -%}
     
         <a href="{{ urls[i] }}" class="grid-product__link">
-          <div class="grid-product__image-mask">
+          <div class="grid-product__image-mask"
+            style="{% if tickets <= 0 %}opacity: 0.4;{% endif %}"
+          >
+            {% assign datefortag = date_time_titles[i] | split: '-' | first | strip %}        
+              
+            <div class="grid-product__tag grid-product__tag--date-tag">
+              <div class="date-tag__day">{{ day_of_week[i] }}</div>
+              <hr class="date-tag__divider">
+              <div class="date-tag__date">{{ datefortag }}</div>
+              <script> console.log("date for tag: {{ datefortag }}")</script>
+            </div>
+
+            
             {%- if fixed_aspect_ratio -%}
               <div
-                class="grid__image-ratio grid__image-ratio--{{ settings.product_grid_image_size }}">
+                class="grid__image-ratio grid__image-ratio--{{ settings.product_grid_image_size }}"
+                >
                 <img class="lazyload{% unless settings.product_grid_image_fill %} grid__image-contain{% endunless %}"
-                    data-src="{{ cities[i] }}"
-                    data-widths="[360, 540, 720, 900, 1080]"
-                    data-aspectratio="{{ preview_image.aspect_ratio }}"
-                    data-sizes="auto"
-                    alt="{{ preview_image.alt | escape }}">
+                  data-src="{{ cities[i] }}"
+                  data-widths="[360, 540, 720, 900, 1080]"
+                  data-aspectratio="{{ preview_image.aspect_ratio }}"
+                  data-sizes="auto"
+                  alt="{{ preview_image.alt | escape }}"
+                  
+                >
               </div>
             {%- else -%}
               <div class="image-wrap"
@@ -271,15 +243,19 @@
                 >
                 {%- assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                 <img class="grid-product__image lazyload"
-                    data-src="{{ img_url }}"
-                    data-widths="[180, 360, 540, 720, 900, 1080]"
-                    data-aspectratio="{{ preview_image.aspect_ratio }}"
-                    data-sizes="auto"
-                    alt="{{ preview_image.alt | escape }}">
+                  data-src="{{ img_url }}"
+                  data-widths="[180, 360, 540, 720, 900, 1080]"
+                  data-aspectratio="{{ preview_image.aspect_ratio }}"
+                  data-sizes="auto"
+                  alt="{{ preview_image.alt | escape }}"
+                  
+                >
                 <noscript>
                   <img class="grid-product__image lazyloaded"
                     src="{{ preview_image | img_url: '400x' }}"
-                    alt="{{ preview_image.alt | escape }}">
+                    alt="{{ preview_image.alt | escape }}"
+                    style="opacity: 0.5"  
+                  >
                 </noscript>
               </div>
             {%- endif -%}
@@ -301,59 +277,66 @@
           </div>
 
           <div class="grid-product__meta item-1">
-            <div class="grid-product__title">{{ titles[i] }}</div>
-            
-            <div class="grid-product__title location">{{ cityStates[i] | replace: "-", "," }}</div>
-         {% assign vt5 = dateTimeTitles[i] | split: "/" %}
-        {% assign vt6 = vt5[0] %}
-        <div class="location_meta 1"><b>{{ vt6 | replace: "-", "," }} </b></div>
-
-             {% assign tree = vt5[1] %}
-            {%- if tree %}
-              <div class="location_meta 3">Tree: {{ tree }}</div>
-            {% endif %} 
-            <div class="grid-product__price">
-              {% if product.metafields.custom.tree %}
-  <div class="tree_meta">
-    {{ product.metafields.custom.tree }}
-  </div>
-{% endif %}
-
-         {{ images[i] }}
-              {%- if on_sale -%}
-                {%- assign compare = product.compare_at_price | money -%}
-                <script>console.log({{product|json}});</script>
-                <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
-                <span class="grid-product__price--original">{{ compare }}</span>
-                <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
-              {%- endif -%}
-              {%- if product.price_varies -%}
-                {%- assign price = product.price_min | money -%}
-                <span {% if on_sale %}class="sale-price"{% endif %}>
-                  {{ images[i] }}
-                </span>
-              {%- else -%}
-                <span {% if on_sale %}class="sale-price"{% endif %}>
-                  {{ product.price  | money }}
-                </span>
-              {%- endif -%}
-    
-              {%- assign product_variant = product.selected_or_first_available_variant -%}
-              {%- if product_variant.unit_price_measurement -%}
-                <div class="product__unit-price">
-                  {%- capture unit_price_base_unit -%}
-                    {%- if product_variant.unit_price_measurement -%}
-                      {%- if product_variant.unit_price_measurement.reference_value != 1 -%}
-                        {{ product_variant.unit_price_measurement.reference_value }}
-                      {%- endif -%}
-                      {{ product_variant.unit_price_measurement.reference_unit }}
-                    {%- endif -%}
-                  {%- endcapture -%}
-    
-                
-                </div>
-              {%- endif -%}
+            <div class="title-price-wrapper">
+              <div class="grid-product__title">{{ titles[i] }}
             </div>
+              <div class="grid-product__price">
+                {% if product.metafields.custom.tree %}
+                  <div class="tree_meta">
+                    {{ product.metafields.custom.tree }}
+                    <script>"{{ product.metafields.custom.tree }}"</script>
+                  </div>
+                {% endif %}
+                
+                {{ images[i] }}
+                {%- if on_sale -%}
+                  {%- assign compare = product.compare_at_price | money -%}
+                  <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+                  <span class="grid-product__price--original">{{ compare }}</span>
+                  <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
+                {%- endif -%}
+                
+                {%- if product.price_varies -%}
+                  {%- assign price = product.price_min | money -%}
+                  <span {% if on_sale %}class="sale-price"{% endif %}>
+                    {{ images[i] }}
+                  </span>
+                {%- else -%}
+                  <span {% if on_sale %}class="sale-price"{% endif %}>
+                    {{ product.price  | money }}
+                  </span>
+                {%- endif -%}
+                
+                {%- assign product_variant = product.selected_or_first_available_variant -%}
+                {%- if product_variant.unit_price_measurement -%}
+                  <div class="product__unit-price">
+                    {%- capture unit_price_base_unit -%}
+                      {%- if product_variant.unit_price_measurement -%}
+                        {%- if product_variant.unit_price_measurement.reference_value != 1 -%}
+                          {{ product_variant.unit_price_measurement.reference_value }}
+                        {%- endif -%}
+                        {{ product_variant.unit_price_measurement.reference_unit }}
+                      {%- endif -%}
+                    {%- endcapture -%}
+                  </div>
+                {%- endif -%}
+                
+              </div>
+            </div>
+          <div 
+            class="grid-product__title location"
+            style="width: 80%;">{{ city_states[i] | replace: "-", "," }}
+          </div>
+
+          {% assign vt5 = date_time_titles[i] | split: "/" %}
+          {% assign vt6 = vt5[0] %}
+
+          <div class="location_meta 1"><b>{{ vt6 | replace: "-", "," }}</b></div>
+
+            {% assign tree = vt5[1] %}
+            {%- if tree %}
+              <div class="location_meta 3"> {{ tree }}</div>
+            {% endif %} 
           </div>
         </a>
         {%- if settings.enable_swatches -%}
@@ -409,18 +392,7 @@
         {%- endif -%}
       {%- endunless -%}
     </div>
-    {% comment %} <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const items = Array.from(document.querySelectorAll('.grid__item'));
-        console.log('🏷︎ total grid__item count:', items.length);
-        console.log('🏷︎ index → data-grid-width map:', 
-          items.map(el => ({
-            index: el.dataset.gridIndex,
-            width: el.dataset.gridWidth
-          }))
-        );
-      });
-    </script> {% endcomment %}
-    {% assign i = i | plus: 1 %}
+
+      {% assign i = i | plus: 1 %}
       
     {% endfor %}

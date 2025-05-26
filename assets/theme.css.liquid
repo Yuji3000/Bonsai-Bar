@@ -8435,7 +8435,7 @@ select .variant-input{
 .grid-product__content{
   position:relative;
   margin-bottom:20px;
-  text-align:left
+  text-align:left;
 }
 
 html[dir=rtl] .grid-product__content{
@@ -8454,7 +8454,9 @@ html[dir=rtl] .grid-product__content{
 }
 
 .grid-product__link{
-  display:block;
+  position: relative;
+  overflow: hidden;
+  display: block;
 }
 
 .grid-product__image-mask{
@@ -8526,10 +8528,13 @@ html[dir=rtl] .grid-product__content{
 
 @media only screen and (min-width:590px){
 
-.grid-product__title{
-    font-size:calc(var(--typeBaseSize)*1.18)
-}
+  .grid-product__title{
+    font-size:calc(var(--typeBaseSize)*1.2);
+    max-width: 70%;
+    flex: 1;
+    min-width: 0;
   }
+}
 
 .grid-product__vendor{
   font-family:var(--typeBasePrimary),var(--typeBaseFallback);
@@ -8549,14 +8554,19 @@ html[dir=rtl] .grid-product__content{
 }
 
 .grid-product__price{
-  margin-top:6px;
-  font-size:calc(var(--typeBaseSize)*0.9*0.92)
+  margin-top:3px;
+  font-size:calc(var(--typeBaseSize)*1.2);
 }
 
 @media only screen and (min-width:590px){
 
 .grid-product__price{
-    font-size:calc(var(--typeBaseSize)*0.9)
+  font-size: calc(var(--typeBaseSize) * 1.1);
+  max-width: 30%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 1%;
 }
   }
 
@@ -8564,6 +8574,16 @@ html[dir=rtl] .grid-product__content{
   text-decoration:line-through;
   margin-right:5px;
 }
+
+.title-price-wrapper {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 8px;
+  
+} 
 
 .grid-product__tag{
   font-family:var(--typeBasePrimary),var(--typeBaseFallback);
