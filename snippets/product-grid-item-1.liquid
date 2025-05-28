@@ -155,7 +155,7 @@
         {% assign city_states= city_states | remove_first: ',' | split: ',' %}
         {% assign available_tickets= available_tickets | remove_first: ',' | split: ',' %}
         {% assign day_of_week = day_of_week | remove_first: ',' | split: ',' %}
-        {% assign i = 1 %}
+        {% assign i = 0 %}
         
         {% for item in variant_numbers %}
           <div
