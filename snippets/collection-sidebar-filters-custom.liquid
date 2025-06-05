@@ -17,6 +17,7 @@
   {%- for filter in collection.filters -%}
     {%- capture filter_id -%}filter-{{ filter.label | handleize }}{%- endcapture -%}
     {%- assign filter_index = forloop.index -%}
+    <script> console.log(" Filter Label - {{ filter.label }}, Index - {{ filter_index }}")</script>
     {%- assign collapsed_state = section.settings.collapsed -%}
 
     <div class="collection-sidebar__group--{{ filter_index }}">
@@ -60,75 +61,58 @@
                       assign color_image = color_file_name | file_img_url: '50x50' | prepend: 'https:' | split: '?' | first
                       assign color_swatch_fallback = filter_value.label | split: ' ' | last | handle
                     -%}
+                      {%- assign i = 0 -%}
+                      {%- for product in collection.products -%}
+                        {% assign mydate = 'now' | date: '%s' %}
+                        {% assign city = product.metafields.custom.city_state.value %}
+                        {% assign brewery = product.metafields.custom.brewery.value %}
+                        {% comment %} {% assign level = product.metafields.custom.level %} {% endcomment %}
 
-                    <li class="tag{% if filter_value.active %} tag--active{% endif %}{% if is_color %} tag--swatch{% endif %}{% if filter_value.count == 0%} hide{% endif %}">
-                      <label class="text-label">
-                        <input
-                          type="checkbox"
-                          name="{{ filter_value.param_name }}"
-                          value="{{ filter_value.value }}"
-                          {% if filter_value.active %}checked{% endif %}>
-                        {%- if is_color -%}
-                          <span
-                            class="color-swatch color-swatch--filter color-swatch--{{ tag_name | handle }}"
-                            title="{{ filter_value.label }}"
-                            style="background-color: {{ color_swatch_fallback }};{% if images[color_file_name] != blank %}  background-image: url({{ color_image }});{% endif %}"
-                          >
-                            {{ filter_value.label }}
-                          </span>
-                          <span class="tag-text hide">{{ filter_value.label | escape }}</span>
-                        {%- else -%}
-                          <span class="tag-checkbox"></span>
-                          {% assign i =0 %}
-                           {% for product in collection.products %}
-                              {%- if filter_index==3 -%}
-                             {%- if product.metafields.custom.city_state == filter_value.label -%}
-                            
-                               {% for variant in product.variants %}
-                                 {% assign vt = variant.title | split: "/" %} 
-   {% assign startdate = vt[0] | date: '%s' %}
-
-{% assign mydate = 'now' | date: '%s' %}
-   {% if mydate < startdate %}
-                                 {% assign i = i | plus: 1 %}
-    {%- endif -%} 
-                                {%- endfor -%} 
-                               {%- endif -%}
-                                 {%- endif -%}
-                             {%- if filter_index==2 -%}
-                             {%- if product.metafields.custom.level == filter_value.label -%}
-                            
-                               {% for variant in product.variants %}
-                                 {% assign vt = variant.title | split: "/" %} 
-   {% assign startdate = vt[0] | date: '%s' %}
-
-{% assign mydate = 'now' | date: '%s' %}
-   {% if mydate < startdate %}
-                                 {% assign i = i | plus: 1 %}
-    {%- endif -%} 
-                                {%- endfor -%} 
-                               {%- endif -%}
-                                 {%- endif -%}
-                             {%- if filter_index==1 -%}
-                               
-                             {%- if product.metafields.custom.brewery.value contains filter_value.label -%}
-                            
-                               {% for variant in product.variants %}
-                                 {% assign vt = variant.title | split: "/" %} 
-   {% assign startdate = vt[0] | date: '%s' %}
-
-{% assign mydate = 'now' | date: '%s' %}
-   {% if mydate < startdate %}
-                                 {% assign i = i | plus: 1 %}
-    {%- endif -%} 
-                                {%- endfor -%} 
-                               {%- endif -%}
-                                 {%- endif -%}
-                              {%- endfor -%}
-                          <span class="tag-text">{{ filter_value.label | escape }}</span> ({{ i }})
+                        {%- if filter_index == 1 and brewery contains filter_value.label -%}
+                          {%- for variant in product.variants -%}
+                            {% assign startdate = variant.title | split: "/" | first | date: '%s' %}
+                            {% if mydate < startdate %}
+                              {% assign i = i | plus: 1 %}
+                            {% endif %}
+                          {%- endfor -%}
+                        {%- elsif filter_index == 2 and city == filter_value.label -%}
+                          {%- for variant in product.variants -%}
+                            {% assign startdate = variant.title | split: "/" | first | date: '%s' %}
+                            {% if mydate < startdate %}
+                              {% assign i = i | plus: 1 %}
+                            {% endif %}
+                          {%- endfor -%}
+                          {% comment %} new filters can be added below and assigned at line 69 {% endcomment %}
+                        {% comment %} {%- elsif filter_index == 3 and city contains filter_value.label -%}
+                          {%- for variant in product.variants -%}
+                            {% assign startdate = variant.title | split: "/" | first | date: '%s' %}
+                            {% if mydate < startdate %}
+                              {% assign i = i | plus: 1 %}
+                            {% endif %}
+                          {%- endfor -%} {% endcomment %}
                         {%- endif -%}
-                      </label>
-                    </li>
+                      {%- endfor -%}
+
+                      <li class="tag{% if filter_value.active %} tag--active{% endif %}{% if is_color %} tag--swatch{% endif %}{% if i == 0 %} hide{% endif %}">
+                        <label class="text-label">
+                          <input
+                            type="checkbox"
+                            name="{{ filter_value.param_name }}"
+                            value="{{ filter_value.value }}"
+                            {% if filter_value.active %}checked{% endif %}>
+                          {%- if is_color -%}
+                            <span class="color-swatch color-swatch--filter color-swatch--{{ tag_name | handle }}"
+                                  title="{{ filter_value.label }}"
+                                  style="background-color: {{ color_swatch_fallback }};{% if images[color_file_name] != blank %}background-image: url({{ color_image }});{% endif %}">
+                              {{ filter_value.label }}
+                            </span>
+                            <span class="tag-text hide">{{ filter_value.label | escape }}</span> ({{ i }})
+                          {%- else -%}
+                            <span class="tag-checkbox"></span>
+                            <span class="tag-text">{{ filter_value.label | escape }}</span> ({{ i }})
+                          {%- endif -%}
+                        </label>
+                      </li>
                   {%- endfor -%}
                 </ul>
 
@@ -137,8 +121,8 @@
                     .collection-sidebar__group--{{ filter_index }} { display: none; }
                   {%- endstyle -%}
                 {%- endif -%}
+
               {%- when 'price_range'-%}
-                {% comment %} Comma code from Dawn {% endcomment %}
                 {% liquid
                   assign currencies_using_comma_decimals = 'ANG,ARS,BRL,BYN,BYR,CLF,CLP,COP,CRC,CZK,DKK,EUR,HRK,HUF,IDR,ISK,MZN,NOK,PLN,RON,RUB,SEK,TRY,UYU,VES,VND' | split: ','
                   assign uses_comma_decimals = false
