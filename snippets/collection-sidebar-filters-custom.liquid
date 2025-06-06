@@ -66,6 +66,7 @@
                         {% assign mydate = 'now' | date: '%s' %}
                         {% assign city = product.metafields.custom.city_state.value %}
                         {% assign brewery = product.metafields.custom.brewery.value %}
+                        {% assign tree = product.metafields.custom.tree.value %}
                         {% comment %} {% assign level = product.metafields.custom.level %} {% endcomment %}
 
                         {%- if filter_index == 1 and brewery contains filter_value.label -%}
@@ -90,6 +91,13 @@
                               {% assign i = i | plus: 1 %}
                             {% endif %}
                           {%- endfor -%} {% endcomment %}
+                        {%- elsif filter_index == 3 and tree contains filter_value.label -%}
+                          {%- for variant in product.variants -%}
+                            {% assign startdate = variant.title | split: "/" | first | date: '%s' %}
+                            {% if mydate < startdate %}
+                              {% assign i = i | plus: 1 %}
+                            {% endif %}
+                          {%- endfor -%}
                         {%- endif -%}
                       {%- endfor -%}
 
