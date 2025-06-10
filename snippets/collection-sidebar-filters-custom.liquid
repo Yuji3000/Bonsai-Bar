@@ -17,7 +17,6 @@
   {%- for filter in collection.filters -%}
     {%- capture filter_id -%}filter-{{ filter.label | handleize }}{%- endcapture -%}
     {%- assign filter_index = forloop.index -%}
-    <script> console.log(" Filter Label - {{ filter.label }}, Index - {{ filter_index }}")</script>
     {%- assign collapsed_state = section.settings.collapsed -%}
 
     <div class="collection-sidebar__group--{{ filter_index }}">
@@ -55,8 +54,6 @@
                   {%- for filter_value in filter.values -%}
                     {%- liquid
                       assign tag_count = tag_count | plus: 1
-                      assign filter_value_index = forloop.index
-
                       assign color_file_name = filter_value.label | handle | append: '.' | append: swatch_file_extension
                       assign color_image = color_file_name | file_img_url: '50x50' | prepend: 'https:' | split: '?' | first
                       assign color_swatch_fallback = filter_value.label | split: ' ' | last | handle
@@ -67,39 +64,39 @@
                         {% assign city = product.metafields.custom.city_state.value %}
                         {% assign brewery = product.metafields.custom.brewery.value %}
                         {% assign tree = product.metafields.custom.tree.value %}
-                        {% comment %} {% assign level = product.metafields.custom.level %} {% endcomment %}
 
-                        {%- if filter_index == 1 and brewery contains filter_value.label -%}
-                          {%- for variant in product.variants -%}
-                            {% assign startdate = variant.title | split: "/" | first | date: '%s' %}
-                            {% if mydate < startdate %}
-                              {% assign i = i | plus: 1 %}
-                            {% endif %}
-                          {%- endfor -%}
-                        {%- elsif filter_index == 2 and city == filter_value.label -%}
-                          {%- for variant in product.variants -%}
-                            {% assign startdate = variant.title | split: "/" | first | date: '%s' %}
-                            {% if mydate < startdate %}
-                              {% assign i = i | plus: 1 %}
-                            {% endif %}
-                          {%- endfor -%}
-                          {% comment %} new filters can be added below and assigned at line 69 {% endcomment %}
-                        {% comment %} {%- elsif filter_index == 3 and city contains filter_value.label -%}
-                          {%- for variant in product.variants -%}
-                            {% assign startdate = variant.title | split: "/" | first | date: '%s' %}
-                            {% if mydate < startdate %}
-                              {% assign i = i | plus: 1 %}
-                            {% endif %}
-                          {%- endfor -%} {% endcomment %}
-                        {%- elsif filter_index == 3 and tree contains filter_value.label -%}
-                          {%- for variant in product.variants -%}
-                            {% assign startdate = variant.title | split: "/" | first | date: '%s' %}
-                            {% if mydate < startdate %}
-                              {% assign i = i | plus: 1 %}
-                            {% endif %}
-                          {%- endfor -%}
-                        {%- endif -%}
-                      {%- endfor -%}
+                        {%- case filter.label -%}
+                          {%- when 'Brewery' -%}
+                            {%- if brewery contains filter_value.label -%}
+                              {%- for variant in product.variants -%}
+                                {% assign startdate = variant.title | split: "/" | first | date: '%s' %}
+                                {% if mydate < startdate %}
+                                  {% assign i = i | plus: 1 %}
+                                {% endif %}
+                              {%- endfor -%}
+                            {%- endif -%}
+
+                          {%- when 'City' -%}
+                            {%- if city == filter_value.label -%}
+                              {%- for variant in product.variants -%}
+                                {% assign startdate = variant.title | split: "/" | first | date: '%s' %}
+                                {% if mydate < startdate %}
+                                  {% assign i = i | plus: 1 %}
+                                {% endif %}
+                              {%- endfor -%}
+                            {%- endif -%}
+
+                          {%- when 'Tree' -%}
+                            {%- if tree contains filter_value.label -%}
+                              {%- for variant in product.variants -%}
+                                {% assign startdate = variant.title | split: "/" | first | date: '%s' %}
+                                {% if mydate < startdate %}
+                                  {% assign i = i | plus: 1 %}
+                                {% endif %}
+                              {%- endfor -%}
+                            {%- endif -%}
+                        {%- endcase -%}
+                      {%- endfor -%} 
 
                       <li class="tag{% if filter_value.active %} tag--active{% endif %}{% if is_color %} tag--swatch{% endif %}{% if i == 0 %} hide{% endif %}">
                         <label class="text-label">

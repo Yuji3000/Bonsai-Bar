@@ -10,16 +10,20 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
 ## Table of Contents
-- [Developer Notes](#developer-notes)
+- [Developer Resources](#developer-resources)
+- [Commands](#commands)
 
 ---
-### Developer Notes
+### Developer Resources and Links
 
 - [Admin version of Shopify store](https://bonsai-bar-dev.myshopify.com/admin)
-<br>
 - [Offical Shopify Docs](https://shopify.dev/docs)
+- [Awesome Shopify](https://github.com/julionc/awesome-shopify/blob/main/readme.md#community)
 <br>
+Resources for tips, docs, headless etc.
 
+
+## Commands
 
 Login and start server:
 ``` bash
