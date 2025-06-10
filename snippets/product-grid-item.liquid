@@ -68,7 +68,8 @@
     {%- assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
     <a href="{{ product.url | within: collection }}" class="grid-product__link">
-      <div class="grid-product__image-mask">
+      <div class="grid-product__image-mask"
+      >
         {%- if fixed_aspect_ratio -%}
           <div
             class="grid__image-ratio grid__image-ratio--{{ settings.product_grid_image_size }}">
@@ -114,8 +115,11 @@
         {%- endif -%}
       </div>
 
-      <div class="grid-product__meta">
-        <div class="grid-product__title">{{ product.title }}</div>
+      <div class="grid-product__meta"
+      >
+        <div class="title-price-wrapper">
+          <div class="grid-product__title">{{ product.title }}</div>
+        
         {%- if settings.vendor_enable -%}
           <div class="grid-product__vendor">{{ product.vendor }}</div>
         {%- endif -%}
@@ -152,6 +156,7 @@
             </div>
           {%- endif -%}
         </div>
+      </div>
       </div>
     </a>
     {%- if settings.enable_swatches -%}
