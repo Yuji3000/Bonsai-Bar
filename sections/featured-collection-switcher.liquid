@@ -81,12 +81,28 @@
           class="grid collection-switcher__collection-grid"
           data-per-row="{{ per_row }}">
           {%- for product in collection1.products limit: product_limit -%}
-            {%- render 'product-grid-item',
+            {% comment %} {%- render 'product-grid-item',
               product: product,
               collection: collection,
               grid_item_width: grid_item_width,
               per_row: per_row,
-              disable_quick_view_output: true -%}
+              disable_quick_view_output: true -%} {% endcomment %}
+              {% if section.settings.card_style == 'event' %}
+                {%- render 'event-grid-item',
+                  product: product,
+                  collection: collection,
+                  grid_item_width: grid_item_width,
+                  per_row: per_row,
+                  disable_quick_view_output: true -%}
+              {% else %}
+                {%- render 'product-grid-item',
+                  product: product,
+                  collection: collection,
+                  grid_item_width: grid_item_width,
+                  per_row: per_row,
+                  disable_quick_view_output: true -%}
+              {% endif %}
+
           {%- endfor -%}
         </div>
 
@@ -105,12 +121,27 @@
           class="grid collection-switcher__collection-grid"
           data-per-row="{{ per_row }}">
           {%- for product in collection2.products limit: product_limit -%}
-            {%- render 'product-grid-item',
+            {% comment %} {%- render 'product-grid-item',
               product: product,
               collection: collection,
               grid_item_width: grid_item_width,
               per_row: per_row,
-              disable_quick_view_output: true -%}
+              disable_quick_view_output: true -%} {% endcomment %}
+              {% if section.settings.card_style == 'event' %}
+                {%- render 'event-grid-item',
+                  product: product,
+                  collection: collection,
+                  grid_item_width: grid_item_width,
+                  per_row: per_row,
+                  disable_quick_view_output: true -%}
+              {% else %}
+                {%- render 'product-grid-item',
+                  product: product,
+                  collection: collection,
+                  grid_item_width: grid_item_width,
+                  per_row: per_row,
+                  disable_quick_view_output: true -%}
+              {% endif %}
           {%- endfor -%}
         </div>
 
@@ -165,7 +196,7 @@
   Output the quick shop modal outside of the section, and pass
   `disable_quick_view_output: true` to `product-grid-item` above.
 {% endcomment %}
-{%- if settings.quick_shop_enable -%}
+{%- if settings.quick_shop_enable and section.settings.card_style == 'product' -%}
   {%- unless collection1.empty? -%}
     {%- for product in collection1.products limit: product_limit -%}
       {%- render 'quick-shop-modal', product: product -%}
@@ -221,6 +252,16 @@
       "id": "divider",
       "label": "t:sections.featured-collection-switcher.settings.divider.label",
       "default": false
+    },
+    {
+      "type": "select",
+      "id": "card_style",
+      "label": "Card Style",
+      "options": [
+        { "value": "product", "label": "Product" },
+        { "value": "event", "label": "Event" }
+      ],
+      "default": "product"
     }
   ],
   "presets": [
