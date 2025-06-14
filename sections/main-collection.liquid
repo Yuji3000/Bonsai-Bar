@@ -145,7 +145,7 @@ div.grid-product__link {
     {%- endstyle -%}
 
     <div class="collection-hero">
-
+      {% assign display_style = display_style | default: 'product' %}
       {%- if section.settings.parallax -%}
         <parallax-image class="parallax-container">
           <div class="parallax-image" data-movement="15%" data-parallax-image data-angle="{{ section.settings.parallax_direction }}">
@@ -242,15 +242,19 @@ div.grid-product__link {
         <div id="CollectionAjaxResult" {{ block.shopify_attributes }}>
           <div id="CollectionAjaxContent" class="list-item">
 
-            {% render 'collection-grid',
+            {% comment %} {% render 'collection-grid',
               collection: collection,
               items: collection.products,
               collection_subnav_style: block.settings.collection_subnav_style,
               mobile_flush_grid: block.settings.mobile_flush_grid,
               quick_shop_enable: settings.quick_shop_enable,
               per_row: block.settings.per_row
-            %}
-
+            %} {% endcomment %}
+            {% if display_style == 'event' %}
+              {% render 'event-grid-item', product: product %}
+            {% elseif display_style == 'product' %}
+              {% render 'product-grid-item', product: product %}
+            {% endif %}
             {%- if paginate.pages > 1 -%}
               {%- render 'pagination', paginate: paginate -%}
             {%- endif -%}
@@ -372,6 +376,16 @@ div.grid-product__link {
           "value": "normal",
           "label": "Filter Normal"
         }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "display_style",
+      "label": "Display style",
+      "default": "product",
+      "options": [
+        { "value": "product", "label": "Product" },
+        { "value": "event", "label": "Event" }
       ]
     }
   ],
