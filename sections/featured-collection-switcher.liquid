@@ -4,9 +4,9 @@
   assign collection1 = collections[section.settings.collection1]
   assign collection2 = collections[section.settings.collection2]
 
-  assign emptyState = false
+  assign empty_state = false
   if collection1.empty? and collection2.empty?
-    assign emptyState = true
+    assign empty_state = true
   endif
 -%}
 
@@ -42,7 +42,7 @@
           </h3>
         {%- endunless -%}
 
-        {%- if emptyState -%}
+        {%- if empty_state -%}
           {%- for i in (1..2) -%}
             <h3 class="collection-switcher__title">
               <a href="#"
@@ -153,7 +153,7 @@
       </div>
     {%- endunless -%}
 
-    {%- if emptyState -%}
+    {%- if empty_state -%}
       {%- for i in (1..2) -%}
         <div id="collection{{i}}-{{ section.id }}" class="collection-switcher__collection{% if i == 2 %} hide{% endif %}">
           <div

@@ -210,7 +210,8 @@
           </div>
         {%- endif -%}
     
-        <a href="{{ urls[i] }}" class="grid-product__link">
+        <a href="{{ urls[i] }}" class="grid-product__link"
+        style='min-height: 450px;'>
           <div class="grid-product__image-mask"
             style="{% if tickets <= 0 %}opacity: 0.4;{% endif %}"
           >
@@ -400,3 +401,33 @@
       {% assign i = i | plus: 1 %}
       
     {% endfor %}
+
+    <script>
+function checkTagOverlap() {
+    // Get all product cards
+    const productCards = document.querySelectorAll('.grid__item');
+
+    productCards.forEach(card => {
+      const soldOutTag = card.querySelector('.grid-product__tag--sold-out');
+      const dateTag = card.querySelector('.grid-product__tag--date-tag');
+
+      if (!soldOutTag || !dateTag) return;
+
+      const soldOutRect = soldOutTag.getBoundingClientRect();
+      const dateRect = dateTag.getBoundingClientRect();
+
+      const overlapping = !(
+        soldOutRect.right < dateRect.left ||
+        soldOutRect.left > dateRect.right ||
+        soldOutRect.bottom < dateRect.top ||
+        soldOutRect.top > dateRect.bottom
+      );
+
+      // Hide the sold out tag if overlapping the date tag
+      soldOutTag.classList.toggle('tag-hidden', overlapping);
+    });
+  }
+
+  window.addEventListener('load', checkTagOverlap);
+  window.addEventListener('resize', checkTagOverlap);
+</script>
