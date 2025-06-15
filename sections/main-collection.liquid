@@ -242,22 +242,21 @@ div.grid-product__link {
         <div id="CollectionAjaxResult" {{ block.shopify_attributes }}>
           <div id="CollectionAjaxContent" class="list-item">
 
-            {% comment %} {% render 'collection-grid',
+            {% render 'collection-grid',
               collection: collection,
               items: collection.products,
               collection_subnav_style: block.settings.collection_subnav_style,
               mobile_flush_grid: block.settings.mobile_flush_grid,
               quick_shop_enable: settings.quick_shop_enable,
               per_row: block.settings.per_row
-            %} {% endcomment %}
-            {% if display_style == 'event' %}
-              {% render 'event-grid-item', product: product %}
-            {% elseif display_style == 'product' %}
-              {% render 'product-grid-item', product: product %}
-            {% endif %}
-            {%- if paginate.pages > 1 -%}
-              {%- render 'pagination', paginate: paginate -%}
-            {%- endif -%}
+            %}
+           {% for product in collection.products %}
+              {% if section.settings.display_style == 'event' %}
+                {% render 'event-grid-item', product: product %}
+              {% else %}
+                {% render 'product-grid-item', product: product %}
+              {% endif %}
+            {% endfor %}
 
           </div>
         </div>
@@ -382,11 +381,11 @@ div.grid-product__link {
       "type": "select",
       "id": "display_style",
       "label": "Display style",
-      "default": "product",
       "options": [
         { "value": "product", "label": "Product" },
         { "value": "event", "label": "Event" }
-      ]
+      ],
+      "default": "product"
     }
   ],
   "blocks": [
