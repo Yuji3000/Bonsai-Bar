@@ -21,7 +21,6 @@
     {% assign city_states = '' %}
     {% assign available_tickets = '' %}
     {% assign weekday = '' %}
-    {% assign t = 0 %}
         
         {% for product in collection.products %}
           {% for variant in product.variants %}
@@ -282,11 +281,9 @@
             {%- endif -%}
           </div>
 
-          <div class="grid-event__meta item-1">
+          <div class="grid-event__meta">
             <div class="title-price-wrapper">
-              <div class="grid-event__title"
-                style="line-height: 1.1">{{ titles[i] }}
-              </div>
+              <div class="grid-event__title">{{ titles[i] }}</div>
               <div class="grid-event__price">
                 {% if product.metafields.custom.tree %}
                   <div class="tree_meta">
