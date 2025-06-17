@@ -81,12 +81,6 @@
           class="grid collection-switcher__collection-grid"
           data-per-row="{{ per_row }}">
           {%- for product in collection1.products limit: product_limit -%}
-            {% comment %} {%- render 'product-grid-item',
-              product: product,
-              collection: collection,
-              grid_item_width: grid_item_width,
-              per_row: per_row,
-              disable_quick_view_output: true -%} {% endcomment %}
               {% if section.settings.card_style == 'event' %}
                 {%- render 'event-grid-item',
                   product: product,
@@ -121,12 +115,6 @@
           class="grid collection-switcher__collection-grid"
           data-per-row="{{ per_row }}">
           {%- for product in collection2.products limit: product_limit -%}
-            {% comment %} {%- render 'product-grid-item',
-              product: product,
-              collection: collection,
-              grid_item_width: grid_item_width,
-              per_row: per_row,
-              disable_quick_view_output: true -%} {% endcomment %}
               {% if section.settings.card_style == 'event' %}
                 {%- render 'event-grid-item',
                   product: product,
