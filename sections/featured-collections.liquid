@@ -27,20 +27,15 @@
     {%- for block in section.blocks -%}
       {%- liquid
         assign collection = collections[block.settings.collection]
+
         case block.settings.size
-        when 'wide'
-        assign grid_item_width = 'medium-up--one-half collection--wide'
+          when 'wide'
+            assign grid_item_width = 'medium-up--one-quarter collection--small'
         endcase
         
         assign background_position = block.settings.focal_point
-        -%}
-        {% if section.settings.card_style == 'event' %}
-          {%- render 'event-grid-item', block: block, collection: collection, grid_item_width: grid_item_width, background_position: background_position -%}
-        {% else %}
-          {%- render 'product-grid-item', block: block, collection: collection, grid_item_width: grid_item_width, background_position: background_position -%}
-        {% endif %}
-      
-      {% comment %} {%- render 'collection-grid-item', block: block, collection: collection, grid_item_width: grid_item_width, background_position: background_position -%} {% endcomment %}
+      -%}
+        {%- render 'collection-grid-item', block: block, collection: collection, grid_item_width: grid_item_width, background_position: background_position -%}
     {%- endfor -%}
 
     {% if is_empty %}
