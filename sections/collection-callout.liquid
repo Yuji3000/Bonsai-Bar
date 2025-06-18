@@ -1,9 +1,9 @@
 {%- liquid
   assign collection = collections[section.settings.collection]
-  assign isEmpty = false
+  assign is_empty = false
 
   if section.settings.collection == blank
-    assign isEmpty = true
+    assign is_empty = true
   endif
 -%}
 
@@ -13,8 +13,8 @@
   <div class="feature-row feature-row--small-none">
 
     <div class="feature-row__item feature-row__callout-image">
-      <div class="callout-images{% if isEmpty %} blank-state{% endif %}" data-aos="collection-callout">
-        {%- if isEmpty -%}
+      <div class="callout-images{% if is_empty %} blank-state{% endif %}" data-aos="collection-callout">
+        {%- if is_empty -%}
           {%- for i in (1..5) -%}
             {%- capture current -%}{% cycle 1, 2, 3, 4, 5, 6 %}{%- endcapture -%}
             {%- if forloop.index == 1 -%}

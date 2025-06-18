@@ -21,8 +21,21 @@ div.grid.grid--uniform > div.grid__item > .skrim__item-content {
   flex-direction: column;
 }
 
+div.grid.grid--uniform > div.grid__item > .grid-event__content,
+div.grid.grid--uniform > div.grid__item > .skrim__item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 /* ensure link itself flexes */
 div.grid-product__link {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+div.grid-event__link {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -34,7 +47,19 @@ div.grid-product__link {
   width: 50% !important;
 }
 
+ .list-item .grid__item.grid-event.medium-up--one-half.aos-init.aos-animate {
+  float: left !important;
+  width: 50% !important;
+}
+
 .list-item .grid-product__content {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.list-item .grid-event__content {
   position: relative;
   float: left;
   width: 100%;
@@ -47,8 +72,19 @@ div.grid-product__link {
   background: #ffffff;
   box-shadow: 0px 0px 4px 0px #0000002e;
 }
+.list-item a.grid-event__link {
+  float: left;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px 0px #0000002e;
+}
 
 .list-item a.grid-product__link .grid-product__image-mask {
+  float: left;
+  width: 100%;
+}
+
+.list-item a.grid-event__link .grid-event__image-mask {
   float: left;
   width: 100%;
 }
@@ -60,7 +96,23 @@ div.grid-product__link {
   padding-right: 10px;
 }
 
+.list-item a.grid-event__link .grid-event__meta {
+  float: left;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 10px;
+}
+
 .list-item .grid-product__content .grid-product__tag--sold-out {
+    top: 0;
+    left: auto;
+    right: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-size: calc(var(--typeBaseSize)*.8);
+}
+
+.list-item .grid-event__content .grid-event__tag--sold-out {
     top: 0;
     left: auto;
     right: 0;
@@ -78,7 +130,16 @@ div.grid-product__link {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   padding: 4px 8px;
-  
+}
+
+.list-item .grid-event__content .grid-event__tag.grid-event__tag--date-tag {
+  top: 0;
+  margin-left: 10px;
+  right: auto;
+  text-align: center;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 4px 8px;
 }
 
 .date-tag__day,
@@ -100,9 +161,11 @@ div.grid-product__link {
 
 @media only screen and (max-width:768px){
 
-}
-
 .list-item .grid-product__content .grid-product__tag.grid-product__tag--date-tag {
+  top: 0;
+  padding: 4px 8px;
+}
+.list-item .grid-event__content .grid-event__tag.grid-event__tag--date-tag {
   top: 0;
   padding: 4px 8px;
 }
@@ -119,13 +182,18 @@ div.grid-product__link {
 .list-item .grid__item.grid-product.medium-up--one-half.aos-init.aos-animate {
     width: 100% !important;
 }
+.list-item .grid__item.grid-event.medium-up--one-half.aos-init.aos-animate {
+    width: 100% !important;
+}
 
 .list-item .grid.grid--uniform.small--grid--flush {
     padding: 20px;
 }
 
 }
-</style><div
+</style>
+
+<div
   id="CollectionSection"
   data-section-id="{{ section.id }}"
   data-section-type="collection-template"
@@ -145,7 +213,7 @@ div.grid-product__link {
     {%- endstyle -%}
 
     <div class="collection-hero">
-
+      {% assign display_style = display_style | default: 'product' %}
       {%- if section.settings.parallax -%}
         <parallax-image class="parallax-container">
           <div class="parallax-image" data-movement="15%" data-parallax-image data-angle="{{ section.settings.parallax_direction }}">
@@ -250,10 +318,13 @@ div.grid-product__link {
               quick_shop_enable: settings.quick_shop_enable,
               per_row: block.settings.per_row
             %}
-
-            {%- if paginate.pages > 1 -%}
-              {%- render 'pagination', paginate: paginate -%}
-            {%- endif -%}
+           {% for product in collection.products %}
+              {% if section.settings.display_style == 'event' %}
+                {% render 'event-grid-item', product: product %}
+              {% else %}
+                {% render 'product-grid-item', product: product %}
+              {% endif %}
+            {% endfor %}
 
           </div>
         </div>
@@ -373,6 +444,16 @@ div.grid-product__link {
           "label": "Filter Normal"
         }
       ]
+    },
+    {
+      "type": "select",
+      "id": "display_style",
+      "label": "Display style",
+      "options": [
+        { "value": "product", "label": "Product" },
+        { "value": "event", "label": "Event" }
+      ],
+      "default": "product"
     }
   ],
   "blocks": [

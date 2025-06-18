@@ -25,8 +25,23 @@ Resources for tips, docs, headless etc.
 
 ## Commands
 
-Login and start server:
+To Login and start server:
 ``` bash
 shopify theme dev --store=bonsai-bar-dev.myshopify.com
 ```
 
+### How to push a local branch via Shopify CLI to Shopify Admin theme library
+1. Create a new duplicate of a theme in the theme library
+2. Run 
+``` bash
+  shopify theme push -t <name of theme>
+```
+3. In your terminal you should see a message similar to this
+
+```
+  The theme 'Copy of Bonsai-Bar/main' (#1111111111) was pushed successfully. 
+```
+
+with links to view and customize the theme.
+<br><br>
+Note: may take a few minutes for changes to appear in theme library

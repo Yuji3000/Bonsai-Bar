@@ -4,9 +4,9 @@
   assign collection1 = collections[section.settings.collection1]
   assign collection2 = collections[section.settings.collection2]
 
-  assign emptyState = false
+  assign empty_state = false
   if collection1.empty? and collection2.empty?
-    assign emptyState = true
+    assign empty_state = true
   endif
 -%}
 
@@ -42,7 +42,7 @@
           </h3>
         {%- endunless -%}
 
-        {%- if emptyState -%}
+        {%- if empty_state -%}
           {%- for i in (1..2) -%}
             <h3 class="collection-switcher__title">
               <a href="#"
@@ -81,12 +81,22 @@
           class="grid collection-switcher__collection-grid"
           data-per-row="{{ per_row }}">
           {%- for product in collection1.products limit: product_limit -%}
-            {%- render 'product-grid-item',
-              product: product,
-              collection: collection,
-              grid_item_width: grid_item_width,
-              per_row: per_row,
-              disable_quick_view_output: true -%}
+              {% if section.settings.card_style == 'event' %}
+                {%- render 'event-grid-item',
+                  product: product,
+                  collection: collection,
+                  grid_item_width: grid_item_width,
+                  per_row: per_row,
+                  disable_quick_view_output: true -%}
+              {% else %}
+                {%- render 'product-grid-item',
+                  product: product,
+                  collection: collection,
+                  grid_item_width: grid_item_width,
+                  per_row: per_row,
+                  disable_quick_view_output: true -%}
+              {% endif %}
+
           {%- endfor -%}
         </div>
 
@@ -105,12 +115,21 @@
           class="grid collection-switcher__collection-grid"
           data-per-row="{{ per_row }}">
           {%- for product in collection2.products limit: product_limit -%}
-            {%- render 'product-grid-item',
-              product: product,
-              collection: collection,
-              grid_item_width: grid_item_width,
-              per_row: per_row,
-              disable_quick_view_output: true -%}
+              {% if section.settings.card_style == 'event' %}
+                {%- render 'event-grid-item',
+                  product: product,
+                  collection: collection,
+                  grid_item_width: grid_item_width,
+                  per_row: per_row,
+                  disable_quick_view_output: true -%}
+              {% else %}
+                {%- render 'product-grid-item',
+                  product: product,
+                  collection: collection,
+                  grid_item_width: grid_item_width,
+                  per_row: per_row,
+                  disable_quick_view_output: true -%}
+              {% endif %}
           {%- endfor -%}
         </div>
 
@@ -122,7 +141,7 @@
       </div>
     {%- endunless -%}
 
-    {%- if emptyState -%}
+    {%- if empty_state -%}
       {%- for i in (1..2) -%}
         <div id="collection{{i}}-{{ section.id }}" class="collection-switcher__collection{% if i == 2 %} hide{% endif %}">
           <div
@@ -165,7 +184,7 @@
   Output the quick shop modal outside of the section, and pass
   `disable_quick_view_output: true` to `product-grid-item` above.
 {% endcomment %}
-{%- if settings.quick_shop_enable -%}
+{%- if settings.quick_shop_enable and section.settings.card_style == 'product' -%}
   {%- unless collection1.empty? -%}
     {%- for product in collection1.products limit: product_limit -%}
       {%- render 'quick-shop-modal', product: product -%}

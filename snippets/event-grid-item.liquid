@@ -21,7 +21,6 @@
     {% assign city_states = '' %}
     {% assign available_tickets = '' %}
     {% assign weekday = '' %}
-    {% assign t = 0 %}
         
         {% for product in collection.products %}
           {% for variant in product.variants %}
@@ -159,16 +158,16 @@
         
         {% for item in variant_numbers %}
           <div
-            class="grid__item grid-product {{ start_dates[i] }} {{ grid_item_width }}{% if settings.quick_shop_enable %} grid-product__has-quick-shop{% endif %}"
+            class="grid__item grid-event {{ start_dates[i] }} {{ grid_item_width }}{% if settings.quick_shop_enable %} grid-event__has-quick-shop{% endif %}"
             data-grid-width="{{ grid_item_width }}"
             data-grid-index="{{ forloop.index0 }}"
             data-product-handle="{{ product.handle }}"
             data-product-id="{{ product.id }}"
             data-aos="row-of-{{ per_row }}"
           >
-      <div class="grid-product__content">
+      <div class="grid-event__content">
         {%- if has_custom_label -%}
-          <div class="grid-product__tag grid-product__tag--custom">
+          <div class="grid-event__tag grid-event__tag--custom">
             {{ custom_label }}
           </div>
         {%- endif -%}
@@ -177,7 +176,7 @@
 
           {%- if on_sale and product.available -%}
             {%- if settings.product_save_amount -%}
-              <div class="grid-product__tag grid-product__tag--sale">
+              <div class="grid-event__tag grid-event__tag--sale">
                 {%- if settings.product_save_type == 'dollar' -%}
                   {% capture saved_amount %}{{ product.compare_at_price | minus: product.price | money | remove: '.00' }}{% endcapture %}
                 {%- else -%}
@@ -205,23 +204,24 @@
         
         
         {%- if tickets <= 0 -%}
-          <div class="grid-product__tag grid-product__tag--sold-out sold-out-center">
+          <div class="grid-event__tag grid-event__tag--sold-out sold-out-center">
             {{ 'products.product.sold_out' | t }}
           </div>
         {%- endif -%}
     
-        <a href="{{ urls[i] }}" class="grid-product__link">
-          <div class="grid-product__image-mask"
+        <a href="{{ urls[i] }}" class="grid-event__link"
+        style='min-height: 450px;'>
+          <div class="grid-event__image-mask"
             style="{% if tickets <= 0 %}opacity: 0.4;{% endif %}"
           >
             {% assign datefortag = date_time_titles[i] | split: '-' | first | strip %}        
-            <div class="grid-product__tag grid-product__tag--date-tag">
+            <div class="grid-event__tag grid-event__tag--date-tag">
               <div class="date-tag__day">{{ day_of_week[i] }}</div>
               <hr class="date-tag__divider">
               
-              {% assign splitDate =  datefortag | split: " " %}
-              {% assign month =  splitDate[0] %}
-              {% assign day =  splitDate[1] %}
+              {% assign split_date =  datefortag | split: " " %}
+              {% assign month =  split_date[0] %}
+              {% assign day =  split_date[1] %}
               {%- if month.size > 5 -%}
                 {% assign month = month | slice: 0, 3 %}
               {%- endif -%}
@@ -247,7 +247,7 @@
                 style="height: 0; padding-bottom: {{ 100 | divided_by: preview_image.aspect_ratio }}%;"
                 >
                 {%- assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                <img class="grid-product__image lazyload"
+                <img class="grid-event__image lazyload"
                   data-src="{{ img_url }}"
                   data-widths="[180, 360, 540, 720, 900, 1080]"
                   data-aspectratio="{{ preview_image.aspect_ratio }}"
@@ -256,7 +256,7 @@
                   
                 >
                 <noscript>
-                  <img class="grid-product__image lazyloaded"
+                  <img class="grid-event__image lazyloaded"
                     src="{{ preview_image | img_url: '400x' }}"
                     alt="{{ preview_image.alt | escape }}"
                     style="opacity: 0.5"  
@@ -269,7 +269,7 @@
               {%- for image in product.images offset: 1 limit: 1 -%}
                 {%- assign second_image = image -%}
               {%- endfor -%}
-              <div class="grid-product__secondary-image small--hide">
+              <div class="grid-event__secondary-image small--hide">
                 {%- assign img_url = cities[i] -%}
                 <img class="lazyload"
                     data-src="{{ img_url }}"
@@ -281,10 +281,10 @@
             {%- endif -%}
           </div>
 
-          <div class="grid-product__meta item-1">
+          <div class="grid-event__meta">
             <div class="title-price-wrapper">
-              <div class="grid-product__title">{{ titles[i] }}</div>
-              <div class="grid-product__price">
+              <div class="grid-event__title">{{ titles[i] }}</div>
+              <div class="grid-event__price">
                 {% if product.metafields.custom.tree %}
                   <div class="tree_meta">
                     {{ product.metafields.custom.tree }}
@@ -296,7 +296,7 @@
                 {%- if on_sale -%}
                   {%- assign compare = product.compare_at_price | money -%}
                   <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
-                  <span class="grid-product__price--original">{{ compare }}</span>
+                  <span class="grid-event__price--original">{{ compare }}</span>
                   <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
                 {%- endif -%}
                 
@@ -328,7 +328,7 @@
               </div>
             </div>
           <div 
-            class="grid-product__title location"
+            class="grid-event__title location"
             style="width: 80%;">{{ city_states[i] | replace: "-", "," }}
           </div>
 
@@ -360,7 +360,7 @@
             {%- if is_color -%}
               {%- assign option_index = forloop.index0 -%}
               {%- assign values = '' -%}
-              <div class="grid-product__colors">
+              <div class="grid-event__colors">
                 {%- for variant in product.variants -%}
                   {%- assign value = variant.options[option_index] %}
                   {%- unless values contains value -%}
@@ -400,3 +400,33 @@
       {% assign i = i | plus: 1 %}
       
     {% endfor %}
+
+    <script>
+function checkTagOverlap() {
+    // Get all product cards
+    const productCards = document.querySelectorAll('.grid__item');
+
+    productCards.forEach(card => {
+      const soldOutTag = card.querySelector('.grid-event__tag--sold-out');
+      const dateTag = card.querySelector('.grid-event__tag--date-tag');
+
+      if (!soldOutTag || !dateTag) return;
+
+      const soldOutRect = soldOutTag.getBoundingClientRect();
+      const dateRect = dateTag.getBoundingClientRect();
+
+      const overlapping = !(
+        soldOutRect.right < dateRect.left ||
+        soldOutRect.left > dateRect.right ||
+        soldOutRect.bottom < dateRect.top ||
+        soldOutRect.top > dateRect.bottom
+      );
+
+      // Hide the sold out tag if overlapping the date tag
+      soldOutTag.classList.toggle('tag-hidden', overlapping);
+    });
+  }
+
+  window.addEventListener('load', checkTagOverlap);
+  window.addEventListener('resize', checkTagOverlap);
+</script>
