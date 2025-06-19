@@ -161,35 +161,36 @@ div.grid-event__link {
 
 @media only screen and (max-width:768px){
 
-.list-item .grid-product__content .grid-product__tag.grid-product__tag--date-tag {
-  top: 0;
-  padding: 4px 8px;
-}
-.list-item .grid-event__content .grid-event__tag.grid-event__tag--date-tag {
-  top: 0;
-  padding: 4px 8px;
-}
-
-.date-tag__day,
-.date-tag__date {
-  font-size: calc(var(--typeBaseSize)*.9);
-}
-
-.date-tag__divider {
-  border-top: 1px solid rgba(255, 255, 255);
-}
-
-.list-item .grid__item.grid-product.medium-up--one-half.aos-init.aos-animate {
+  
+  .list-item .grid-product__content .grid-product__tag.grid-product__tag--date-tag {
+    top: 0;
+    padding: 4px 8px;
+  }
+  .list-item .grid-event__content .grid-event__tag.grid-event__tag--date-tag {
+    top: 0;
+    padding: 4px 8px;
+  }
+  
+  .date-tag__day,
+  .date-tag__date {
+    font-size: calc(var(--typeBaseSize)*.9);
+  }
+  
+  .date-tag__divider {
+    border-top: 1px solid rgba(255, 255, 255);
+  }
+  
+  .list-item .grid__item.grid-product.medium-up--one-half.aos-init.aos-animate {
     width: 100% !important;
-}
-.list-item .grid__item.grid-event.medium-up--one-half.aos-init.aos-animate {
+  }
+  .list-item .grid__item.grid-event.medium-up--one-half.aos-init.aos-animate {
     width: 100% !important;
-}
-
-.list-item .grid.grid--uniform.small--grid--flush {
+  }
+  
+  .list-item .grid.grid--uniform.small--grid--flush {
     padding: 20px;
-}
-
+  }
+  
 }
 </style>
 
@@ -213,7 +214,7 @@ div.grid-event__link {
     {%- endstyle -%}
 
     <div class="collection-hero">
-      {% assign display_style = display_style | default: 'product' %}
+      {% assign display_style = section.settings.display_style | default: 'product' %}
       {%- if section.settings.parallax -%}
         <parallax-image class="parallax-container">
           <div class="parallax-image" data-movement="15%" data-parallax-image data-angle="{{ section.settings.parallax_direction }}">
@@ -267,11 +268,11 @@ div.grid-event__link {
     
 
     {% if section.settings.flter_type == 'drawer' %}
-    {% render 'collection-filters',
-      collection: collection,
-      enable_sort: section.settings.enable_sort,
-      collection_tags_style: section.settings.collection_tags_style
-    %}    
+      {% render 'collection-filters',
+        collection: collection,
+        enable_sort: section.settings.enable_sort,
+        collection_tags_style: section.settings.collection_tags_style
+      %}    
     {% else %}
       {%- render 'custom-collection-filters', section: section, collection: collection, enable_sort: section.settings.enable_sort, collection_tags_style: section.settings.collection_tags_style -%}
     {% endif %}
@@ -309,7 +310,6 @@ div.grid-event__link {
 
         <div id="CollectionAjaxResult" {{ block.shopify_attributes }}>
           <div id="CollectionAjaxContent" class="list-item">
-
             {% render 'collection-grid',
               collection: collection,
               items: collection.products,
@@ -318,14 +318,6 @@ div.grid-event__link {
               quick_shop_enable: settings.quick_shop_enable,
               per_row: block.settings.per_row
             %}
-           {% for product in collection.products %}
-              {% if section.settings.display_style == 'event' %}
-                {% render 'event-grid-item', product: product %}
-              {% else %}
-                {% render 'product-grid-item', product: product %}
-              {% endif %}
-            {% endfor %}
-
           </div>
         </div>
 

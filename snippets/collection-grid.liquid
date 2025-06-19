@@ -58,7 +58,7 @@
     
   {%- endif -%}
   
-  {%- if collection.template_suffix== 'events' -%}
+  {%- if collection.template_suffix == 'events' -%}
      {%- render 'event-grid-item', product: item, grid_item_width: grid_item_width -%}
   {%- else -%}
     {%- for item in items -%}
