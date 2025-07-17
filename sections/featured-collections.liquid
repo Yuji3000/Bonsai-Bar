@@ -21,8 +21,7 @@
       <h2 class="section-header__title">{{ section.settings.title }}</h2>
     </div>
   {% endif %}
-
-  <div class="grid{% if section.settings.enable_gutter %} grid--small-gutters{%else%} grid--no-gutters{% endif %}">
+ <div class="grid{% if section.settings.enable_gutter %} grid--small-gutters{%else%} grid--no-gutters{% endif %}">
     {%- for block in section.blocks -%}
       {%- liquid
         assign collection = collections[block.settings.collection]
@@ -31,13 +30,39 @@
           assign grid_item_width = 'small--one-half medium-up--one-quarter collection--square-small'
         else
           case block.settings.size
+            when 'square-small'
+              assign grid_item_width = 'medium-up--one-quarter small--one-half collection--square-small'
+              assign sizeVariable = 'medium-up--one-quarter'
+              assign fallback = 'small--one-half'
             when 'wide'
               assign grid_item_width = 'medium-up--one-half collection--wide'
+              assign sizeVariable = 'medium-up--one-half'
+            when 'tall'
+              assign grid_item_width = 'medium-up--one-quarter small--one-half collection--tall'
+              assign sizeVariable = 'medium-up--one-quarter'
+              assign fallback = 'small--one-half'
+            when 'square-large'
+              assign grid_item_width = 'medium-up--one-half collection--square-large'
+              assign sizeVariable = 'medium-up--one-half'
           endcase
         endif
         assign background_position = block.settings.focal_point
+        if block.settings.focal_point == blank
+          assign background_position = 'center center'
+        endif
+        
       -%}
-        {%- render 'collection-grid-item', block: block, collection: collection, grid_item_width: grid_item_width, background_position: background_position -%}
+      {% comment %} Added second render for collection-grid-item with additional parameters {% endcomment %}
+        {% comment %} {%- render 'collection-grid-item', block: block, collection: collection, grid_item_width: grid_item_width, background_position: background_position -%}
+        {% endcomment %}
+      {%- render 'collection-grid-item',
+          block: block,
+          collection: collection,
+          grid_item_width: grid_item_width,
+          background_position: background_position,
+          sizeVariable: sizeVariable,
+          fallback: fallback,
+      -%}
     {%- endfor -%}
 
     {% if is_empty %}
@@ -204,6 +229,9 @@
         }
       ]
     }
-  ]
+  ],
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.popups"]
+  }
 }
 {% endschema %}

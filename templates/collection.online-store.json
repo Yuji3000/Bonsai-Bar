@@ -1,1 +1,128 @@
-{"sections":{"rich_text_hXbcJL":{"type":"rich-text","blocks":{"heading_DRHF4C":{"type":"heading","settings":{"title":"Shop bonsai tools, accessories, & Apparel"}},"text_pzKjez":{"type":"text","settings":{"enlarge_text":true,"text":"<p>Restock on your bonsai necessities, grab a gift for the plant lover in your life, or some sweet tees for yourself. <\/p>"}}},"block_order":["heading_DRHF4C","text_pzKjez"],"settings":{"align_text":"center","narrow_column":true,"divider":false}},"main-collection":{"type":"main-collection","blocks":{"product_grid":{"type":"product_grid","settings":{"collection_subnav_style":"inline","per_row":4,"mobile_flush_grid":true}}},"block_order":["product_grid"],"settings":{"collection_image_enable":true,"collection_image_height":550,"parallax":true,"parallax_direction":"top","enable_sidebar":false,"collapsed":true,"enable_color_swatches":true,"enable_sort":false,"flter_type":"drawer"}}},"order":["rich_text_hXbcJL","main-collection"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_hXbcJL": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_DRHF4C": {
+          "type": "heading",
+          "settings": {
+            "title": "Shop bonsai tools, accessories, & Apparel"
+          }
+        },
+        "text_pzKjez": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Restock on your bonsai necessities, grab a gift for the plant lover in your life, or some sweet tees for yourself. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DRHF4C",
+        "text_pzKjez"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "settings": {
+        "collection_image_enable": true,
+        "collection_image_height": 550,
+        "parallax": true,
+        "parallax_direction": "top",
+        "enable_sidebar": false,
+        "collapsed": true,
+        "enable_color_swatches": true,
+        "enable_sort": false,
+        "flter_type": "drawer",
+        "display_style": "product"
+      }
+    },
+    "featured_collections_KJKJ74": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_qJzL8C": {
+          "type": "collection",
+          "settings": {
+            "collection": "kits-diy-make-at-home-etc",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_RnfM9d": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_Ca3Vc8": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_keXGgc": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_nPXE6K": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_WkwjDc": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        }
+      },
+      "block_order": [
+        "collection_qJzL8C",
+        "collection_RnfM9d",
+        "collection_Ca3Vc8",
+        "collection_keXGgc",
+        "collection_nPXE6K",
+        "collection_WkwjDc"
+      ],
+      "name": "t:sections.featured-collections.presets.collection_list.name",
+      "settings": {
+        "card_style": "product",
+        "title": "Collection list",
+        "divider": false,
+        "enable_gutter": false
+      }
+    }
+  },
+  "order": [
+    "rich_text_hXbcJL",
+    "main-collection",
+    "featured_collections_KJKJ74"
+  ]
+}
