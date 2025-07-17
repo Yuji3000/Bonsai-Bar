@@ -46,12 +46,6 @@
             "inventory_transfers_enable": true
           }
         },
-        "9989d4d5-6e9b-41e7-9d83-cef7f6102075": {
-          "type": "text",
-          "settings": {
-            "text": "Workshop Type: {{ product.metafields.custom.tree.value }}"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {}
@@ -143,7 +137,6 @@
         "variant_picker",
         "6b65a6b7-8715-472b-89b4-873f1809efe4",
         "6e799cc5-943b-4006-a8e5-e83ed85873e5",
-        "9989d4d5-6e9b-41e7-9d83-cef7f6102075",
         "price",
         "c99f5e00-7d70-441a-9d65-b2e7fbd1069a",
         "6221606c-23c3-468c-8807-08c9cb795999",
