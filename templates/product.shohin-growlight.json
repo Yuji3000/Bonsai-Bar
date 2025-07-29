@@ -38,6 +38,20 @@
           "type": "price",
           "settings": {}
         },
+        "sales_point_TepGxh": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "tag",
+            "text": "$10 off when you preorder!"
+          }
+        },
+        "fa97a3bc-4ac9-436d-bd01-cd23ab984aa8": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -68,23 +82,17 @@
             "title": "Ask a question",
             "phone": false
           }
-        },
-        "fa97a3bc-4ac9-436d-bd01-cd23ab984aa8": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "surface_pickup_enable": true
-          }
         }
       },
       "block_order": [
         "price",
+        "sales_point_TepGxh",
+        "fa97a3bc-4ac9-436d-bd01-cd23ab984aa8",
         "variant_picker",
         "description",
         "fc217836-9ac0-439f-a8f9-3c89ce5c913f",
         "separator",
-        "contact",
-        "fa97a3bc-4ac9-436d-bd01-cd23ab984aa8"
+        "contact"
       ],
       "settings": {
         "sku_enable": false,
