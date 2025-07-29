@@ -9,13 +9,31 @@
  */
 {
   "sections": {
+    "advanced_content_JVPQAF": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_yY4nYD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2efd0e4818a63ca2d164451e05300daf2f3a1cf6.png",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_yY4nYD"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
-        "share": {
-          "type": "share",
-          "settings": {}
-        },
         "price": {
           "type": "price",
           "settings": {}
@@ -60,7 +78,6 @@
         }
       },
       "block_order": [
-        "share",
         "price",
         "variant_picker",
         "description",
@@ -82,7 +99,19 @@
     },
     "sub": {
       "type": "product-full-width",
-      "disabled": true,
+      "blocks": {
+        "tab_hLEMMj": {
+          "type": "tab",
+          "settings": {
+            "title": "Learn More",
+            "content": "<p>When we teamed up with our friends at Growgenics we had three clear goals:</p><ol><li>Make a quality grow light specifically tailored to the needs of a bonsai tree.</li><li>Create a grow light that would showcase your bonsai—not distract from it. </li><li>Provide the light needed for your tree to thrive without raising your electric bill </li></ol>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_hLEMMj"
+      ],
       "settings": {
         "max_width": true
       }
@@ -101,6 +130,7 @@
     }
   },
   "order": [
+    "advanced_content_JVPQAF",
     "main",
     "sub",
     "product-recommendations",
