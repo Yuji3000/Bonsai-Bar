@@ -1,1 +1,57 @@
-{"sections":{"main":{"type":"main-404","disabled":true,"settings":{}},"rich_text_Xz6yPz":{"type":"rich-text","blocks":{"heading_N7Ex3B":{"type":"heading","settings":{"title":"404 Tree Not Found\/Old Link"}},"text_XxyzbL":{"type":"text","settings":{"enlarge_text":true,"text":"<p>Bonsai Bar has updated to a new ticketing system and the link you used may no longer be correct. <br\/>Lets get you back to finding a fun night with tiny trees.<\/p>"}},"button_VT7ByL":{"type":"button","settings":{"link":"https:\/\/bonsaibar.nightsplus.com\/calendar\/in-person\/united-states\/","link_text":"To the New Bonsai Bar Pages"}}},"block_order":["heading_N7Ex3B","text_XxyzbL","button_VT7ByL"],"settings":{"align_text":"center","narrow_column":true,"divider":false}}},"order":["main","rich_text_Xz6yPz"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-404",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_Xz6yPz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_N7Ex3B": {
+          "type": "heading",
+          "settings": {
+            "title": "404 Page Not Found"
+          }
+        },
+        "text_XxyzbL": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>If you are attempting to register your tree <a href=\"/pages/tree-registration\" title=\"Tree Registration\"><em><strong>click here! </strong></em></a></p>"
+          }
+        },
+        "button_VT7ByL": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://pages/tree-registration",
+            "link_text": "Tree Registration"
+          }
+        }
+      },
+      "block_order": [
+        "heading_N7Ex3B",
+        "text_XxyzbL",
+        "button_VT7ByL"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_Xz6yPz"
+  ]
+}
