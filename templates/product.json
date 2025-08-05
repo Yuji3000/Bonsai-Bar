@@ -12,6 +12,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "klaviyo_reviews_average_rating_A3C6Qy": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
         "share": {
           "type": "share",
           "settings": {}
@@ -60,6 +66,7 @@
         }
       },
       "block_order": [
+        "klaviyo_reviews_average_rating_A3C6Qy",
         "share",
         "price",
         "variant_picker",
