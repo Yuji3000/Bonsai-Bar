@@ -1,1 +1,227 @@
-{"sections":{"hero-video":{"type":"hero-video","custom_css":[],"settings":{"title":"BONSAI + BEERS + FRIENDS","title_size":40,"subheading":"pop-up bonsai workshops","link_text":"","link":"","link_text_2":"","link_2":"https:\/\/youtu.be\/8UCmnLWLxj8","link_text_3":"","link_3":"","link_text_4":"","link_4":"","link_text_5":"","link_5":"","link_text_6":"","link_6":"","link_text_7":"","link_7":"","link_text_8":"","link_8":"","link_text_9":"","link_9":"","text_align":"vertical-center horizontal-center","video_url":"https:\/\/youtu.be\/r027eQGtM24","overlay_opacity":0,"section_height":"16-9","mobile_height":"400px"}},"rich_text_G6wdAL":{"type":"rich-text","blocks":{"heading_biKfRQ":{"type":"heading","settings":{"title":"Learn the Art of Bonsai Through Hands-On Workshops"}},"text_Wwr8qU":{"type":"text","settings":{"enlarge_text":true,"text":"<p>At Bonsai Bar, our mission is to make bonsai accessible and enjoyable for everyone. Through our pop-up workshops, we teach people the ancient art of bonsai in a fun, social environment. Guided by expert instructors, participants learn the essentials of bonsai care, styling, and maintenance, creating their own tree to take home. Perfect for beginners and plant lovers alike, Bonsai Bar workshops are hosted in popular venues across the country, offering a unique experience that blends creativity, community, and nature. Join us in learning bonsai in a relaxed, welcoming setting and discover the joy of growing something meaningful.<\/p>"}}},"block_order":["heading_biKfRQ","text_Wwr8qU"],"custom_css":["div {position: relative; border-radius: 50px; background-color: #ffa238; padding-bottom: 20px; width: 100%;}","h2 {padding-top: 20px;}"],"settings":{"align_text":"center","narrow_column":false,"divider":false}},"0d9f85ca-456c-4038-a25e-e424dd6dc8f5":{"type":"collection-callout","custom_css":[".grid-product__price {display: none;}"],"settings":{"collection":"gift-cards","subtitle":"Give the Gift of Bonsai","title":"Gift Cards","text":"","cta_text1":"Up to 20% off","cta_link1":"shopify:\/\/collections\/apparel","cta_text2":"","cta_link2":"","layout":"right","divider":false}},"5c3783e6-c40f-411c-a121-88ede66ee45c":{"type":"testimonials","blocks":{"50c05e8f-d3ef-45f2-b882-2596ffdc3a42":{"type":"testimonial","settings":{"icon":"quote","testimonial":"<p>Attended an event at Smug Brewery! Tim and Annie were awesome!!! Fun and informative....they are passionate about Bonsai and it shows! Looking forward to future events with different species!! Highly recommend! You won't be disappointed!<\/p>","author":"Jessica","author_info":"Boston, MA"}},"2c268a08-d0ad-4e9d-a2d9-7011d70b2c0c":{"type":"testimonial","settings":{"icon":"quote","testimonial":"<p>What a fun event. my husband and I both had a good time. The guys were knowledgable, funny and so helpful. If you haven't signed up for one of these classes yet..DO IT!!<\/p>","author":"Michele","author_info":"Worcester, MA"}},"16901e2d-26c7-49f6-abf2-957994d690b5":{"type":"testimonial","settings":{"icon":"quote","testimonial":"<p>So much fun…excellent job teaching basics of Bonsai!<\/p>","author":"Kathleen","author_info":"Waltham, MA"}},"972d4c45-0bfa-4804-bddc-b735a7e712a7":{"type":"testimonial","settings":{"icon":"quote","testimonial":"<p>We went to Bonsai Bar at Trident Booksellers on 10 FEB 2022.  We had a great time, thank you so much. I highly recommend doing this.  Tim and Ben made it relaxing, funny and they were super helpful.<\/p>","author":"Thomas","author_info":"Middleton, MA"}},"0fc758d5-36b3-463d-bd0d-13340be5efe4":{"type":"testimonial","settings":{"icon":"quote","testimonial":"<p>I had a great time at the most recent Bonsai Bar event. The class was fun and informative. The instructors were very hands-on and you could tell they truly enjoyed what they were doing. If you are interested in getting into bonsai this was a great place to start. I could not have been happier with the entire experience.<\/p>","author":"Josh","author_info":"MA"}},"048a1a4e-49be-40bc-964f-7eec3d35e190":{"type":"testimonial","settings":{"icon":"quote","testimonial":"<p>We joined a blast of a bonsai class yesterday in Boston where we got to artistically design our very own bonsai tree from start to finish, and it was so fun!!!<\/p>","author":"Rorie","author_info":"MA"}},"c64da953-e3ce-4e57-8ba4-2695cfed5887":{"type":"testimonial","settings":{"icon":"quote","testimonial":"<p>Did this last week and it was a blast - we love our little Bonsais!<\/p>","author":"Mark","author_info":"RI"}},"466effe9-1c34-45c2-8f1b-76c57bf0f4d3":{"type":"testimonial","settings":{"icon":"quote","testimonial":"<p>I just wanted to let you know how great of a time we had at Brewery Silvaticus in Amesbury, MA last night! The instructors were so great, patient, helpful, and funny!<\/p>","author":"Dustin","author_info":"MA"}}},"block_order":["50c05e8f-d3ef-45f2-b882-2596ffdc3a42","2c268a08-d0ad-4e9d-a2d9-7011d70b2c0c","16901e2d-26c7-49f6-abf2-957994d690b5","972d4c45-0bfa-4804-bddc-b735a7e712a7","0fc758d5-36b3-463d-bd0d-13340be5efe4","048a1a4e-49be-40bc-964f-7eec3d35e190","c64da953-e3ce-4e57-8ba4-2695cfed5887","466effe9-1c34-45c2-8f1b-76c57bf0f4d3"],"settings":{"title":"Happy Bonsai Customers","round_images":true,"color_background":"#f9f9f9","color_text":"#1c1d1d"}},"background-image-text":{"type":"background-image-text","settings":{"subtitle":"Team Building","title":"Corporate & Private Events","text":"<p>Perfect for team-building, birthdays, or celebrations, our private workshops bring the art of bonsai to your group, led by expert instructors in a fun, engaging setting. Create your own bonsai tree and enjoy a unique, interactive experience together.<\/p>","button_label":"LEARN MORE","button_link":"https:\/\/bonsaibar.com\/pages\/private-events","image":"shopify:\/\/shop_images\/image-bg.jpg","focal_point":"center","layout":"left","height":650,"parallax":false,"parallax_direction":"top"}}},"order":["hero-video","rich_text_G6wdAL","0d9f85ca-456c-4038-a25e-e424dd6dc8f5","5c3783e6-c40f-411c-a121-88ede66ee45c","background-image-text"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero-video": {
+      "type": "hero-video",
+      "custom_css": [],
+      "settings": {
+        "title": "BONSAI + BEERS + FRIENDS",
+        "title_size": 40,
+        "subheading": "pop-up bonsai workshops",
+        "link_text": "",
+        "link": "",
+        "link_text_2": "",
+        "link_2": "https://youtu.be/8UCmnLWLxj8",
+        "link_text_3": "",
+        "link_3": "",
+        "link_text_4": "",
+        "link_4": "",
+        "link_text_5": "",
+        "link_5": "",
+        "link_text_6": "",
+        "link_6": "",
+        "link_text_7": "",
+        "link_7": "",
+        "link_text_8": "",
+        "link_8": "",
+        "link_text_9": "",
+        "link_9": "",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https://youtu.be/r027eQGtM24",
+        "overlay_opacity": 0,
+        "section_height": "16-9",
+        "mobile_height": "400px"
+      }
+    },
+    "rich_text_G6wdAL": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_biKfRQ": {
+          "type": "heading",
+          "settings": {
+            "title": "Learn the Art of Bonsai Through Hands-On Workshops"
+          }
+        },
+        "text_Wwr8qU": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>At Bonsai Bar, our mission is to make bonsai accessible and enjoyable for everyone. Through our pop-up workshops, we teach people the ancient art of bonsai in a fun, social environment. Guided by expert instructors, participants learn the essentials of bonsai care, styling, and maintenance, creating their own tree to take home. Perfect for beginners and plant lovers alike, Bonsai Bar workshops are hosted in popular venues across the country, offering a unique experience that blends creativity, community, and nature. Join us in learning bonsai in a relaxed, welcoming setting and discover the joy of growing something meaningful.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_biKfRQ",
+        "text_Wwr8qU"
+      ],
+      "custom_css": [
+        "div {position: relative; border-radius: 50px; background-color: #ffa238; padding-bottom: 20px; width: 100%;}",
+        "h2 {padding-top: 20px;}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "divider": false
+      }
+    },
+    "0d9f85ca-456c-4038-a25e-e424dd6dc8f5": {
+      "type": "collection-callout",
+      "custom_css": [
+        ".grid-product__price {display: none;}"
+      ],
+      "settings": {
+        "collection": "gift-cards",
+        "subtitle": "Give the Gift of Bonsai",
+        "title": "Gift Cards",
+        "text": "",
+        "cta_text1": "Up to 20% off",
+        "cta_link1": "shopify://collections/apparel",
+        "cta_text2": "",
+        "cta_link2": "",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "background-image-text": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "Team Building",
+        "title": "Corporate & Private Events",
+        "text": "<p>Perfect for team-building, birthdays, or celebrations, our private workshops bring the art of bonsai to your group, led by expert instructors in a fun, engaging setting. Create your own bonsai tree and enjoy a unique, interactive experience together.</p>",
+        "button_label": "LEARN MORE",
+        "button_link": "https://bonsaibar.com/pages/private-events",
+        "image": "shopify://shop_images/image-bg.jpg",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 650,
+        "parallax": false,
+        "parallax_direction": "top"
+      }
+    },
+    "175441603940c9f009": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_featured_reviews_carousel_6a6j9J": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/featured-reviews-carousel/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_featured_reviews_carousel_6a6j9J"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "5c3783e6-c40f-411c-a121-88ede66ee45c": {
+      "type": "testimonials",
+      "blocks": {
+        "50c05e8f-d3ef-45f2-b882-2596ffdc3a42": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "testimonial": "<p>Attended an event at Smug Brewery! Tim and Annie were awesome!!! Fun and informative....they are passionate about Bonsai and it shows! Looking forward to future events with different species!! Highly recommend! You won't be disappointed!</p>",
+            "author": "Jessica",
+            "author_info": "Boston, MA"
+          }
+        },
+        "2c268a08-d0ad-4e9d-a2d9-7011d70b2c0c": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "testimonial": "<p>What a fun event. my husband and I both had a good time. The guys were knowledgable, funny and so helpful. If you haven't signed up for one of these classes yet..DO IT!!</p>",
+            "author": "Michele",
+            "author_info": "Worcester, MA"
+          }
+        },
+        "16901e2d-26c7-49f6-abf2-957994d690b5": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "testimonial": "<p>So much fun…excellent job teaching basics of Bonsai!</p>",
+            "author": "Kathleen",
+            "author_info": "Waltham, MA"
+          }
+        },
+        "972d4c45-0bfa-4804-bddc-b735a7e712a7": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "testimonial": "<p>We went to Bonsai Bar at Trident Booksellers on 10 FEB 2022.  We had a great time, thank you so much. I highly recommend doing this.  Tim and Ben made it relaxing, funny and they were super helpful.</p>",
+            "author": "Thomas",
+            "author_info": "Middleton, MA"
+          }
+        },
+        "0fc758d5-36b3-463d-bd0d-13340be5efe4": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "testimonial": "<p>I had a great time at the most recent Bonsai Bar event. The class was fun and informative. The instructors were very hands-on and you could tell they truly enjoyed what they were doing. If you are interested in getting into bonsai this was a great place to start. I could not have been happier with the entire experience.</p>",
+            "author": "Josh",
+            "author_info": "MA"
+          }
+        },
+        "048a1a4e-49be-40bc-964f-7eec3d35e190": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "testimonial": "<p>We joined a blast of a bonsai class yesterday in Boston where we got to artistically design our very own bonsai tree from start to finish, and it was so fun!!!</p>",
+            "author": "Rorie",
+            "author_info": "MA"
+          }
+        },
+        "c64da953-e3ce-4e57-8ba4-2695cfed5887": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "testimonial": "<p>Did this last week and it was a blast - we love our little Bonsais!</p>",
+            "author": "Mark",
+            "author_info": "RI"
+          }
+        },
+        "466effe9-1c34-45c2-8f1b-76c57bf0f4d3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "testimonial": "<p>I just wanted to let you know how great of a time we had at Brewery Silvaticus in Amesbury, MA last night! The instructors were so great, patient, helpful, and funny!</p>",
+            "author": "Dustin",
+            "author_info": "MA"
+          }
+        }
+      },
+      "block_order": [
+        "50c05e8f-d3ef-45f2-b882-2596ffdc3a42",
+        "2c268a08-d0ad-4e9d-a2d9-7011d70b2c0c",
+        "16901e2d-26c7-49f6-abf2-957994d690b5",
+        "972d4c45-0bfa-4804-bddc-b735a7e712a7",
+        "0fc758d5-36b3-463d-bd0d-13340be5efe4",
+        "048a1a4e-49be-40bc-964f-7eec3d35e190",
+        "c64da953-e3ce-4e57-8ba4-2695cfed5887",
+        "466effe9-1c34-45c2-8f1b-76c57bf0f4d3"
+      ],
+      "settings": {
+        "title": "Happy Bonsai Customers",
+        "round_images": true,
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
+    }
+  },
+  "order": [
+    "hero-video",
+    "rich_text_G6wdAL",
+    "0d9f85ca-456c-4038-a25e-e424dd6dc8f5",
+    "background-image-text",
+    "175441603940c9f009",
+    "5c3783e6-c40f-411c-a121-88ede66ee45c"
+  ]
+}
