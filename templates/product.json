@@ -121,6 +121,13 @@
         "full_width": false,
         "space_around": true
       }
+    },
+    "175441994866746598": {
+      "type": "apps",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
     }
   },
   "order": [
@@ -128,6 +135,7 @@
     "sub",
     "product-recommendations",
     "collection-return",
-    "175441562622903288"
+    "175441562622903288",
+    "175441994866746598"
   ]
 }
