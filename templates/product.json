@@ -128,6 +128,22 @@
         "product_recommendations_heading": "You may also like",
         "related_count": 5
       }
+    },
+    "1754422324b7005823": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_product_reviews_jnGeri": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_product_reviews_jnGeri"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
     }
   },
   "order": [
@@ -136,6 +152,7 @@
     "collection-return",
     "175441562622903288",
     "175441994866746598",
-    "product-recommendations"
+    "product-recommendations",
+    "1754422324b7005823"
   ]
 }
