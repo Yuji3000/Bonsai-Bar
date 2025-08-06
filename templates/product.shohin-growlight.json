@@ -9,22 +9,48 @@
  */
 {
   "sections": {
+    "advanced_content_JVPQAF": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_yY4nYD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2efd0e4818a63ca2d164451e05300daf2f3a1cf6.png",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_yY4nYD"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
-        "klaviyo_reviews_average_rating_A3C6Qy": {
-          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
-          "settings": {
-            "product": "{{product}}"
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {}
-        },
         "price": {
           "type": "price",
           "settings": {}
+        },
+        "sales_point_TepGxh": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "tag",
+            "text": "$10 off when you preorder!"
+          }
+        },
+        "fa97a3bc-4ac9-436d-bd01-cd23ab984aa8": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -56,25 +82,17 @@
             "title": "Ask a question",
             "phone": false
           }
-        },
-        "fa97a3bc-4ac9-436d-bd01-cd23ab984aa8": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "surface_pickup_enable": true
-          }
         }
       },
       "block_order": [
-        "klaviyo_reviews_average_rating_A3C6Qy",
-        "share",
         "price",
+        "sales_point_TepGxh",
+        "fa97a3bc-4ac9-436d-bd01-cd23ab984aa8",
         "variant_picker",
         "description",
         "fc217836-9ac0-439f-a8f9-3c89ce5c913f",
         "separator",
-        "contact",
-        "fa97a3bc-4ac9-436d-bd01-cd23ab984aa8"
+        "contact"
       ],
       "settings": {
         "sku_enable": false,
@@ -90,35 +108,20 @@
     "sub": {
       "type": "product-full-width",
       "blocks": {
-        "klaviyo_reviews_product_reviews_FwebQY": {
-          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
-          "settings": {}
+        "tab_hLEMMj": {
+          "type": "tab",
+          "settings": {
+            "title": "Learn More",
+            "content": "<p>When we teamed up with our friends at Growgenics we had three clear goals:</p><ol><li>Make a quality grow light specifically tailored to the needs of a bonsai tree.</li><li>Create a grow light that would showcase your bonsai—not distract from it. </li><li>Provide the light needed for your tree to thrive without raising your electric bill </li></ol>",
+            "page": ""
+          }
         }
       },
       "block_order": [
-        "klaviyo_reviews_product_reviews_FwebQY"
+        "tab_hLEMMj"
       ],
-      "disabled": true,
       "settings": {
         "max_width": true
-      }
-    },
-    "collection-return": {
-      "type": "collection-return",
-      "settings": {}
-    },
-    "175441562622903288": {
-      "type": "apps",
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
-    },
-    "175441994866746598": {
-      "type": "apps",
-      "settings": {
-        "full_width": false,
-        "space_around": true
       }
     },
     "product-recommendations": {
@@ -129,30 +132,16 @@
         "related_count": 5
       }
     },
-    "1754422324b7005823": {
-      "type": "apps",
-      "blocks": {
-        "klaviyo_reviews_product_reviews_jnGeri": {
-          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "klaviyo_reviews_product_reviews_jnGeri"
-      ],
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {}
     }
   },
   "order": [
+    "advanced_content_JVPQAF",
     "main",
     "sub",
-    "collection-return",
-    "175441562622903288",
-    "175441994866746598",
     "product-recommendations",
-    "1754422324b7005823"
+    "collection-return"
   ]
 }

@@ -74,7 +74,7 @@
         "collection_kVrD6N": {
           "type": "collection",
           "settings": {
-            "collection": "norcal",
+            "collection": "",
             "focal_point": "center center",
             "size": "wide"
           }
@@ -213,6 +213,7 @@
         "h2 {font-family: arial; font-size: medium;}"
       ],
       "settings": {
+        "card_style": "product",
         "title": "",
         "divider": false,
         "enable_gutter": false

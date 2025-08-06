@@ -10,39 +10,25 @@
 {
   "sections": {
     "main": {
-      "type": "main-404",
+      "type": "main-page",
       "disabled": true,
       "settings": {}
     },
-    "rich_text_Xz6yPz": {
+    "rich_text_KN3WXc": {
       "type": "rich-text",
       "blocks": {
-        "heading_N7Ex3B": {
-          "type": "heading",
-          "settings": {
-            "title": "404 Page Not Found"
-          }
-        },
-        "text_XxyzbL": {
+        "text_C9tgfr": {
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>If you are attempting to register your tree <a href=\"/pages/tree-registration\" title=\"Tree Registration\"><em><strong>click here! </strong></em></a></p>"
-          }
-        },
-        "button_VT7ByL": {
-          "type": "button",
-          "settings": {
-            "link": "shopify://pages/tree-registration",
-            "link_text": "Tree Registration"
+            "text": "<p><strong>Thanks for submitting our Private Events form!</strong></p><p>We'll be in touch shortly with details about your own private bonsai workshop.</p>"
           }
         }
       },
       "block_order": [
-        "heading_N7Ex3B",
-        "text_XxyzbL",
-        "button_VT7ByL"
+        "text_C9tgfr"
       ],
+      "name": "t:sections.rich-text.presets.rich_text.name",
       "settings": {
         "align_text": "center",
         "narrow_column": true,
@@ -52,6 +38,6 @@
   },
   "order": [
     "main",
-    "rich_text_Xz6yPz"
+    "rich_text_KN3WXc"
   ]
 }
