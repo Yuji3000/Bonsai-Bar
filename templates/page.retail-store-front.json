@@ -13,18 +13,19 @@
       "type": "main-page",
       "settings": {}
     },
-    "rich_text_KN3WXc": {
-      "type": "rich-text",
-      "name": "t:sections.rich-text.presets.rich_text.name",
+    "collection_banner_1": {
+      "type": "collection-banner",
       "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "divider": false
+        "banner_image": "shopify://shop_images/BonsaiBanner.png",
+        "heading": "Bonsai Trees",
+        "description": "Expert-styled bonsai trees that would fit perfectly in your collection",
+        "button_text": "Explore Bonsai Trees",
+        "button_link": "shopify://collections/bonsai"
       }
     }
   },
   "order": [
     "main",
-    "rich_text_KN3WXc"
+    "collection_banner_1"
   ]
 }

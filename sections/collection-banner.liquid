@@ -13,6 +13,13 @@
       "label": "Heading",
       "default": "Explore Our Collection"
     },
+    
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Description",
+      "default": "Explore Our Collection"
+    },
     {
       "type": "text",
       "id": "button_text",
@@ -36,11 +43,17 @@
 
 <div class="collection-banner" style="position: relative; text-align: center;">
   {% if section.settings.banner_image %}
-    <img src="{{ section.settings.banner_image | image_url: width: 1600 }}" alt="{{ section.settings.heading }}" style="width: 100%; height: auto;">
+    <img 
+      src="{{ section.settings.banner_image | image_url: width: 1600 }}" 
+      alt="{{ section.settings.heading }}" 
+      width="{{ section.settings.banner_image.width | default: 1300 }}" 
+      height="{{ section.settings.banner_image.height | default: 320 }}" 
+      style="width: 100%; height: auto;">
   {% endif %}
 
   <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-shadow: 0 0 5px rgba(0,0,0,0.5);">
     <h2>{{ section.settings.heading }}</h2>
+    <h2>{{ section.settings.description }}</h2>
     <a href="{{ section.settings.button_link }}" class="btn" style="background-color: black; color: white; padding: 10px 20px; text-decoration: none;">{{ section.settings.button_text }}</a>
   </div>
 </div>

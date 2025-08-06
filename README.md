@@ -34,7 +34,7 @@ shopify theme dev --store=bonsai-bar-dev.myshopify.com
 1. Create a new duplicate of a theme in the theme library
 2. Run 
 ``` bash
-  shopify theme push -t <name of theme>
+  shopify theme push -t "<name of theme>"
 ```
 3. In your terminal you should see a message similar to this
 
