@@ -52,6 +52,7 @@
       "type": "collection-banner",
       "name": "Collection Banner",
       "settings": {
+        "banner_image": "shopify://shop_images/PotsBanner.png",
         "heading": "POTS",
         "description": "**************",
         "button_text": "Explore Bonsai Pots",
