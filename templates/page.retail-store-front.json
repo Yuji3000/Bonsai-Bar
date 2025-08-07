@@ -20,27 +20,32 @@
         "heading": "Bonsai Trees",
         "description": "Expert-styled bonsai trees that would fit perfectly in your collection",
         "button_text": "Explore Bonsai Trees",
-        "button_link": "shopify://collections/bonsai"
+        "button_link": "shopify://collections/bonsai",
+        "text_alignment": "right"
       }
     },
     "collection_banner_NdKqJf": {
       "type": "collection-banner",
       "name": "Collection Banner",
       "settings": {
+        "banner_image": "shopify://shop_images/suppliesBanner.png",
         "heading": "SUPPLIES",
         "description": "********************",
         "button_text": "Explore Supplies",
-        "button_link": "shopify://collections/supplies"
+        "button_link": "shopify://collections/supplies",
+        "text_alignment": "left"
       }
     },
     "collection_banner_pUexCf": {
       "type": "collection-banner",
       "name": "Collection Banner",
       "settings": {
+        "banner_image": "shopify://shop_images/DiykitBanner.png",
         "heading": "DIY KITS",
         "description": "Explore Our Collection",
         "button_text": "Explore DIY Kits",
-        "button_link": "shopify://collections/kits-diy-make-at-home-etc"
+        "button_link": "shopify://collections/kits-diy-make-at-home-etc",
+        "text_alignment": "right"
       }
     },
     "collection_banner_xQwjaU": {
@@ -50,27 +55,32 @@
         "heading": "POTS",
         "description": "**************",
         "button_text": "Explore Bonsai Pots",
-        "button_link": "shopify://collections/pots"
+        "button_link": "shopify://collections/pots",
+        "text_alignment": "middle"
       }
     },
     "collection_banner_niTLYT": {
       "type": "collection-banner",
       "name": "Collection Banner",
       "settings": {
+        "banner_image": "shopify://shop_images/ApparelBanner.png",
         "heading": "APPAREL",
         "description": "*****************",
         "button_text": "Explore Bonsai Bar Apparel",
-        "button_link": "shopify://collections/apparel"
+        "button_link": "shopify://collections/apparel",
+        "text_alignment": "left"
       }
     },
     "collection_banner_q7a9PB": {
       "type": "collection-banner",
       "name": "Collection Banner",
       "settings": {
+        "banner_image": "shopify://shop_images/GiftcardBanner.png",
         "heading": "GIFT CARDS",
         "description": "**************",
         "button_text": "Explore Gift Cards",
-        "button_link": "shopify://collections/gift-cards"
+        "button_link": "shopify://collections/gift-cards",
+        "text_alignment": "right"
       }
     }
   },
