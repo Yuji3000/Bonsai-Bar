@@ -22,10 +22,65 @@
         "button_text": "Explore Bonsai Trees",
         "button_link": "shopify://collections/bonsai"
       }
+    },
+    "collection_banner_NdKqJf": {
+      "type": "collection-banner",
+      "name": "Collection Banner",
+      "settings": {
+        "heading": "SUPPLIES",
+        "description": "********************",
+        "button_text": "Explore Supplies",
+        "button_link": "shopify://collections/supplies"
+      }
+    },
+    "collection_banner_pUexCf": {
+      "type": "collection-banner",
+      "name": "Collection Banner",
+      "settings": {
+        "heading": "DIY KITS",
+        "description": "Explore Our Collection",
+        "button_text": "Explore DIY Kits",
+        "button_link": "shopify://collections/kits-diy-make-at-home-etc"
+      }
+    },
+    "collection_banner_xQwjaU": {
+      "type": "collection-banner",
+      "name": "Collection Banner",
+      "settings": {
+        "heading": "POTS",
+        "description": "**************",
+        "button_text": "Explore Bonsai Pots",
+        "button_link": "shopify://collections/pots"
+      }
+    },
+    "collection_banner_niTLYT": {
+      "type": "collection-banner",
+      "name": "Collection Banner",
+      "settings": {
+        "heading": "APPAREL",
+        "description": "*****************",
+        "button_text": "Explore Bonsai Bar Apparel",
+        "button_link": "shopify://collections/apparel"
+      }
+    },
+    "collection_banner_q7a9PB": {
+      "type": "collection-banner",
+      "name": "Collection Banner",
+      "settings": {
+        "heading": "GIFT CARDS",
+        "description": "**************",
+        "button_text": "Explore Gift Cards",
+        "button_link": "shopify://collections/gift-cards"
+      }
     }
   },
   "order": [
     "main",
-    "collection_banner_1"
+    "collection_banner_1",
+    "collection_banner_NdKqJf",
+    "collection_banner_pUexCf",
+    "collection_banner_xQwjaU",
+    "collection_banner_niTLYT",
+    "collection_banner_q7a9PB"
   ]
 }
