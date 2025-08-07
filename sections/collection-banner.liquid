@@ -44,16 +44,34 @@
 <div class="collection-banner" style="position: relative; text-align: center;">
   {% if section.settings.banner_image %}
     <img 
-      src="{{ section.settings.banner_image | image_url: width: 1600 }}" 
+      src="{{ section.settings.banner_image | image_url: width: 1300 }}" 
       alt="{{ section.settings.heading }}" 
       width="{{ section.settings.banner_image.width | default: 1300 }}" 
       height="{{ section.settings.banner_image.height | default: 320 }}" 
-      style="width: 100%; height: auto;">
+      style="width: 1300px; height: 320px; object-fit: cover; display: block; margin: 0 auto;">
   {% endif %}
 
-  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-shadow: 0 0 5px rgba(0,0,0,0.5);">
-    <h2>{{ section.settings.heading }}</h2>
-    <h2>{{ section.settings.description }}</h2>
-    <a href="{{ section.settings.button_link }}" class="btn" style="background-color: black; color: white; padding: 10px 20px; text-decoration: none;">{{ section.settings.button_text }}</a>
+  <div style="
+    position: absolute;
+    top: 50%;
+    left: 75%; 
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+  ">
+    <h2 style="font-size: 64px;
+       margin: 0 0 10px 0;
+       white-space: nowrap; 
+      overflow: hidden;">
+      {{ section.settings.heading }}
+    </h2>
+    <h2 style="font: var(--typeBasePrimary); font-size: 15px; margin: 0 0 15px 0; line-height: 1.4;">
+      {{ section.settings.description }}
+    </h2>
+    <a href="{{ section.settings.button_link }}" class="btn" >
+      {{ section.settings.button_text }}
+    </a>
   </div>
 </div>
