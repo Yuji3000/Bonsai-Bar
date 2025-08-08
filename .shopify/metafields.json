@@ -316,7 +316,7 @@
       "key": "bought_together_products",
       "namespace": "globo--filter--product_recommendation",
       "name": "Bought together products",
-      "description": null,
+      "description": "",
       "type": {
         "name": "list.product_reference",
         "category": "REFERENCE"
