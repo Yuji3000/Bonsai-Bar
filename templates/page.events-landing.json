@@ -182,6 +182,14 @@
             "focal_point": "center center",
             "size": "wide"
           }
+        },
+        "collection_MkPPC3": {
+          "type": "collection",
+          "settings": {
+            "collection": "washington",
+            "focal_point": "center center",
+            "size": "wide"
+          }
         }
       },
       "block_order": [
@@ -198,7 +206,8 @@
         "collection_QWyYfL",
         "collection_xjbNjy",
         "collection_rDyDUE",
-        "collection_Pdmkb8"
+        "collection_Pdmkb8",
+        "collection_MkPPC3"
       ],
       "custom_css": [
         "h2 {font-family: arial; font-size: medium;}"
