@@ -1,127 +1,164 @@
-
-<div class="collection-banner" 
-  style="
-  position: relative; 
-  width: 80%; 
-  height: 320px; 
-  margin: 0 auto 10px auto;
+{% style %}
+.collection-banner {
+  position: relative;
+  width: 80%;
+  height: 320px;
+  margin: 0 auto 5px auto;
   background-color: black;
-  ">
-  {% if section.settings.banner_image %}
-    <img 
-      src="{{ section.settings.banner_image | image_url: width: 1250 }}" 
-      alt="{{ section.settings.heading }}" 
-      width="{{ section.settings.banner_image.width | default: 1250 }}" 
-      height="{{ section.settings.banner_image.height | default: 320 }}" 
-      style="width: 100%; height: 100%; object-fit: cover; display: block;">
-    {% endif %}
-    
-    {% assign text_position = section.settings.text_alignment %}
+}
 
-    <div style="
-      position: absolute;
-      top: 50%;
-      {% if text_position == 'right' %}
-        left: 75%;
-      {% elsif text_position == 'middle' %}
-       left: 50%;
-      {% else %}
-        left: 25%;
-      {% endif %}
-      transform: translate(-50%, -50%);
-      color: white;
-      text-align: center;
-      max-width: 500px;
-      margin: 0 auto;
-      ">
-      <h2 style="font-size: 64px;
-        margin: 0 0 10px 0;
-        white-space: nowrap; 
-        overflow: hidden;">
-        {{ section.settings.heading }}
-      </h2>
-      <h2 style="font: var(--typeBasePrimary); font-size: 15px; margin: 0 0 15px 0; line-height: 1.4;">
-        {{ section.settings.description }}
-      </h2>
-      <div style="
-        position: absolute;
-        bottom: -65px;
-        left: 50%;
-        transform: translateX(-50%);"
+.collection-banner__image-link,
+.collection-banner__image-link img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection-banner__text-wrapper {
+  position: absolute;
+  top: 50%;
+  color: white;
+  text-align: center;
+  max-width: 500px;
+  transform: translate(-50%, -50%);
+}
+
+.collection-banner__text-wrapper.right {
+  left: 75%;
+}
+
+.collection-banner__text-wrapper.left {
+  left: 25%;
+}
+
+.collection-banner__text-wrapper.middle {
+  left: 50%;
+}
+
+.collection-banner__heading {
+  font-size: 64px;
+  margin: 0 0 10px 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.collection-banner__description {
+  font: var(--typeBasePrimary);
+  font-size: 15px;
+  margin: 0 0 15px 0;
+  line-height: 1.4;
+}
+
+.collection-banner__button {
+  position: absolute;
+  bottom: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  padding: 5px 20px;
+  font: var(--typeBasePrimary);
+  font-size: 14px;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 589px) {
+  .collection-banner__text-wrapper {
+  margin-top: 5px;
+}
+  .collection-banner__button {
+    display: none;
+  }
+
+  .collection-banner {
+    width: 100%;
+    height: 100px; 
+  }
+  .collection-banner__heading {
+    font-size: 18px; 
+  }
+  .collection-banner__description {
+    font-size: 8px;
+  }
+  .collection-banner__button {
+    display: none; 
+  }
+}
+
+{% endstyle %}
+
+<div class="collection-banner">
+  {% if section.settings.banner_image %}
+    <a href="{{ section.settings.button_link }}" class="collection-banner__image-link">
+      <img 
+        src="{{ section.settings.banner_image | image_url: width: 1250 }}" 
+        alt="{{ section.settings.banner_image }}" 
+        width="{{ section.settings.banner_image.width | default: 1250 }}" 
+        height="{{ section.settings.banner_image.height | default: 320 }}" 
       >
-        <a 
-          href="{{ section.settings.button_link }}" 
-          class="btn"
-          style="
-          white-space: nowrap;
-          padding: 5px 20px;
-          font: var(--typeBasePrimary);
-           font-size: 14px;" 
-        >
-          {{ section.settings.button_text }}
-        </a>
-        </div>
-    </div>
+    </a>
+  {% endif %}
+
+  {% assign text_position = section.settings.text_alignment %}
+  <div class="collection-banner__text-wrapper {{ text_position }}">
+    <h2 class="collection-banner__heading">{{ section.settings.heading }}</h2>
+    <h2 class="collection-banner__description">{{ section.settings.description }}</h2>
+    
+    <a href="{{ section.settings.button_link }}" class="btn collection-banner__button">
+      {{ section.settings.button_text }}
+    </a>
   </div>
-  
-  {% schema %}
-  {
-    "name": "Collection Banner",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "banner_image",
-        "label": "Banner Image"
-      },
-      {
-        "type": "text",
-        "id": "heading",
-        "label": "Heading",
-        "default": "Explore Our Collection"
-      },
-      {
-        "type": "text",
-        "id": "description",
-        "label": "Description",
-        "default": "Explore Our Collection"
-      },
-      {
-        "type": "text",
-        "id": "button_text",
-        "label": "Button Text",
-        "default": "Shop Now"
-      },
-      {
-        "type": "url",
-        "id": "button_link",
-        "label": "Link to Collection"
-      },
-      {
-    "type": "select",
-    "id": "text_alignment",
-    "label": "Text Alignment",
-    "default": "right",
-    "options": [
-      {
-        "value": "right",
-        "label": "Right"
-      },
-      {
-        "value": "left",
-        "label": "Left"
-      },
-      {
-        "value": "middle",
-        "label": "Middle"
-      }
-    ]
-  }
-    ],
-    "presets": [
-      {
-        "name": "Collection Banner",
-        "category": "Custom"
-      }
-    ]
-  }
-  {% endschema %}
+</div>
+
+{% schema %}
+{
+  "name": "Collection Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Banner Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Explore Our Collection"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Description",
+      "default": "Explore Our Collection"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Link to Collection"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text Alignment",
+      "default": "right",
+      "options": [
+        { "value": "right", "label": "Right" },
+        { "value": "left", "label": "Left" },
+        { "value": "middle", "label": "Middle" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection Banner",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
