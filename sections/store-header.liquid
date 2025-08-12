@@ -1,0 +1,30 @@
+<div class="store-header-wrapper">
+
+  {% if linklists[section.settings.menu] and linklists[section.settings.menu].links.size > 0 %}
+    <ul class="store-header__list">
+      {% for link in linklists[section.settings.menu].links %}
+        <li class="store-header__item">
+          <a href="{{ link.url }}" class="store-header__link">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Subheader with Links",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Subheader with Links"
+    }
+  ]
+}
+{% endschema %}
