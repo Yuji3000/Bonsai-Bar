@@ -224,7 +224,7 @@
       },
       "13191946590013868116": {
         "type": "shopify://apps/feebee/blocks/global/eb243dcb-aa50-48eb-ad4e-3a2116e4122b",
-        "disabled": true,
+        "disabled": false,
         "settings": {}
       }
     }
