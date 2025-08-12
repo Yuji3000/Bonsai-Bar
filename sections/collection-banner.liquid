@@ -1,7 +1,7 @@
 {% style %}
 .collection-banner {
   position: relative;
-  width: 80%;
+  width: 90%;
   height: 320px;
   margin: 0 auto 5px auto;
   background-color: black;
@@ -85,7 +85,34 @@
   }
 }
 
+.store-subheading {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.store-links a {
+  margin: 0 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.store-links a:hover {
+  text-decoration: underline;
+}
+
 {% endstyle %}
+
+{% assign menu_handle = section.settings.menu_handle %}
+{% assign menu = linklists[menu_handle] %}
+{% if menu.links.size > 0 %}
+  <div class="store-subheading">
+    <nav class="store-links">
+      {% for link in menu.links %}
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+{% endif %}
 
 <div class="collection-banner">
   {% if section.settings.banner_image %}
@@ -152,7 +179,17 @@
         { "value": "left", "label": "Left" },
         { "value": "middle", "label": "Middle" }
       ]
-    }
+    },
+    {
+  "type": "text",
+  "id": "subheading_text",
+  "label": "Subheading"
+},
+{
+  "type": "url",
+  "id": "subheading_link",
+  "label": "Subheading Link"
+}
   ],
   "presets": [
     {
