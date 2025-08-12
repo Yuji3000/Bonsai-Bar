@@ -1,15 +1,51 @@
-<div class="store-header-wrapper">
+{% style %}
+.store-header__link {
+  font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+  font-weight: var(--typeHeaderWeight);
+  letter-spacing: var(--typeHeaderSpacing);
+  line-height: var(--typeHeaderLineHeight);
+  position: relative;
 
-  {% if linklists[section.settings.menu] and linklists[section.settings.menu].links.size > 0 %}
-    <ul class="store-header__list">
-      {% for link in linklists[section.settings.menu].links %}
-        <li class="store-header__item">
-          <a href="{{ link.url }}" class="store-header__link">{{ link.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-</div>
+  text-decoration: none;
+}
+
+.store-header__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background: var(--colorBtnPrimary);
+  transition: width 0.3s ease;
+}
+
+.store-header__link:hover::after {
+  width: 100%;
+}
+
+{% endstyle %}
+
+<header 
+  id="site-header"
+  class="site-header"
+>
+  <div class="page-width">
+    <div>
+      {% if linklists[section.settings.menu] and linklists[section.settings.menu].links.size > 0 %}
+        <div class="header-layout">
+          {% for link in linklists[section.settings.menu].links %}
+            <div>
+              <a href="{{ link.url }}" class="store-header__link">{{ link.title }}</a>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</header>
+
+
 
 {% schema %}
 {

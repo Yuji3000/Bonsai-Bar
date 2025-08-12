@@ -11,7 +11,15 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {}
+    },
+    "store_header_AipAyg": {
+      "type": "store-header",
+      "name": "Subheader with Links",
+      "settings": {
+        "menu": "store-header"
+      }
     },
     "collection_banner_1": {
       "type": "collection-banner",
@@ -21,7 +29,9 @@
         "description": "Expert-styled bonsai trees that would fit perfectly in your collection",
         "button_text": "Explore Bonsai Trees",
         "button_link": "shopify://collections/bonsai",
-        "text_alignment": "right"
+        "text_alignment": "right",
+        "subheading_text": "",
+        "subheading_link": ""
       }
     },
     "collection_banner_NdKqJf": {
@@ -33,7 +43,9 @@
         "description": "********************",
         "button_text": "Explore Supplies",
         "button_link": "shopify://collections/supplies",
-        "text_alignment": "left"
+        "text_alignment": "left",
+        "subheading_text": "",
+        "subheading_link": ""
       }
     },
     "collection_banner_pUexCf": {
@@ -45,7 +57,9 @@
         "description": "Explore Our Collection",
         "button_text": "Explore DIY Kits",
         "button_link": "shopify://collections/kits-diy-make-at-home-etc",
-        "text_alignment": "right"
+        "text_alignment": "right",
+        "subheading_text": "",
+        "subheading_link": ""
       }
     },
     "collection_banner_xQwjaU": {
@@ -57,7 +71,9 @@
         "description": "**************",
         "button_text": "Explore Bonsai Pots",
         "button_link": "shopify://collections/pots",
-        "text_alignment": "middle"
+        "text_alignment": "middle",
+        "subheading_text": "",
+        "subheading_link": ""
       }
     },
     "collection_banner_niTLYT": {
@@ -69,7 +85,9 @@
         "description": "*****************",
         "button_text": "Explore Bonsai Bar Apparel",
         "button_link": "shopify://collections/apparel",
-        "text_alignment": "left"
+        "text_alignment": "left",
+        "subheading_text": "",
+        "subheading_link": ""
       }
     },
     "collection_banner_q7a9PB": {
@@ -81,12 +99,15 @@
         "description": "**************",
         "button_text": "Explore Gift Cards",
         "button_link": "shopify://collections/gift-cards",
-        "text_alignment": "right"
+        "text_alignment": "right",
+        "subheading_text": "",
+        "subheading_link": ""
       }
     }
   },
   "order": [
     "main",
+    "store_header_AipAyg",
     "collection_banner_1",
     "collection_banner_NdKqJf",
     "collection_banner_pUexCf",
