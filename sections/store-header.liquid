@@ -22,12 +22,27 @@
 .store-header__link:hover::after {
   width: 100%;
 }
-
 {% endstyle %}
+
+{% liquid 
+
+  assign sticky_header = false
+  assign overlay_header = false
+
+  if section.settings.header_sticky
+    assign sticky_header = true
+  endif
+
+  if template_name == 'index' and section.settings.sticky_index
+    assign overlay_header = true
+  endif
+
+ %}
 
 <header 
   id="site-header"
   class="site-header"
+  data-sticky="{{ sticky_header }}"
 >
   <div class="page-width">
     <div>
@@ -54,6 +69,18 @@
       "type": "link_list",
       "id": "menu",
       "label": "Menu"
+    },
+    {
+      "type": "checkbox",
+      "id": "header_sticky",
+      "label": "t:sections.header.settings.header_sticky.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "sticky_index",
+      "label": "t:sections.header.settings.sticky_index.label",
+      "default": false
     }
   ],
   "presets": [
