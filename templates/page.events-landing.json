@@ -71,14 +71,6 @@
     "featured_collections_ehCn78": {
       "type": "featured-collections",
       "blocks": {
-        "collection_kVrD6N": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "focal_point": "center center",
-            "size": "wide"
-          }
-        },
         "collection_n9Ydbp": {
           "type": "collection",
           "settings": {
@@ -193,7 +185,6 @@
         }
       },
       "block_order": [
-        "collection_kVrD6N",
         "collection_n9Ydbp",
         "collection_zEtKKf",
         "collection_Y763iK",

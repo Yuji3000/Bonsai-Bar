@@ -22,22 +22,6 @@
     {% assign available_tickets = '' %}
     {% assign weekday = '' %}
         
-    {% comment %} {% assign trees_array = "" | split: "" %}
-
-{% for product in collection.products %}
-  {% for variant in product.variants %}
-    {% if variant.metafields.custom.tree %}
-      {% assign trees_array = trees_array | concat: variant.metafields.custom.tree | uniq %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-
-<script>
-  const treeSpecies = {{ species_array | json }};
-  console.log("Tree species found in this collection:", treeSpecies);
-</script> {% endcomment %}
-
-
         {% for product in collection.products %}
           {% for variant in product.variants %}
             {%- liquid

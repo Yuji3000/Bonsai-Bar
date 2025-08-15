@@ -22,42 +22,32 @@
 .store-header__link:hover::after {
   width: 100%;
 }
+
+.site-subheader {
+  position: sticky;
+  top: var(--header-height, 170px); 
+  background: white;
+  z-index: 999; 
+  border-bottom: 1px solid #eee;
+}
+
+.site-subheader .header-layout {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 {% endstyle %}
-
-{% liquid 
-
-  assign sticky_header = false
-  assign overlay_header = false
-
-  if section.settings.header_sticky
-    assign sticky_header = true
-  endif
-
-  if template_name == 'index' and section.settings.sticky_index
-    assign overlay_header = true
-  endif
-
- %}
-
-<header 
-  id="site-header"
-  class="site-header"
-  data-sticky="{{ sticky_header }}"
->
+<div class="site-subheader">
   <div class="page-width">
-    <div>
+    <div class="header-layout">
       {% if linklists[section.settings.menu] and linklists[section.settings.menu].links.size > 0 %}
-        <div class="header-layout">
-          {% for link in linklists[section.settings.menu].links %}
-            <div>
-              <a href="{{ link.url }}" class="store-header__link">{{ link.title }}</a>
-            </div>
-          {% endfor %}
-        </div>
+        {% for link in linklists[section.settings.menu].links %}
+          <a href="{{ link.url }}" class="store-header__link">{{ link.title }}</a>
+        {% endfor %}
       {% endif %}
     </div>
   </div>
-</header>
+
 
 
 
@@ -69,18 +59,6 @@
       "type": "link_list",
       "id": "menu",
       "label": "Menu"
-    },
-    {
-      "type": "checkbox",
-      "id": "header_sticky",
-      "label": "t:sections.header.settings.header_sticky.label",
-      "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "sticky_index",
-      "label": "t:sections.header.settings.sticky_index.label",
-      "default": false
     }
   ],
   "presets": [
