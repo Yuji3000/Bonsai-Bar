@@ -12,11 +12,7 @@
     "store_header_j9RXK9": {
       "type": "store-header",
       "name": "Subheader with Links",
-      "settings": {
-        "menu": "store-header",
-        "header_sticky": true,
-        "sticky_index": false
-      }
+      "settings": {}
     },
     "advanced_content_JVPQAF": {
       "type": "advanced-content",

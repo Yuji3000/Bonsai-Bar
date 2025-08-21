@@ -9,13 +9,6 @@
  */
 {
   "sections": {
-    "store_header_97nd8F": {
-      "type": "store-header",
-      "name": "Subheader with Links",
-      "settings": {
-        "menu": "store-header"
-      }
-    },
     "fading_images_JwN3J9": {
       "type": "fading-images",
       "blocks": {
@@ -89,7 +82,7 @@
           "type": "product_grid",
           "settings": {
             "collection_subnav_style": "inline",
-            "per_row": 5,
+            "per_row": 4,
             "mobile_flush_grid": true
           }
         },
@@ -178,7 +171,6 @@
     }
   },
   "order": [
-    "store_header_97nd8F",
     "fading_images_JwN3J9",
     "featured_collection_FAKE8F",
     "main-collection",

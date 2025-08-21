@@ -12,11 +12,7 @@
     "store_header_NCfwX6": {
       "type": "store-header",
       "name": "Subheader with Links",
-      "settings": {
-        "menu": "store-header",
-        "header_sticky": false,
-        "sticky_index": false
-      }
+      "settings": {}
     },
     "main-collection": {
       "type": "main-collection",

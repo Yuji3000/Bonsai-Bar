@@ -12,9 +12,7 @@
     "store_header_hMgtPA": {
       "type": "store-header",
       "name": "Subheader with Links",
-      "settings": {
-        "menu": "store-header"
-      }
+      "settings": {}
     },
     "main-collection": {
       "type": "main-collection",
