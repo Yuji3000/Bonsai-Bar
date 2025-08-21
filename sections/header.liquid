@@ -22,6 +22,8 @@
   if template_name contains 'collection' and collection.image and section.settings.sticky_collection
     assign overlay_header = true
   endif
+
+
 -%}
 
 {%- render 'drawer-menu', section: section, main_menu: main_menu, logo_alignment: logo_alignment -%}
@@ -31,6 +33,20 @@
   .site-nav__link,
   .site-nav__dropdown-link {
     font-size: {{ settings.type_navigation_size }}px;
+  }
+
+  .store-header {
+    width: 100%;
+  }
+
+  .store-header .site-nav {
+    display: flex;
+    justify-content: space-between; 
+  }
+
+  .store-header .site-nav--active {
+    border-bottom: var(--colorBtnPrimary);
+    padding-bottom: 4px; 
   }
 
   {%- if settings.type_navigation_size < 18 -%}
@@ -181,6 +197,15 @@
           </div>
         {%- endif -%}
       </div>
+
+      {%- if template_name contains 'collection' or template_name contains 'product'-%}
+        <div class="store-header">
+          <div class="page-width">
+            {%- render 'header-desktop-nav', section: section, main_menu: linklists['store-header'] -%}
+          </div>
+        </div>
+      {%- endif -%}
+
     </header>
   </div>
 </div>
