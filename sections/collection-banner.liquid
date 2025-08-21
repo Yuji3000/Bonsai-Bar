@@ -37,10 +37,12 @@
 }
 
 .collection-banner__heading {
+  font-family: var(--typeHeaderPrimary);
   font-size: 64px;
   margin: 0 0 10px 0;
   white-space: nowrap;
   overflow: hidden;
+  color: white;
 }
 
 .collection-banner__description {
@@ -48,6 +50,7 @@
   font-size: 15px;
   margin: 0 0 15px 0;
   line-height: 1.4;
+  color: white;
 }
 
 .collection-banner__button {
@@ -92,7 +95,7 @@
 
 .store-links a {
   margin: 0 10px;
-  color: inherit;
+  /* color: inherit; */
   text-decoration: none;
 }
 
@@ -123,18 +126,18 @@
         width="{{ section.settings.banner_image.width | default: 1250 }}" 
         height="{{ section.settings.banner_image.height | default: 320 }}" 
       >
-    </a>
-  {% endif %}
-
-  {% assign text_position = section.settings.text_alignment %}
-  <div class="collection-banner__text-wrapper {{ text_position }}">
-    <h2 class="collection-banner__heading">{{ section.settings.heading }}</h2>
-    <h2 class="collection-banner__description">{{ section.settings.description }}</h2>
-    
-    <a href="{{ section.settings.button_link }}" class="btn collection-banner__button">
-      {{ section.settings.button_text }}
-    </a>
-  </div>
+        
+        {% assign text_position = section.settings.text_alignment %}
+        <div class="collection-banner__text-wrapper {{ text_position }}">
+          <h2 class="collection-banner__heading">{{ section.settings.heading }}</h2>
+          <h2 class="collection-banner__description">{{ section.settings.description }}</h2>
+          
+          <a href="{{ section.settings.button_link }}" class="btn collection-banner__button">
+            {{ section.settings.button_text }}
+          </a>
+        </div>
+      </a>
+    {% endif %}
 </div>
 
 {% schema %}
