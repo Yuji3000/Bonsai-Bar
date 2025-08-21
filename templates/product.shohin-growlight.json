@@ -27,8 +27,8 @@
       ],
       "name": "t:sections.advanced-content.presets.custom_content.name",
       "settings": {
-        "full_width": false,
-        "space_around": true
+        "full_width": true,
+        "space_around": false
       }
     },
     "main": {
