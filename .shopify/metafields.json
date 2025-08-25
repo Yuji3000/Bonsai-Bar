@@ -351,6 +351,26 @@
         "name": "rating",
         "category": "RATING"
       }
+    },
+    {
+      "key": "ticket-type",
+      "namespace": "shopify",
+      "name": "Ticket type",
+      "description": "Identifies the category of event tickets, like general admission or reserved seating",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "event-type",
+      "namespace": "shopify",
+      "name": "Event type",
+      "description": "Classifies the nature of an event, such as a concert, seminar, or festival",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
   "variant": [
