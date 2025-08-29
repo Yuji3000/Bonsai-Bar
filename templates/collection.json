@@ -1,1 +1,63 @@
-{"sections":{"main-collection":{"type":"main-collection","blocks":{"product_grid":{"type":"product_grid","settings":{"collection_subnav_style":"inline","per_row":4,"mobile_flush_grid":false}},"collection_description":{"type":"collection_description","settings":{}}},"block_order":["product_grid","collection_description"],"settings":{"collection_image_enable":true,"collection_image_height":550,"parallax":true,"parallax_direction":"top","enable_sidebar":false,"collapsed":true,"enable_color_swatches":false,"enable_sort":true,"flter_type":"drawer"}},"16770043152e6ddcdb":{"type":"apps","settings":{"full_width":false,"space_around":true}}},"order":["main-collection","16770043152e6ddcdb"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "store_header_hMgtPA": {
+      "type": "store-header",
+      "name": "Subheader with Links",
+      "settings": {}
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "collection_subnav_style": "inline",
+            "per_row": 4,
+            "mobile_flush_grid": false
+          }
+        },
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "product_grid",
+        "collection_description"
+      ],
+      "settings": {
+        "collection_image_enable": false,
+        "collection_image_height": 550,
+        "parallax": true,
+        "parallax_direction": "top",
+        "enable_sidebar": false,
+        "collapsed": true,
+        "enable_color_swatches": false,
+        "enable_sort": true,
+        "flter_type": "drawer",
+        "display_style": "product"
+      }
+    },
+    "16770043152e6ddcdb": {
+      "type": "apps",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "store_header_hMgtPA",
+    "main-collection",
+    "16770043152e6ddcdb"
+  ]
+}

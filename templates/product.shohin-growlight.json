@@ -9,6 +9,11 @@
  */
 {
   "sections": {
+    "store_header_j9RXK9": {
+      "type": "store-header",
+      "name": "Subheader with Links",
+      "settings": {}
+    },
     "advanced_content_JVPQAF": {
       "type": "advanced-content",
       "blocks": {
@@ -25,10 +30,11 @@
       "block_order": [
         "image_yY4nYD"
       ],
+      "custom_css": [],
       "name": "t:sections.advanced-content.presets.custom_content.name",
       "settings": {
         "full_width": true,
-        "space_around": false
+        "space_around": true
       }
     },
     "main": {
@@ -112,11 +118,12 @@
           "type": "tab",
           "settings": {
             "title": "Learn More",
-            "content": "<p>When we teamed up with our friends at Growgenics</p><p> We had three clear goals:</p><ol><li>Make a quality grow light specifically tailored to the needs of a bonsai tree.</li><li>Create a grow light that would showcase your bonsai—not distract from it. </li><li>Provide the light needed for your tree to thrive without raising your electric bill</li></ol><p>The curved light panel can be adjusted within inches of the canopy, focusing light directly on the upper and lower branches of your tree.   The spectrum chosen for the Shohin is optimized for tight internodal growth—perfect for preventing excess stretching in your canopy—a common result with other grow light models.  But the part that excites us most—At a total Wattage of 10W this powerhouse of a growlight operates at a minimal electrical demand-a level so low you likely won’t even notice on your electrical bill! </p><p>Through thoughtful design and a patented optimized light spectrum, The Shohin Growlight is our tiny-but-mighty solution to north-facing apartments and windowless offices across the continental US. </p>",
+            "content": "<p><strong>When we teamed up with our friends at Growgenics</strong></p><p><strong> We had three clear goals:</strong></p><ol><li>Make a quality grow light specifically tailored to the needs of a bonsai tree.</li><li>Create a grow light that would showcase your bonsai—not distract from it. </li><li>Provide the light needed for your tree to thrive without raising your electric bill</li></ol><p>The curved light panel can be adjusted within inches of the canopy, focusing light directly on the upper and lower branches of your tree. The spectrum chosen for the Shohin is optimized for tight internodal growth—perfect for preventing excess stretching in your canopy—a common result with other grow light models.But the part that excites us most—At a total Wattage of 10W this powerhouse of a growlight operates at a minimal electrical demand-a level so low you likely won’t even notice on your electrical bill! </p><p>Through thoughtful design and a patented optimized light spectrum, The Shohin Growlight is our tiny-but-mighty solution to north-facing apartments and windowless offices across the continental US. </p>",
             "page": ""
           }
         },
-        "tab_GhJNHf": {
+        "tab_8ArCQK": {
+
           "type": "tab",
           "settings": {
             "title": "Key Features",
@@ -124,7 +131,7 @@
             "page": ""
           }
         },
-        "tab_YpNTiX": {
+        "tab_LY7Vbq": {
           "type": "tab",
           "settings": {
             "title": "Design Team",
@@ -135,8 +142,8 @@
       },
       "block_order": [
         "tab_hLEMMj",
-        "tab_GhJNHf",
-        "tab_YpNTiX"
+        "tab_8ArCQK",
+        "tab_LY7Vbq"
       ],
       "settings": {
         "max_width": true
@@ -156,6 +163,7 @@
     }
   },
   "order": [
+    "store_header_j9RXK9",
     "advanced_content_JVPQAF",
     "main",
     "sub",

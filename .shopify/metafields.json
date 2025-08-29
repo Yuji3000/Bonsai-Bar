@@ -43,6 +43,46 @@
   ],
   "product": [
     {
+      "key": "queries",
+      "namespace": "shopify--discovery--product_search_boost",
+      "name": "Search product boosts",
+      "description": "List of search queries for which a product gets higher rank in search results",
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "related_products",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Related products",
+      "description": "List of related products",
+      "type": {
+        "name": "list.product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "related_products_display",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Related products settings",
+      "description": "Determines how related products are displayed along with algorithmic product recommendations",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "complementary_products",
+      "namespace": "shopify--discovery--product_recommendation",
+      "name": "Complementary products",
+      "description": "List of complementary products",
+      "type": {
+        "name": "list.product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
       "key": "brewery",
       "namespace": "custom",
       "name": "Brewery",
@@ -276,7 +316,7 @@
       "key": "bought_together_products",
       "namespace": "globo--filter--product_recommendation",
       "name": "Bought together products",
-      "description": null,
+      "description": "",
       "type": {
         "name": "list.product_reference",
         "category": "REFERENCE"
@@ -287,6 +327,46 @@
       "namespace": "shopify",
       "name": "Age restrictions",
       "description": "Indicates the minimum age requirement for a product or event, like 18 years or older",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "rating_count",
+      "namespace": "reviews",
+      "name": "Product rating count",
+      "description": "Total number of ratings from customers",
+      "type": {
+        "name": "number_integer",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "rating",
+      "namespace": "reviews",
+      "name": "Product rating",
+      "description": "Average rating from customers",
+      "type": {
+        "name": "rating",
+        "category": "RATING"
+      }
+    },
+    {
+      "key": "ticket-type",
+      "namespace": "shopify",
+      "name": "Ticket type",
+      "description": "Identifies the category of event tickets, like general admission or reserved seating",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "event-type",
+      "namespace": "shopify",
+      "name": "Event type",
+      "description": "Classifies the nature of an event, such as a concert, seminar, or festival",
       "type": {
         "name": "list.metaobject_reference",
         "category": "REFERENCE"

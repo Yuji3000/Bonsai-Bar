@@ -121,7 +121,8 @@
                           {%- endif -%}
                         </div>
 
-                        {%- if has_sub_dropdown -%}
+                      {%- if has_sub_dropdown -%}
+                        
                           <div id="Sublinklist-{{ child_list_handle }}-{{ grand_child_list_handle }}" class="mobile-nav__sublist collapsible-content collapsible-content--all" aria-labelledby="Sublabel-{{ grand_child_list_handle }}">
                             <div class="collapsible-content__inner">
                               <ul class="mobile-nav__grandchildlist">
@@ -135,7 +136,9 @@
                               </ul>
                             </div>
                           </div>
-                        {%- endif -%} 
+
+                        {%- endif -%}
+
                       </li>
                     {%- endfor -%}
                   </ul>
