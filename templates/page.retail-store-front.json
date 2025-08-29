@@ -17,9 +17,7 @@
     "store_header_AipAyg": {
       "type": "store-header",
       "name": "Subheader with Links",
-      "settings": {
-        "menu": "store-header"
-      }
+      "settings": {}
     },
     "collection_banner_1": {
       "type": "collection-banner",

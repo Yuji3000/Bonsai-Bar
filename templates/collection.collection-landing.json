@@ -44,9 +44,7 @@
     "store_header_f3LnyK": {
       "type": "store-header",
       "name": "Subheader with Links",
-      "settings": {
-        "menu": "store-header"
-      }
+      "settings": {}
     },
     "main-collection": {
       "type": "main-collection",
