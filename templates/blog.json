@@ -1,1 +1,75 @@
-{"sections":{"6dc2c7bd-d1ab-41af-99a5-e37f03c9e6d7":{"type":"slideshow","blocks":{"template--14814507139153__6dc2c7bd-d1ab-41af-99a5-e37f03c9e6d7-1679406914c0d77f8d-0":{"type":"image","settings":{"title":"Caring for your trees","title_size":50,"subheading":"","link":"","link_text":"","text_align":"vertical-center horizontal-center","image":"{{ blog.metafields.custom.background_image.value }}","parallax_direction":"top","overlay_opacity":20,"focal_point":"center center"}}},"block_order":["template--14814507139153__6dc2c7bd-d1ab-41af-99a5-e37f03c9e6d7-1679406914c0d77f8d-0"],"settings":{"section_height":"natural","mobile_height":"auto","parallax":false,"style":"arrows","autoplay":true,"autoplay_speed":5}},"main":{"type":"blog-template","disabled":true,"settings":{"blog_show_tag_filter":false,"blog_show_rss":false,"blog_show_tags":false,"blog_show_date":false,"blog_show_comments":false,"blog_show_author":false}},"3be0d7af-7842-420e-ace8-439228d88b99":{"type":"blog-posts","settings":{"title":"How to care for you bonsai","blog":"tree-care","post_limit":3,"blog_show_tags":true,"blog_show_date":true,"blog_show_comments":false,"blog_show_author":false,"view_all":false,"divider":false}}},"order":["6dc2c7bd-d1ab-41af-99a5-e37f03c9e6d7","main","3be0d7af-7842-420e-ace8-439228d88b99"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "6dc2c7bd-d1ab-41af-99a5-e37f03c9e6d7": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14814507139153__6dc2c7bd-d1ab-41af-99a5-e37f03c9e6d7-1679406914c0d77f8d-0": {
+          "type": "image",
+          "settings": {
+            "title": "Caring for your trees",
+            "title_size": 50,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "text_align": "vertical-center horizontal-center",
+            "image": "{{ blog.metafields.custom.background_image.value }}",
+            "parallax_direction": "top",
+            "overlay_opacity": 20,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14814507139153__6dc2c7bd-d1ab-41af-99a5-e37f03c9e6d7-1679406914c0d77f8d-0"
+      ],
+      "settings": {
+        "section_height": "natural",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "main": {
+      "type": "blog-template",
+      "disabled": true,
+      "settings": {
+        "blog_show_tag_filter": false,
+        "blog_show_rss": false,
+        "blog_show_tags": false,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false
+      }
+    },
+    "3be0d7af-7842-420e-ace8-439228d88b99": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "How to care for your bonsai",
+        "blog": "tree-care",
+        "post_limit": 3,
+        "blog_show_tags": true,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": false,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "6dc2c7bd-d1ab-41af-99a5-e37f03c9e6d7",
+    "main",
+    "3be0d7af-7842-420e-ace8-439228d88b99"
+  ]
+}
