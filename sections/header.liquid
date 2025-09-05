@@ -198,7 +198,14 @@
         {%- endif -%}
       </div>
 
-      {%- if template_name contains 'collection' or template_name contains 'product'-%}
+       {%-   
+        if collection.title == 'Apparel' or
+         collection.title == 'Bonsai Trees' or
+         collection.title == 'Supplies' or
+         collection.title == 'Homebrew Bonsai Kits' or
+         collection.title == 'Gift Cards' or 
+         collection.title == 'Pots'
+      %}
         <div class="store-header">
           <div class="page-width">
             {%- render 'header-desktop-nav', section: section, main_menu: linklists['store-header'] -%}
