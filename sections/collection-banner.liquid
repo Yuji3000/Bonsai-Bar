@@ -95,12 +95,15 @@
 
 .store-links a {
   margin: 0 10px;
-  /* color: inherit; */
   text-decoration: none;
 }
 
 .store-links a:hover {
   text-decoration: underline;
+}
+
+.collection-banner-section:last-of-type .collection-banner {
+  margin-bottom: 140px; 
 }
 
 {% endstyle %}
@@ -143,6 +146,7 @@
 {% schema %}
 {
   "name": "Collection Banner",
+  "class": "collection-banner-section",
   "settings": [
     {
       "type": "image_picker",
@@ -184,16 +188,17 @@
       ]
     },
     {
-  "type": "text",
-  "id": "subheading_text",
-  "label": "Subheading"
-},
-{
-  "type": "url",
-  "id": "subheading_link",
-  "label": "Subheading Link"
-}
+      "type": "text",
+      "id": "subheading_text",
+      "label": "Subheading"
+    },
+    {
+      "type": "url",
+      "id": "subheading_link",
+      "label": "Subheading Link"
+    } 
   ],
+  
   "presets": [
     {
       "name": "Collection Banner",
