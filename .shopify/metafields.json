@@ -371,6 +371,16 @@
         "name": "list.metaobject_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "tree_specific_info",
+      "namespace": "custom",
+      "name": "Tree Specific Info",
+      "description": "Multiline description",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
     }
   ],
   "variant": [
