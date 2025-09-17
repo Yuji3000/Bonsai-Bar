@@ -3448,10 +3448,11 @@ svg.icon:not(.icon--full-color) circle,svg.icon:not(.icon--full-color) ellipse,s
   flex:none;
   display:flex;
   flex-direction:column;
-  overflow-y:hidden;
+  overflow-y:auto;
 }
 
 .drawer__scrollable{
+  height: 100%;
   padding-top:20px;
   overflow:hidden;
   overflow-y:auto;
@@ -10910,7 +10911,8 @@ div[data-section-type=fading-images]{
 }
 
 .cart__checkout-wrapper{
-  margin-top:20px
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .cart__checkout-wrapper .additional-checkout-buttons{
