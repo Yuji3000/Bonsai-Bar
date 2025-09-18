@@ -41,6 +41,32 @@
         "mobile_height": "400px"
       }
     },
+    "featured_collection_gicNMV": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.featured_collection.name",
+      "settings": {
+        "title": "Featured collection",
+        "home_featured_products": "",
+        "per_row": 4,
+        "rows": 1,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "featured_products_custom_Hcqgcf": {
+      "type": "featured-products-custom",
+      "name": "Featured Products",
+      "settings": {
+        "title": "Featured Products",
+        "product_1": "mame-kit",
+        "product_2": "premium-glow-up-kit",
+        "product_3": "rectangle-pot-01-by-jas-jas-pots",
+        "product_4": "tiny-tree-cascade-t-shirt",
+        "per_row": 4,
+        "view_store": true,
+        "divider": false
+      }
+    },
     "rich_text_G6wdAL": {
       "type": "rich-text",
       "blocks": {
@@ -218,6 +244,8 @@
   },
   "order": [
     "hero-video",
+    "featured_collection_gicNMV",
+    "featured_products_custom_Hcqgcf",
     "rich_text_G6wdAL",
     "0d9f85ca-456c-4038-a25e-e424dd6dc8f5",
     "background-image-text",

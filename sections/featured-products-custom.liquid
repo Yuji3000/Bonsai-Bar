@@ -1,0 +1,150 @@
+{%- liquid
+  assign per_row = section.settings.per_row
+  assign grid_item_width = 'small--one-half medium-up--one-third'
+
+  case per_row
+    when 1
+      assign grid_item_width = ''
+    when 2
+      assign grid_item_width = 'medium-up--one-half'
+    when 3
+      assign grid_item_width = 'small--one-half medium-up--one-third'
+    when 4
+      assign grid_item_width = 'small--one-half medium-up--one-quarter'
+
+  endcase
+-%}
+
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+<div id="FeaturedProducts-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="featured-products">
+  {%- if section.settings.title != blank -%}
+    <div class="page-width">
+      <div class="section-header">
+        <h2 class="section-header__title">
+          {{ section.settings.title }}
+          {% if section.settings.view_store %}
+              <a href="/pages/retail-store" class="section-header__link">View Store</a>
+          {% endif %}
+        </h2>
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="page-width page-width--flush-small">
+    <div class="grid-overflow-wrapper">
+      <div class="grid grid--uniform" data-aos="overflow__animation">
+
+        {%- assign chosen_products = "" -%}
+        {% for i in (1..4) %}
+          {% assign key = "product_" | append: i %}
+          {% if section.settings[key] %}
+            {% assign chosen_products = chosen_products | append: section.settings[key] | append: "," %}
+          {% endif %}
+        {% endfor %}
+        {% assign chosen_products = chosen_products | split: "," | uniq %}
+
+        {% if chosen_products.size > 0 %}
+          {% for handle in chosen_products %}
+            {% assign product = all_products[handle] %}
+            {% if product %}
+              {%- render 'product-grid-item',
+                product: product,
+                collection: null,
+                grid_item_width: grid_item_width,
+                per_row: per_row -%}
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          {%- comment -%} Placeholder products when nothing is chosen {%- endcomment -%}
+          <div class="grid__item">
+            <div class="grid grid--uniform">
+              {%- for i in (1..per_row) -%}
+                <div class="grid__item grid-product {{ grid_item_width }}" data-aos="row-of-{{ per_row }}">
+                  <div class="grid-product__content">
+                    <a href="#" class="grid-product__link">
+                      <div class="grid-product__image-mask">
+                        {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+                        <div class="image-wrap">{{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}</div>
+                      </div>
+                      <div class="grid-product__meta">
+                        <div class="grid-product__title">{{ 'home_page.onboarding.product_title' | t }}</div>
+                        <div class="grid-product__price">$29</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              {%- endfor -%}
+            </div>
+          </div>
+        {% endif %}
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% schema %}
+{
+  "name": "Featured Products",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Featured Products"
+    },
+    {
+      "type": "product",
+      "id": "product_1",
+      "label": "Product 1"
+    },
+    {
+      "type": "product",
+      "id": "product_2",
+      "label": "Product 2"
+    },
+    {
+      "type": "product",
+      "id": "product_3",
+      "label": "Product 3"
+    },
+    {
+      "type": "product",
+      "id": "product_4",
+      "label": "Product 4"
+    },
+    {
+      "type": "range",
+      "id": "per_row",
+      "label": "Products per row",
+      "default": 4,
+      "min": 1,
+      "max": 4,
+      "step": 1
+    },
+    {
+      "type": "checkbox",
+      "id": "view_store",
+      "label": "Show View Store button",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "Divider",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Products",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
