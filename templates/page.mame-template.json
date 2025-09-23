@@ -22,7 +22,7 @@
           "settings": {
             "title": "Bite Sized Bonsai",
             "title_size": 100,
-            "subheading": "A mame-making workshop for google",
+            "subheading": "A mame-making workshop",
             "link": "",
             "link_text": "",
             "text_align": "vertical-center horizontal-center",
@@ -103,7 +103,7 @@
           "settings": {
             "title": "Keep the fun going",
             "title_size": 100,
-            "subheading": "Use code 'googlemame' for $15.00 off a full length beginner workshop",
+            "subheading": "Use code 'morebonsai' for 10% off a full length beginner workshop",
             "link": "https://bonsaibar.com/discount/GOOGLEMAME",
             "link_text": "Apply Code",
             "text_align": "vertical-bottom horizontal-left",
