@@ -358,12 +358,37 @@
             "button_label": "@bonsaibar_nyc",
             "button_link": ""
           }
+        },
+        "text_block_6akBXe": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/NATIONALS-13.jpg",
+            "image_width": 650,
+            "title": "Anastasia Youngash",
+            "text": "<p>Regional Director of Florida <br/>homebase: Miami </p>",
+            "button_label": "@bonsaibar_FL",
+            "button_link": ""
+          }
+        },
+        "text_block_6BQ8r3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "Chris Holmes",
+            "text": "",
+            "button_label": "@bonsaibar_WA",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "text_block_UdDU47",
         "text_block_A8aRtm",
-        "text_block_wr4yNV"
+        "text_block_wr4yNV",
+        "text_block_6akBXe",
+        "text_block_6BQ8r3"
       ],
       "settings": {
         "title": "",
@@ -394,8 +419,8 @@
             "image_width": 650,
             "title": "Ben Kegel",
             "text": "<p><strong>California Regional Director, Venue Coordinator, Bonsai Bar Instructor<br/></strong>Homebase: S. California</p>",
-            "button_label": "@benkegel",
-            "button_link": "https://www.instagram.com/benkegel/"
+            "button_label": "@thebonsaiben",
+            "button_link": ""
           }
         },
         "text_block_yUAMpf": {
