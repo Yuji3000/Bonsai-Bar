@@ -377,9 +377,9 @@
             "enable_image": true,
             "image_width": 650,
             "title": "Chris Holmes",
-            "text": "",
+            "text": "<p>Regional Director: Washington</p><p>Homebase: Seattle</p>",
             "button_label": "@bonsaibar_WA",
-            "button_link": ""
+            "button_link": "https://www.instagram.com/bonsaibar_wa/"
           }
         }
       },
