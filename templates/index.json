@@ -41,6 +41,28 @@
         "mobile_height": "400px"
       }
     },
+    "featured_products_custom_Hcqgcf": {
+      "type": "featured-products-custom",
+      "name": "Featured Products",
+      "settings": {
+        "per_row": 4,
+        "view_store": true,
+        "divider": false,
+        "title": "Featured Products",
+        "slot_1_type": "product",
+        "slot_1_product": "mame-kit",
+        "slot_1_collection": "",
+        "slot_2_type": "collection",
+        "slot_2_product": "",
+        "slot_2_collection": "kits-diy-make-at-home-etc",
+        "slot_3_type": "product",
+        "slot_3_product": "diy-bonsai-bar-kit-tiger-bark-ficus",
+        "slot_3_collection": "",
+        "slot_4_type": "collection",
+        "slot_4_product": "",
+        "slot_4_collection": "supplies"
+      }
+    },
     "rich_text_G6wdAL": {
       "type": "rich-text",
       "blocks": {
@@ -218,6 +240,7 @@
   },
   "order": [
     "hero-video",
+    "featured_products_custom_Hcqgcf",
     "rich_text_G6wdAL",
     "0d9f85ca-456c-4038-a25e-e424dd6dc8f5",
     "background-image-text",

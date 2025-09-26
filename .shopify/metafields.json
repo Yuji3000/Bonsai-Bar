@@ -535,5 +535,16 @@
       }
     }
   ],
-  "shop": []
+  "shop": [
+    {
+      "key": "fastbundleconf",
+      "namespace": "rbrfb",
+      "name": "Fast Bundle Conf",
+      "description": "App's config for the widgets",
+      "type": {
+        "name": "json",
+        "category": "JSON"
+      }
+    }
+  ]
 }
