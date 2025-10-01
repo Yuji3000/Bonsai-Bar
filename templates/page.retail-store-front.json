@@ -51,7 +51,7 @@
       "name": "Collection Banner",
       "settings": {
         "banner_image": "shopify://shop_images/DiykitBanner.png",
-        "heading": "Homebrew KITS",
+        "heading": "Homebrew",
         "description": "Everything you need to DIY the bonsai of your dreams at home",
         "button_text": "Explore DIY Kits",
         "button_link": "shopify://collections/kits-diy-make-at-home-etc",
