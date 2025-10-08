@@ -38,7 +38,7 @@
       "settings": {
         "banner_image": "shopify://shop_images/suppliesBanner.png",
         "heading": "SUPPLIES",
-        "description": "",
+        "description": "For all of your at-home tree care and styling needs - from tools to soil, fertilizer, and more!",
         "button_text": "Explore Supplies",
         "button_link": "shopify://collections/supplies",
         "text_alignment": "left",
@@ -51,8 +51,8 @@
       "name": "Collection Banner",
       "settings": {
         "banner_image": "shopify://shop_images/DiykitBanner.png",
-        "heading": "DIY KITS",
-        "description": "",
+        "heading": "Homebrew",
+        "description": "Everything you need to DIY the bonsai of your dreams at home",
         "button_text": "Explore DIY Kits",
         "button_link": "shopify://collections/kits-diy-make-at-home-etc",
         "text_alignment": "right",
@@ -66,7 +66,7 @@
       "settings": {
         "banner_image": "shopify://shop_images/PotsBanner.png",
         "heading": "POTS",
-        "description": "",
+        "description": "Quality-made ceramic pots and drip trays perfect for your bonsai or plants",
         "button_text": "Explore Bonsai Pots",
         "button_link": "shopify://collections/pots",
         "text_alignment": "middle",
@@ -80,7 +80,7 @@
       "settings": {
         "banner_image": "shopify://shop_images/ApparelBanner.png",
         "heading": "APPAREL",
-        "description": "",
+        "description": "Rep your Bonsai Bar pride with our awesome merch!",
         "button_text": "Explore Bonsai Bar Apparel",
         "button_link": "shopify://collections/apparel",
         "text_alignment": "left",
@@ -94,7 +94,7 @@
       "settings": {
         "banner_image": "shopify://shop_images/GiftcardBanner.png",
         "heading": "GIFT CARDS",
-        "description": "",
+        "description": "What do you gift the bonsai lover in your life? This!",
         "button_text": "Explore Gift Cards",
         "button_link": "shopify://collections/gift-cards",
         "text_alignment": "right",
