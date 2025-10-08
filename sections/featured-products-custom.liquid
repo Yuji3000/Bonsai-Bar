@@ -54,12 +54,20 @@
           {% elsif section.settings[type_key] == 'collection' and section.settings[collection_key] %}
             {% assign slot_collection_id = "slot_" | append: i | append: "_collection" %}
             {% assign collection = collections[section.settings[slot_collection_id]] %}
-            <script>console.log("collection: {{ collection | json }}");</script>
-            {% comment %} {%- assign chosen_products = chosen_products | append: collection.handle | append: ',' -%} {% endcomment %}
             {% if collection and collection.products_count.size > 0 %}
-              {% assign product = collection.products.first %}
+             {% assign sorted_products = collection.products | sort: 'created_at' | reverse %}
+              {% assign newest_available_product = nil %}
+              {% for product in sorted_products %}
+                {% if product.available %}
+                  {% assign newest_available_product = product %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+               
+
+
               {%- render 'product-grid-item',
-                product: product,
+                product: newest_available_product,
                 collection: collection,
                 grid_item_width: grid_item_width,
                 per_row: per_row
