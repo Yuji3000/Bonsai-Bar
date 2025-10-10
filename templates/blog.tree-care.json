@@ -59,25 +59,17 @@
             "text": "<ul><li>Not able to find answers in our Care Guides below? </li><li>Need someone to take a look at your tree? </li><li>Need a tree replacement?</li></ul><p>Schedule a 15-min Tree-iage appointment with one of our teachers.</p>"
           }
         },
-        "6fb31250-c7d9-4e5f-aa64-be1e708e981e": {
-          "type": "button",
-          "settings": {
-            "link": "/treeiage",
-            "link_text": "Schedule a Treeiage session"
-          }
-        },
         "button_QPXxTM": {
           "type": "button",
           "settings": {
             "link": "/treeiage",
-            "link_text": "Button"
+            "link_text": "Schedule a treeiage session"
           }
         }
       },
       "block_order": [
         "template--14834677842001__4e3eca00-5c44-4e14-a589-53e352b5e5ae-1680885863bf2f55ef-0",
         "fe16ffd0-14c6-4491-ab4e-e29b43d0990a",
-        "6fb31250-c7d9-4e5f-aa64-be1e708e981e",
         "button_QPXxTM"
       ],
       "settings": {
