@@ -1,1 +1,21 @@
-{"parent":"blog.tree-care.json","context":{"market":"us"},"sections":{"4e3eca00-5c44-4e14-a589-53e352b5e5ae":{"settings":{},"blocks":{"6fb31250-c7d9-4e5f-aa64-be1e708e981e":{"settings":{"link":"https:\/\/meetings.hubspot.com\/bonsai-bar\/tree-iage-scheduler"}}}}}}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "blog.tree-care.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "4e3eca00-5c44-4e14-a589-53e352b5e5ae": {
+      "settings": {},
+      "blocks": {}
+    }
+  }
+}
