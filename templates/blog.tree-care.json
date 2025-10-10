@@ -62,7 +62,7 @@
         "6fb31250-c7d9-4e5f-aa64-be1e708e981e": {
           "type": "button",
           "settings": {
-            "link": "https://meetings.hubspot.com/bonsai-bar/tree-care-meeting-schduler",
+            "link": "https://knowledgebase.bonsaibar.com/meetings/bonsai-bar/treeiage-scheduler",
             "link_text": "Schedule a Tree-Care Consultation"
           }
         }
@@ -75,6 +75,15 @@
       "settings": {
         "align_text": "center",
         "narrow_column": true,
+        "divider": false
+      }
+    },
+    "featured_video_HDEJEH": {
+      "type": "featured-video",
+      "name": "t:sections.featured-video.presets.video.name",
+      "settings": {
+        "title": "Watering Your Bonsai",
+        "video_url": "https://youtu.be/nwtIW4tk-0k",
         "divider": false
       }
     },
@@ -94,15 +103,6 @@
       "settings": {
         "align_text": "center",
         "narrow_column": true,
-        "divider": false
-      }
-    },
-    "featured_video_HDEJEH": {
-      "type": "featured-video",
-      "name": "t:sections.featured-video.presets.video.name",
-      "settings": {
-        "title": "Watering Your Bonsai",
-        "video_url": "https://youtu.be/nwtIW4tk-0k",
         "divider": false
       }
     },
