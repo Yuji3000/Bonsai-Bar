@@ -62,7 +62,7 @@
         "6fb31250-c7d9-4e5f-aa64-be1e708e981e": {
           "type": "button",
           "settings": {
-            "link": "https://knowledgebase.bonsaibar.com/meetings/bonsai-bar/treeiage-scheduler",
+            "link": "/treeiage",
             "link_text": "Schedule a Tree-Care Consultation"
           }
         }
