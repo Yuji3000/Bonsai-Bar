@@ -65,12 +65,20 @@
             "link": "/treeiage",
             "link_text": "Schedule a Treeiage session"
           }
+        },
+        "button_QPXxTM": {
+          "type": "button",
+          "settings": {
+            "link": "/treeiage",
+            "link_text": "Button"
+          }
         }
       },
       "block_order": [
         "template--14834677842001__4e3eca00-5c44-4e14-a589-53e352b5e5ae-1680885863bf2f55ef-0",
         "fe16ffd0-14c6-4491-ab4e-e29b43d0990a",
-        "6fb31250-c7d9-4e5f-aa64-be1e708e981e"
+        "6fb31250-c7d9-4e5f-aa64-be1e708e981e",
+        "button_QPXxTM"
       ],
       "settings": {
         "align_text": "center",
