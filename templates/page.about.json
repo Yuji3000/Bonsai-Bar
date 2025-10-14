@@ -375,6 +375,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify://shop_images/chris-profile.jpg",
             "image_width": 650,
             "title": "Chris Holmes",
             "text": "<p>Regional Director: Washington</p><p>Homebase: Seattle</p>",
