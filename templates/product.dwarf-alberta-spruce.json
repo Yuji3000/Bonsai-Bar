@@ -70,13 +70,13 @@
         "0b4a6fdc-b3bb-42a7-b9bb-cdc7d747c2eb": {
           "type": "custom",
           "settings": {
-            "code": "<h3>About the Event</h3>"
+            "code": "<h3>Dwarf Alberta Spruce Workshop</h3>"
           }
         },
-        "7043a1f9-a0fc-4ab5-92f5-9826eda58f4c": {
-          "type": "text",
+        "custom_TGUwiB": {
+          "type": "custom",
           "settings": {
-            "text": "{{ product.metafields.custom.about_the_event | metafield_text }}"
+            "code": "<p>Ready to take your skills to the next level + add a real showpiece for your garden? Join us for our intermediate Hinoki Cypress workshop! The focus of these workshops is to sharpen your wiring skills to maximize the function and aesthetic of the wire on your tree.</p> \n\n<p>We will also be diving deeper into what it means to style a tree, different styles we can achieve, and how to set our tree up for success in the future! Hinoki Cypress is a great tree to work with and will look absolutely stunning in just a short time. Patience with these trees is required as they grow slowly and are less forgiving than other species. </p>\n\n<p>The trees we have selected are approximately 20-24” tall and set up to make beautiful bonsai. </p> \n\n<p>These trees were pre-potted into a 10” unglazed bonsai pot in Spring 2024, so they are very well established as bonsai. The recommended repotting window for these trees would be Spring 27’ (March-early May) - we will have repotting kits available for purchase that would suit these trees nicely.</p>\n\n<p><b>THESE ARE OUTDOOR TREES AND MUST REMAIN OUTSIDE THROUGHOUT THE YEAR (protected in the winter). THEY WILL DIE INSIDE.</b> </p>\n<p>We are offering you, for free, over-winter boarding for your trees in (after workshop date - April-May), our cold frame greenhouse. This will guarantee the best conditions for your tree throughout the cold winter months and ensure they are ready to thrive in your outdoor space next summer! All you have to do is coordinate with us for pickup in the spring.</p>"
           }
         },
         "7c4724ff-74d4-4ab8-9ee9-2343e612a6dd": {
@@ -92,13 +92,20 @@
         "442a4257-7708-4129-9a76-d1847e33e6d3": {
           "type": "text",
           "settings": {
-            "text": "<strong>Website:</strong>   {{ product.metafields.custom.venue_website.value }}"
+            "text": "Website:   {{ product.metafields.custom.venue_website.value }}"
           }
         },
         "a25afe7f-629f-40bb-9ca3-7d2fe2067be4": {
           "type": "description",
           "settings": {
             "is_tab": false
+          }
+        },
+        "text_Nqb9bi": {
+          "type": "text",
+          "repeater": "{{ product.metafields.shopify[\"plant-support-material\"].value }}",
+          "settings": {
+            "text": "{{ block.repeater.label.value }}"
           }
         },
         "73a2e633-d363-4207-bb18-f5fc33bd3c39": {
@@ -136,11 +143,12 @@
         "6221606c-23c3-468c-8807-08c9cb795999",
         "b124acb5-cf4c-488c-8c03-b8f2ee64496e",
         "0b4a6fdc-b3bb-42a7-b9bb-cdc7d747c2eb",
-        "7043a1f9-a0fc-4ab5-92f5-9826eda58f4c",
+        "custom_TGUwiB",
         "7c4724ff-74d4-4ab8-9ee9-2343e612a6dd",
         "d22d04bb-dcb2-4586-8ff4-d02daaf0874e",
         "442a4257-7708-4129-9a76-d1847e33e6d3",
         "a25afe7f-629f-40bb-9ca3-7d2fe2067be4",
+        "text_Nqb9bi",
         "73a2e633-d363-4207-bb18-f5fc33bd3c39",
         "7973a771-9e4a-4152-a6ac-8190884cc0f5",
         "408e8347-6c0d-4b16-b0d6-0cdc08192075",
