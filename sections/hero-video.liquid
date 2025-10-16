@@ -86,7 +86,7 @@
         {%- endunless -%}
         {%- if section.settings.subheading or section.settings.link -%}
           {%- unless section.settings.subheading == blank -%}
-            <div class="hero__subtitle">
+            <div class="hero__subtitle" style="opacity: .8;">
               <div class="animation-cropper"><div class="animation-contents">
                 {{ section.settings.subheading | escape }}
               </div></div>
