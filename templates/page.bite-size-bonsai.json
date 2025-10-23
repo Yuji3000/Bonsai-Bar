@@ -21,37 +21,7 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/mame.shop-2_copy.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "38c004ce-6f20-4824-996c-a371bfc677e2": {
-          "type": "image",
-          "settings": {
-            "title": "tiny tree zen",
-            "title_size": 80,
-            "subheading": "Team bonding with bonsai",
-            "link": "",
-            "link_text": "",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/042823_2401_5013681e-06ae-4836-852f-2592bba9bb83.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
-        "4f3cf763-04b0-41b5-8f66-820bb726a9d4": {
-          "type": "image",
-          "settings": {
-            "title": "Stress Free Planning",
-            "title_size": 80,
-            "subheading": "Let us handle the dirty work",
-            "link": "",
-            "link_text": "",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/Bonsai-Bar-Daugher_Dad.jpg",
+            "image": "shopify://shop_images/mame.card.photo_36f640e1-fdd4-4c91-8172-cac9aa291cf6.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0,
             "focal_point": "center center"
@@ -59,9 +29,7 @@
         }
       },
       "block_order": [
-        "template--14833082302545__6ce2c482-8447-4fcf-ad57-f4940505dc8c-1680702544a22f437b-0",
-        "38c004ce-6f20-4824-996c-a371bfc677e2",
-        "4f3cf763-04b0-41b5-8f66-820bb726a9d4"
+        "template--14833082302545__6ce2c482-8447-4fcf-ad57-f4940505dc8c-1680702544a22f437b-0"
       ],
       "custom_css": [
         ".parallax-container {position: absolute; top: 0%; left: 0; height: 100%; width: 100%;}"
