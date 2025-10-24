@@ -23,7 +23,7 @@
         "15eaa26a-5647-4535-8a8b-43857d675881": {
           "type": "text",
           "settings": {
-            "text": "Level: {{ product.metafields.custom.level.value }}"
+            "text": "Level: Holiday Workshop"
           }
         },
         "variant_picker": {
@@ -60,7 +60,7 @@
         "6221606c-23c3-468c-8807-08c9cb795999": {
           "type": "custom",
           "settings": {
-            "code": "<h4>Notice</h4><p>Please arrive at least <strong>15 MINUTES BEFORE</strong> your event to ensure your group can sit together, <b>ORDER FOOD AND DRINK</b>, and pick your <b>FAVORITE TREE & POT!</b> </p>"
+            "code": "<p><b>THESE ARE OUTDOOR TREES AND MUST REMAIN OUTSIDE THROUGHOUT THE YEAR (protected in the winter). THEY WILL DIE INSIDE.</b> </p>\n<h<p>Please arrive at least <strong>15 MINUTES BEFORE</strong> your event to ensure your group can sit together, <b>ORDER FOOD AND DRINK</b>, and pick your <b>FAVORITE TREE!</b> </p>"
           }
         },
         "b124acb5-cf4c-488c-8c03-b8f2ee64496e": {
