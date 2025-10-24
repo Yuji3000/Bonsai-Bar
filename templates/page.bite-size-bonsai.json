@@ -21,7 +21,7 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/mame.card.photo_36f640e1-fdd4-4c91-8172-cac9aa291cf6.jpg",
+            "image": "shopify://shop_images/Mame-3_aea1cd4f-343b-4900-827a-8b7e4cd8bf66.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0,
             "focal_point": "center center"
@@ -51,95 +51,34 @@
     "text_and_image_HXw8dw": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify://shop_images/Bonsai_Bar_Corporate_Events.jpg",
+        "image": "shopify://shop_images/mame.shop-7.jpg",
         "image_width": 700,
-        "subtitle": "strong roots",
-        "title": "Team Builders, Corporate Events and Virtual Events",
-        "text": "<p>Hosting a Bonsai Bar class gives your guests a meaningful experience that nurtures well-being and reduces stress. Our events promote healing, joy, and a positive impact on employees. Partnering with us connects your brand to wellness, mindfulness, and authentic connection.</p>",
+        "subtitle": "Pronounced \"mah-meh\"",
+        "title": "Mame— Japanese for bean",
+        "text": "<p>An even smaller classification of Bonsai, Mame fit into the palm of your hand and are often created from cuttings off of more mature bonsai trees. </p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
         "align_text": "left",
         "layout": "right",
         "divider": false
-      }
-    },
-    "advanced_content_VQMBAy": {
-      "type": "advanced-content",
-      "blocks": {
-        "image_YgtGwW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/PARLEAUX-25.jpg",
-            "link": "",
-            "width": "50%",
-            "alignment": "center"
-          }
-        },
-        "liquid_pCrBhG": {
-          "type": "liquid",
-          "settings": {
-            "code": "<h2>Bonsai ... anywhere!</h2><p>Bring Bonsai Bar’s expert instructors anywhere for a unique and impactful brand activation! Whether it’s to your office, your company's back lawn, or your countryside retreat —our team is ready to elevate your event. With coverage in 13 states and 16 markets (and counting), we can travel to bring our exciting, hands-on experience to your next event, product launch or activation. Let us create a memorable experience that leaves your audience feeling relaxed, inspired, and connected—no matter where you are!</p>",
-            "width": "50%",
-            "alignment": "top-middle"
-          }
-        }
-      },
-      "block_order": [
-        "image_YgtGwW",
-        "liquid_pCrBhG"
-      ],
-      "settings": {
-        "full_width": false,
-        "space_around": true
       }
     },
     "text_and_image_PiKtBP": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify://shop_images/BonsaiBar_AdStills-25.png",
-        "image2": "shopify://shop_images/PARLEAUX-3.jpg",
-        "image_width": 680,
-        "subtitle": "bonsai 101",
-        "title": "FUN for all",
-        "text": "<p>Bonsai Bar events are fun, inclusive and beginner-friendly. Each 120-minute workshop includes expert instruction, high-quality trees, and all necessary tools. Designed for success, our events also maintain an eco-friendly footprint. Group sessions typically accommodate 24 - 48 participants.</p>",
+        "image": "shopify://shop_images/Mame.In_hand.jpg",
+        "image2": "shopify://shop_images/mame.shop-2_copy_79ff23a7-ef4c-46e2-9896-2a89e50acc3c.jpg",
+        "image_width": 700,
+        "subtitle": "Skip right to the fun part!",
+        "title": "A taster",
+        "text": "<p>Participants will receive a potted mame and be guided through the process of pruning + styling their tree </p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "right",
+        "layout": "left",
         "divider": false
-      }
-    },
-    "advanced_content_gfMzE9": {
-      "type": "advanced-content",
-      "blocks": {
-        "image_h7JnqH": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/LIVE-WORKSHOP-GRAPHIC.jpg",
-            "link": "",
-            "width": "50%",
-            "alignment": "center"
-          }
-        },
-        "liquid_7QjU3G": {
-          "type": "liquid",
-          "settings": {
-            "code": "<h2>bonsai zoom teambuilders for 20+ guests!</h2><p>At Bonsai Bar, we’ve had the honor of facilitating some truly unique virtual bonsai team-building workshops for companies with teams spread across the country. 🌱\n\nHere’s how it works: First, we ship our beginner bonsai kits directly to your participants, ensuring everyone has what they need for the big day. Then, we coordinate with your in-house tech team to make sure the virtual experience runs smoothly. On the day of the workshop, our expert instructors can teach live from your HQ for in-person attendees or broadcast from our studio for fully remote teams.\n\nWe keep it interactive, with multiple team members facilitating breakout sessions to ensure everyone gets personalized guidance. And just like in our in-person classes, each participant’s tree is covered by our Beginner Tree Guarantee, so they can feel confident about their new bonsai journey.\n\nPerfect for groups of 20 to 60 participants.",
-            "width": "50%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "image_h7JnqH",
-        "liquid_7QjU3G"
-      ],
-      "name": "t:sections.advanced-content.presets.custom_content.name",
-      "settings": {
-        "full_width": false,
-        "space_around": true
       }
     },
     "faq_aRb6Rg": {
@@ -279,57 +218,6 @@
         "divider": false
       }
     },
-    "4d09e01a-57de-4ff4-af5a-e22eee49d64a": {
-      "type": "text-columns",
-      "blocks": {
-        "template--14866561794129__4d09e01a-57de-4ff4-af5a-e22eee49d64a-168735385374485d4f-0": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify://shop_images/PARLEAUX-15.jpg",
-            "image_width": 650,
-            "title": "Say cheese!",
-            "text": "<p>Instagrammable smiles for miles. Low pressure—great vibes.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "template--14866561794129__4d09e01a-57de-4ff4-af5a-e22eee49d64a-168735385374485d4f-1": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify://shop_images/Repot_Kit.jpg",
-            "image_width": 400,
-            "title": "A hobby for life",
-            "text": "<p>Optional add-ons are available to enhance your class, providing  keepsakes for your guests!</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "template--14866561794129__4d09e01a-57de-4ff4-af5a-e22eee49d64a-168735385374485d4f-2": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify://shop_images/042823_1448_3745fa81-a18b-45e2-aa25-9b8fcbf6c006.jpg",
-            "image_width": 650,
-            "title": "A traveling forest",
-            "text": "<p>Our planning staff will help you select from more than 200 Venues—or bring the adventure straight to you!</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--14866561794129__4d09e01a-57de-4ff4-af5a-e22eee49d64a-168735385374485d4f-0",
-        "template--14866561794129__4d09e01a-57de-4ff4-af5a-e22eee49d64a-168735385374485d4f-1",
-        "template--14866561794129__4d09e01a-57de-4ff4-af5a-e22eee49d64a-168735385374485d4f-2"
-      ],
-      "settings": {
-        "title": "",
-        "align_text": "center",
-        "divider": false
-      }
-    },
     "rich_text_XyBM79": {
       "type": "rich-text",
       "blocks": {
@@ -401,14 +289,11 @@
     "6ce2c482-8447-4fcf-ad57-f4940505dc8c",
     "main",
     "text_and_image_HXw8dw",
-    "advanced_content_VQMBAy",
     "text_and_image_PiKtBP",
-    "advanced_content_gfMzE9",
     "faq_aRb6Rg",
     "051634a5-4e3e-4d7c-82c7-1290c849dcda",
     "42066751-0bf7-4161-be10-23662ccbf9bf",
     "be6542ff-1662-4bd4-9e94-2087fc1ebdb4",
-    "4d09e01a-57de-4ff4-af5a-e22eee49d64a",
     "rich_text_XyBM79",
     "a31d695d-f15a-49b3-a990-2e5772f840a8",
     "cc8c0487-2291-4984-b775-702d3e91a886"

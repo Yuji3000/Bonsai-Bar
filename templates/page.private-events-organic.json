@@ -174,97 +174,6 @@
         "space_around": true
       }
     },
-    "faq_aRb6Rg": {
-      "type": "faq",
-      "blocks": {
-        "question_JQAtPU": {
-          "type": "question",
-          "settings": {
-            "title": "Can you do a Zoom Bonsai Class? My team is WFH and my company is spread out.",
-            "text": "<p>We’ll ship everything your team needs for the class, then log in together for a live, interactive workshop led by our expert instructors. Breakout sessions provide personalized guidance, making it a memorable and engaging shared experience.</p>"
-          }
-        },
-        "question_WHdfRX": {
-          "type": "question",
-          "settings": {
-            "title": "Can I have a private event at my house? Where will you go for an event?",
-            "text": "<p>If your home is within one of our Bonsai Bar regions, hosting a private event could be an amazing idea!</p><p>With 20 to 30 friends, you can turn your backyard, patio, or living room into the ultimate pop-up bonsai bar — complete with drinks, laughs, and tiny trees. It's a party <em>and</em> everyone leaves with a wonderful little tree they made themselves. 🌱</p><p>Private events do require a minimum booking of 20 guests, but trust us — once you start inviting, you’ll be surprised how fast your guest list grows. Our team can help you plan the perfect night and make it ridiculously easy — all you need to do is clear a little space and pop the corks.</p>"
-          }
-        },
-        "question_ckrREi": {
-          "type": "question",
-          "settings": {
-            "title": "Would you host a small group of us for a private event?",
-            "text": "<p>If your stock portfolio is booming and you’re dreaming of a super intimate night with a few friends or co-workers— we can totally do that!<br/><br/>However, our private events have a minimum billing based on <strong>20 guests</strong>, so it might be a little more <em>platinum card</em> than you were hoping.</p><p>In that case, we highly recommend buying six tickets to one of our public classes instead. Make a night of it: take your crew out to dinner first, then arrive early enough to snag six seats together.<br/><br/>With a little advance planning, our Bonsai Bar team can even help coordinate the seating — and maybe even keep the whole thing a surprise. (We love a good surprise.)</p>"
-          }
-        },
-        "question_UzTxpT": {
-          "type": "question",
-          "settings": {
-            "title": "Will you do a Bar Mitzvah/Bat Mitzvah for an anime-obsessed kid?",
-            "text": "<p>Please. We would LOVE this.  Our teachers would have the greatest rock, paper, scissors tournament in history to win the opportunity to teach your class. </p>"
-          }
-        },
-        "question_wM8tT3": {
-          "type": "question",
-          "settings": {
-            "title": "Will you come to our office?",
-            "text": "<p>Yes! This is exactly what we do during the day — plan events, teach corporate classes, water our trees, and soak up some sunlight with them. Please invite us to your office! </p><p>Ask for our brochure — it's packed with all the big fancy names, companies and institutions that keep inviting us back for more bonsai magic.</p>"
-          }
-        },
-        "question_46EgNa": {
-          "type": "question",
-          "settings": {
-            "title": "What if I’m outside of the regions you serve?",
-            "text": "<p>Let’s talk travel fees! We’ll hop on a plane — tiny trees love to fly! ✈️ We'll just need a little extra for travel expenses on top of our usual fees, because trees (and Bonsai instructors) love a good adventure.</p>"
-          }
-        },
-        "question_zrAhrq": {
-          "type": "question",
-          "settings": {
-            "title": "Can you do the class in the park behind our office?",
-            "text": "<p>Absolutely! We just need tables and chairs for everyone. Don’t worry — we bring fancy tablecloths to class up even the most battle-worn Costco tables.</p>"
-          }
-        },
-        "question_rtFqXH": {
-          "type": "question",
-          "settings": {
-            "title": "Can this be a green initiative for my company?",
-            "text": "<p>Hosting a Bonsai Bar class is a meaningful way to bring sustainability and green learning to your company. One of our signature trees, the Portulacaria afra, is celebrated for its carbon-sequestering abilities — it's even used in South Africa to restore degraded landscapes and absorb CO₂. As a drought-tolerant succulent, it supports low-impact gardening and helps improve indoor air quality. Invite us in to lead a class, and we’ll share even more about the incredible environmental benefits of bonsai.</p>"
-          }
-        },
-        "question_UAGCiK": {
-          "type": "question",
-          "settings": {
-            "title": "What if I want to host a corporate event for more than 50 people?",
-            "text": "<p>Ask us about our new ‘Bite-Size Bonsai’ event — perfect for big groups! We just launched it, and big companies are already loving it. Great for kids too! Minimum group size is 50, and we require at least 60 days' notice to book.</p>"
-          }
-        },
-        "question_8HkngL": {
-          "type": "question",
-          "settings": {
-            "title": "What about a Bonsai Event for my school?",
-            "text": "<p><strong>Bite-Size Bonsai: A New Life Science Enrichment Opportunity</strong></p><p>We are excited to offer a new program designed to support Life Science education through a hands-on, creative experience.</p><p>Ideal for students ages 8 and up, this one-hour activity introduces key concepts in plant biology and sustainability, while encouraging creativity and engagement.<br/><br/>Programs require a minimum of 60 days’ lead time to schedule.</p><p>When we connect, we’ll review your school’s purchase order process, discuss your educational goals, and ensure our program is aligned to meet the needs of diverse learners.</p><p>We would be honored to help enrich your Life Science curriculum with this memorable and meaningful experience.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "question_JQAtPU",
-        "question_WHdfRX",
-        "question_ckrREi",
-        "question_UzTxpT",
-        "question_wM8tT3",
-        "question_46EgNa",
-        "question_zrAhrq",
-        "question_rtFqXH",
-        "question_UAGCiK",
-        "question_8HkngL"
-      ],
-      "name": "t:sections.faq.presets.faq.name",
-      "settings": {
-        "title": "FAQs"
-      }
-    },
     "051634a5-4e3e-4d7c-82c7-1290c849dcda": {
       "type": "rich-text",
       "blocks": {
@@ -436,7 +345,6 @@
     "advanced_content_VQMBAy",
     "text_and_image_PiKtBP",
     "advanced_content_gfMzE9",
-    "faq_aRb6Rg",
     "051634a5-4e3e-4d7c-82c7-1290c849dcda",
     "42066751-0bf7-4161-be10-23662ccbf9bf",
     "be6542ff-1662-4bd4-9e94-2087fc1ebdb4",
