@@ -12,21 +12,6 @@
     "6ce2c482-8447-4fcf-ad57-f4940505dc8c": {
       "type": "slideshow",
       "blocks": {
-        "template--14833082302545__6ce2c482-8447-4fcf-ad57-f4940505dc8c-1680702544a22f437b-0": {
-          "type": "image",
-          "settings": {
-            "title": "Grow Together",
-            "title_size": 60,
-            "subheading": "Corporate & Private Events",
-            "link": "",
-            "link_text": "",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/Notion_TorchCrown9.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
-        },
         "38c004ce-6f20-4824-996c-a371bfc677e2": {
           "type": "image",
           "settings": {
@@ -41,27 +26,10 @@
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
-        },
-        "4f3cf763-04b0-41b5-8f66-820bb726a9d4": {
-          "type": "image",
-          "settings": {
-            "title": "Stress Free Planning",
-            "title_size": 80,
-            "subheading": "Let us handle the dirty work",
-            "link": "",
-            "link_text": "",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/Bonsai-Bar-Daugher_Dad.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 0,
-            "focal_point": "center center"
-          }
         }
       },
       "block_order": [
-        "template--14833082302545__6ce2c482-8447-4fcf-ad57-f4940505dc8c-1680702544a22f437b-0",
-        "38c004ce-6f20-4824-996c-a371bfc677e2",
-        "4f3cf763-04b0-41b5-8f66-820bb726a9d4"
+        "38c004ce-6f20-4824-996c-a371bfc677e2"
       ],
       "custom_css": [
         ".parallax-container {position: absolute; top: 0%; left: 0; height: 100%; width: 100%;}"
@@ -85,45 +53,15 @@
       "settings": {
         "image": "shopify://shop_images/Bonsai_Bar_Corporate_Events.jpg",
         "image_width": 700,
-        "subtitle": "strong roots",
-        "title": "Team Builders, Corporate Events and Virtual Events",
-        "text": "<p>Hosting a Bonsai Bar class gives your guests a meaningful experience that nurtures well-being and reduces stress. Our events promote healing, joy, and a positive impact on employees. Partnering with us connects your brand to wellness, mindfulness, and authentic connection.</p>",
+        "subtitle": "Full length workshops",
+        "title": "Team Builders & Corporate Events",
+        "text": "<p>Our </p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
         "align_text": "left",
         "layout": "right",
         "divider": false
-      }
-    },
-    "advanced_content_VQMBAy": {
-      "type": "advanced-content",
-      "blocks": {
-        "image_YgtGwW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/PARLEAUX-25.jpg",
-            "link": "",
-            "width": "50%",
-            "alignment": "center"
-          }
-        },
-        "liquid_pCrBhG": {
-          "type": "liquid",
-          "settings": {
-            "code": "<h2>Bonsai ... anywhere!</h2><p>Bring Bonsai Bar’s expert instructors anywhere for a unique and impactful brand activation! Whether it’s to your office, your company's back lawn, or your countryside retreat —our team is ready to elevate your event. With coverage in 13 states and 16 markets (and counting), we can travel to bring our exciting, hands-on experience to your next event, product launch or activation. Let us create a memorable experience that leaves your audience feeling relaxed, inspired, and connected—no matter where you are!</p>",
-            "width": "50%",
-            "alignment": "top-middle"
-          }
-        }
-      },
-      "block_order": [
-        "image_YgtGwW",
-        "liquid_pCrBhG"
-      ],
-      "settings": {
-        "full_width": false,
-        "space_around": true
       }
     },
     "text_and_image_PiKtBP": {
@@ -134,12 +72,28 @@
         "image_width": 680,
         "subtitle": "bonsai 101",
         "title": "FUN for all",
-        "text": "<p>Bonsai Bar events are fun, inclusive and beginner-friendly. Each 120-minute workshop includes expert instruction, high-quality trees, and all necessary tools. Designed for success, our events also maintain an eco-friendly footprint. Group sessions typically accommodate 24 - 48 participants.</p>",
+        "text": "<p>Bonsai Bar events are fun, inclusive and beginner-friendly. Each 120-minute workshop includes expert instruction, high-quality trees, and all necessary tools. </p><p>Designed for success, our events also maintain an eco-friendly footprint. Group sessions typically accommodate 24 - 48 participants.</p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
         "align_text": "left",
         "layout": "right",
+        "divider": false
+      }
+    },
+    "text_and_image_h67cEJ": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify://shop_images/mame.card.photo_36f640e1-fdd4-4c91-8172-cac9aa291cf6.jpg",
+        "image_width": 700,
+        "subtitle": "A Bonsai BAr Taster",
+        "title": "Bite-Sized Bonsai",
+        "text": "<p>Mame (pronounced mah-meh) are mini bonsai that fit into the palm of your hand! <br/><br/>Designed for larger groups with time constraits, this </p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
         "divider": false
       }
     },
@@ -222,49 +176,6 @@
     },
     "4d09e01a-57de-4ff4-af5a-e22eee49d64a": {
       "type": "text-columns",
-      "blocks": {
-        "template--14866561794129__4d09e01a-57de-4ff4-af5a-e22eee49d64a-168735385374485d4f-0": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify://shop_images/PARLEAUX-15.jpg",
-            "image_width": 650,
-            "title": "Say cheese!",
-            "text": "<p>Instagrammable smiles for miles. Low pressure—great vibes.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "template--14866561794129__4d09e01a-57de-4ff4-af5a-e22eee49d64a-168735385374485d4f-1": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify://shop_images/Repot_Kit.jpg",
-            "image_width": 400,
-            "title": "A hobby for life",
-            "text": "<p>Optional add-ons are available to enhance your class, providing  keepsakes for your guests!</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "template--14866561794129__4d09e01a-57de-4ff4-af5a-e22eee49d64a-168735385374485d4f-2": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify://shop_images/042823_1448_3745fa81-a18b-45e2-aa25-9b8fcbf6c006.jpg",
-            "image_width": 650,
-            "title": "A traveling forest",
-            "text": "<p>Our planning staff will help you select from more than 200 Venues—or bring the adventure straight to you!</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--14866561794129__4d09e01a-57de-4ff4-af5a-e22eee49d64a-168735385374485d4f-0",
-        "template--14866561794129__4d09e01a-57de-4ff4-af5a-e22eee49d64a-168735385374485d4f-1",
-        "template--14866561794129__4d09e01a-57de-4ff4-af5a-e22eee49d64a-168735385374485d4f-2"
-      ],
       "settings": {
         "title": "",
         "align_text": "center",
@@ -342,8 +253,8 @@
     "6ce2c482-8447-4fcf-ad57-f4940505dc8c",
     "main",
     "text_and_image_HXw8dw",
-    "advanced_content_VQMBAy",
     "text_and_image_PiKtBP",
+    "text_and_image_h67cEJ",
     "advanced_content_gfMzE9",
     "051634a5-4e3e-4d7c-82c7-1290c849dcda",
     "42066751-0bf7-4161-be10-23662ccbf9bf",
