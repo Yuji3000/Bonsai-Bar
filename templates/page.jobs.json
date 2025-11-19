@@ -140,20 +140,29 @@
         "divider": false
       }
     },
-    "96ea8365-3b5f-4653-9a38-6acf4a62a57a": {
-      "type": "rich-text",
+    "advanced_content_4nGUpf": {
+      "type": "advanced-content",
       "blocks": {
-        "template--14832266641489__96ea8365-3b5f-4653-9a38-6acf4a62a57a-1678742458e6ccb7d5-1": {
-          "type": "text",
+        "liquid_GqH47W": {
+          "type": "liquid",
           "settings": {
-            "enlarge_text": true,
-            "text": "<p>If you are interested working at Bonsai Bar, shoot us an email and let us know why you are excited to teach bonsai with us! <br/></p><p>Submit your email at: <em><strong>teach@bonsaibar.com</strong></em></p>"
+            "code": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/embed/v2.js\"></script>\n<script>\n  hbspt.forms.create({\n    portalId: \"22530467\",\n    formId: \"d2db84f6-56ca-42a7-8540-7cb7966eb630\",\n    region: \"na1\"\n  });\n</script>",
+            "width": "100%",
+            "alignment": "center"
           }
         }
       },
       "block_order": [
-        "template--14832266641489__96ea8365-3b5f-4653-9a38-6acf4a62a57a-1678742458e6ccb7d5-1"
+        "liquid_GqH47W"
       ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "96ea8365-3b5f-4653-9a38-6acf4a62a57a": {
+      "type": "rich-text",
       "settings": {
         "align_text": "center",
         "narrow_column": true,
@@ -202,6 +211,7 @@
     "60281f81-a1f9-43c3-a617-01890183779f",
     "e1b49669-e742-4363-a51c-2034dcd0b47a",
     "95d0a351-5662-4644-b43b-c8eee0d88296",
+    "advanced_content_4nGUpf",
     "96ea8365-3b5f-4653-9a38-6acf4a62a57a",
     "rich_text_wknkWD"
   ]
