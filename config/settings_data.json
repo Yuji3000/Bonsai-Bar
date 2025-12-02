@@ -60,7 +60,7 @@
     "enable_product_reviews": true,
     "cart_type": "drawer",
     "cart_icon": "cart",
-    "cart_notes_enable": false,
+    "cart_notes_enable": true,
     "cart_terms_conditions_enable": false,
     "social_facebook_link": "https://www.facebook.com/thebonsaibar/",
     "social_instagram_link": "https://www.instagram.com/thebonsaibar/",
