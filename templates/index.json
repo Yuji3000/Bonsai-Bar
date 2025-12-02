@@ -55,9 +55,9 @@
         "slot_2_type": "collection",
         "slot_2_product": "",
         "slot_2_collection": "homebrew-kits",
-        "slot_3_type": "product",
+        "slot_3_type": "collection",
         "slot_3_product": "tiny-tree-cascade-t-shirt",
-        "slot_3_collection": "",
+        "slot_3_collection": "apparel",
         "slot_4_type": "collection",
         "slot_4_product": "tiny-tree-cascade-t-shirt",
         "slot_4_collection": "supplies"
