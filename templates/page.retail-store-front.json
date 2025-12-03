@@ -78,7 +78,7 @@
       "type": "collection-banner",
       "name": "Collection Banner",
       "settings": {
-        "banner_image": "shopify://shop_images/ApparelBanner.png",
+        "banner_image": "shopify://shop_images/ApparelBanner.jpg",
         "heading": "APPAREL",
         "description": "Rep your Bonsai Bar pride with our awesome merch!",
         "button_text": "Explore Bonsai Bar Apparel",
@@ -92,7 +92,7 @@
       "type": "collection-banner",
       "name": "Collection Banner",
       "settings": {
-        "banner_image": "shopify://shop_images/GiftcardBanner.png",
+        "banner_image": "shopify://shop_images/giftcard-banner-dec-2025.jpg",
         "heading": "GIFT CARDS",
         "description": "What do you gift the bonsai lover in your life? This!",
         "button_text": "Explore Gift Cards",
