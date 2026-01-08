@@ -53,7 +53,7 @@
         "liquid_m8dgJi": {
           "type": "liquid",
           "settings": {
-            "code": "<div class=\"fareharbor-state-embed\" id=\"fh-embed-holder\"></div>",
+            "code": "<div class=\"fareharbor-state-embed\"></div>",
             "width": "100%",
             "alignment": "center"
           }

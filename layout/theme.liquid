@@ -11,28 +11,45 @@
     </style>
     <script>
 (function () {
-  var path = window.location.pathname.toLowerCase();
+  function loadFareHarbor() {
+    var path = window.location.pathname.toLowerCase();
 
-  var flow =
-    path.includes('/collections/collection-ca') ? '1515280' :
-    path.includes('/collections/colorado') ? '1515273' :
-    path.includes('/collections/collection-ct') ? '1515276' :
-    path.includes('/collections/florida') ? '1515274' :
-    path.includes('/collections/collection-la') ? '1515275' :
-    path.includes('/collections/collection-ma') ? '1534520' :
-    path.includes('/collections/collection-me') ? '1534521' :
-    path.includes('/collections/collection-nj') ? '1515279' :
-    path.includes('/collections/ma-repotting') ? '1509844' :
-    path.includes('/collections/ri-repotting') ? '1509844' :
-    path.includes('/collections/tx-repotting') ? '1509844' :
-    path.includes('/collections/ca-repotting') ? '1509844' :
-'1509844';
+    var flow =
+      path.includes('/collections/collection-ca') ? '1515280' :
+      path.includes('/collections/colorado') ? '1515273' :
+      path.includes('/collections/collection-ct') ? '1515276' :
+      path.includes('/collections/florida') ? '1515274' :
+      path.includes('/collections/collection-la') ? '1515275' :
+      path.includes('/collections/collection-ma') ? '1534520' :
+      path.includes('/collections/collection-me') ? '1534521' :
+      path.includes('/collections/collection-nj') ? '1515279' :
+      path.includes('/collections/ma-repotting') ? '1509844' :
+      path.includes('/collections/ri-repotting') ? '1509844' :
+      path.includes('/collections/tx-repotting') ? '1509844' :
+      path.includes('/collections/ca-repotting') ? '1509844' :
+      '1509844';
 
-  var src = 'https://fareharbor.com/embeds/script/items/bonsaibar/?full-items=yes&fallback=simple&flow=' + encodeURIComponent(flow);
+    var src =
+      'https://fareharbor.com/embeds/script/items/bonsaibar/?full-items=yes&fallback=simple&flow=' +
+      encodeURIComponent(flow);
 
-  var s = document.createElement('script');
-  s.src = src;
-  document.getElementById('fh-embed-holder').appendChild(s);
+    // Prevent double-load
+    if (window.__FH_EMBED_LOADED__) return;
+    window.__FH_EMBED_LOADED__ = true;
+
+    var s = document.createElement('script');
+    s.src = src;
+    s.async = true;
+
+    document.head.appendChild(s);
+  }
+
+  // If DOM is already ready, load immediately
+  if (document.readyState === 'interactive' || document.readyState === 'complete') {
+    loadFareHarbor();
+  } else {
+    document.addEventListener('DOMContentLoaded', loadFareHarbor);
+  }
 })();
 </script>
   <!-- Google tag (gtag.js) -->
