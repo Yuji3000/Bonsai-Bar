@@ -53,7 +53,7 @@
         "liquid_m8dgJi": {
           "type": "liquid",
           "settings": {
-            "code": "<!-- FareHarbor item grid of flow #1515280 -->\n<script src=\"https://fareharbor.com/embeds/script/items/bonsaibar/?full-items=yes&fallback=simple&flow=1515280\"></script>",
+            "code": "<div class=\"fareharbor-state-embed\" id=\"fh-embed-holder\"></div>\n\n<script>\n(function () {\n  var path = window.location.pathname.toLowerCase();\n\n  var flow =\n    path.includes('/collections/collection-ca') ? '1515280' :\n    path.includes('/collections/colorado') ? '1515273' :\n    path.includes('/collections/collection-ct') ? '1515276' :\n    path.includes('/collections/florida') ? '1515274' :\n    path.includes('/collections/collection-la') ? '1515275' :\n    path.includes('/collections/collection-ma') ? '1534520' :\n    path.includes('/collections/collection-me') ? '1534521' :\n    path.includes('/collections/collection-nj') ? '1515279' :\n    path.includes('/collections/ma-repotting') ? '1509844' :\n    path.includes('/collections/ri-repotting') ? '1509844' :\n    path.includes('/collections/tx-repotting') ? '1509844' :\n    path.includes('/collections/ca-repotting') ? '1509844' :\n'1509844';\n\n  var src = 'https://fareharbor.com/embeds/script/items/bonsaibar/?full-items=yes&fallback=simple&flow=' + encodeURIComponent(flow);\n\n  var s = document.createElement('script');\n  s.src = src;\n  s.defer = true;\n\n  document.getElementById('fh-embed-holder').appendChild(s);\n})();\n</script>",
             "width": "100%",
             "alignment": "center"
           }
