@@ -1,0 +1,166 @@
+:root {
+  /*
+    Shopify note:
+    Do NOT point these at relative filenames here.
+    Set these via Liquid where you embed the script, e.g.:
+
+    <style>
+      #fh-store-locator {
+        --MARKER_ICON_URL: url("{{ 'fh-store-locator-marker.png' | asset_url }}");
+        --MARKER_ICON_ACTIVE_URL: url("{{ 'fh-store-locator-marker-active.png' | asset_url }}");
+      }
+    </style>
+  */
+  --MARKER_ICON_URL: none;
+  --MARKER_ICON_ACTIVE_URL: none;
+}
+
+#fh-store-locator {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  font-family: "Stencilla", serif !important;
+  overflow: hidden;
+  border: 2px solid #4d752c;
+  border-radius: 0.5rem;
+}
+
+#fh-store-locator .sidebar {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #ffffff;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+
+#fh-store-locator .map {
+  position: absolute;
+  left: 25%;
+  width: 75%;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+#fh-store-locator .marker {
+  background-image: var(--MARKER_ICON_URL);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 37px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#fh-store-locator .marker:hover {
+  opacity: 0.8;
+}
+
+#fh-store-locator .marker.active {
+  background-image: var(--MARKER_ICON_ACTIVE_URL);
+}
+
+#fh-store-locator .sidebar-title {
+  color: #4d752c;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+}
+
+#fh-store-locator #store-count {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#fh-store-locator .store-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  scroll-margin: 1.25rem 0 1.25rem 0;
+  background-color: #ffffff;
+  border: 2px solid #4d752c;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+#fh-store-locator .store-item:hover,
+#fh-store-locator .store-item.active {
+  background-color: #ffffff;
+}
+
+#fh-store-locator .store-name {
+  margin: 0 0 0.5rem 0;
+  color: #00473c;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+#fh-store-locator .store-details {
+  color: #00473c;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+#fh-store-locator .store-details > div {
+  margin-bottom: 0.25rem;
+}
+
+#fh-store-locator .store-details .label {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+#fh-store-locator #booking {
+  font-family: "Stencilla", serif;
+  font-weight: bold;
+}
+
+/* =========================
+   Mobile layout adjustments
+   ========================= */
+
+@media (max-width: 768px) {
+  #fh-store-locator {
+    display: flex;
+    flex-direction: column-reverse; /* map on top */
+    height: auto;
+    min-height: unset;
+  }
+
+  #fh-store-locator .map {
+    position: relative;
+    width: 100%;
+    height: 300px; /* map height on mobile */
+    left: 0;
+    top: 0;
+  }
+
+  #fh-store-locator .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    overflow-y: visible;
+    box-shadow: none;
+    padding: 1rem;
+  }
+
+  #fh-store-locator .store-item {
+    margin: 1rem 0;
+  }
+
+  #fh-store-locator .sidebar-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
