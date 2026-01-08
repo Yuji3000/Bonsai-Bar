@@ -49,19 +49,6 @@
     },
     "advanced_content_44nkH7": {
       "type": "advanced-content",
-      "blocks": {
-        "liquid_m8dgJi": {
-          "type": "liquid",
-          "settings": {
-            "code": "{%- assign flow = collection.metafields.custom.fareharbor_flow | default: '1509844' -%}\n\n<div class=\"fareharbor-state-embed\">\n  <script\n    src=\"https://fareharbor.com/embeds/script/items/bonsaibar/?full-items=yes&fallback=simple&flow={{ flow }}\"\n   >\n  </script>\n</div>",
-            "width": "100%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "liquid_m8dgJi"
-      ],
       "name": "t:sections.advanced-content.presets.custom_content.name",
       "settings": {
         "full_width": false,
