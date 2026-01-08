@@ -11,10 +11,10 @@
     </style>
     <script>
 (function () {
-  function loadFareHarbor() {
-    var path = window.location.pathname.toLowerCase();
+  function pickFlowFromPath(path) {
+    path = (path || '').toLowerCase();
 
-    var flow =
+    return (
       path.includes('/collections/collection-ca') ? '1515280' :
       path.includes('/collections/colorado') ? '1515273' :
       path.includes('/collections/collection-ct') ? '1515276' :
@@ -27,28 +27,43 @@
       path.includes('/collections/ri-repotting') ? '1509844' :
       path.includes('/collections/tx-repotting') ? '1509844' :
       path.includes('/collections/ca-repotting') ? '1509844' :
-      '1509844';
+      '1509844'
+    );
+  }
 
+  function injectFareHarbor() {
+    // Prevent double inject (Shopify can re-run scripts)
+    if (window.__FH_EMBED_INJECTED__) return;
+    window.__FH_EMBED_INJECTED__ = true;
+
+    var holder = document.getElementById('fh-embed-holder');
+    if (!holder) {
+      console.error('FH embed holder not found: #fh-embed-holder');
+      return;
+    }
+
+    var flow = pickFlowFromPath(window.location.pathname);
     var src =
       'https://fareharbor.com/embeds/script/items/bonsaibar/?full-items=yes&fallback=simple&flow=' +
       encodeURIComponent(flow);
 
-    // Prevent double-load
-    if (window.__FH_EMBED_LOADED__) return;
-    window.__FH_EMBED_LOADED__ = true;
-
     var s = document.createElement('script');
     s.src = src;
-    s.async = true;
 
-    document.head.appendChild(s);
+    // Important: for dynamically inserted scripts, async defaults to true.
+    // Set async=false so it behaves more like a normal inline placement.
+    s.async = false;
+
+    s.onload = function () { console.log('FareHarbor embed loaded:', src); };
+    s.onerror = function () { console.error('FareHarbor embed failed to load:', src); };
+
+    holder.appendChild(s);
   }
 
-  // If DOM is already ready, load immediately
-  if (document.readyState === 'interactive' || document.readyState === 'complete') {
-    loadFareHarbor();
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectFareHarbor);
   } else {
-    document.addEventListener('DOMContentLoaded', loadFareHarbor);
+    injectFareHarbor();
   }
 })();
 </script>
