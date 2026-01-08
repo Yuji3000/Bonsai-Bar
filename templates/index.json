@@ -134,7 +134,7 @@
         "liquid_gFhWCe": {
           "type": "liquid",
           "settings": {
-            "code": "<style>\n  /* Provide marker image URLs via Shopify asset pipeline */\n  #fh-store-locator {\n    --MARKER_ICON_URL: url(\"{{ 'fh-store-locator-marker.png' | asset_url }}\");\n    --MARKER_ICON_ACTIVE_URL: url(\"{{ 'fh-store-locator-marker-active.png' | asset_url }}\");\n  }\n</style>\n\n<script>\n  /* Provide absolute theme-asset URLs to the loader */\n  window.FH_STORE_LOCATOR_ASSETS = {\n    css: \"{{ 'fh-store-locator.embed.css' | asset_url }}\",\n    stores: \"{{ 'fh-store-locator.stores.js' | asset_url }}\",\n    app: \"{{ 'fh-store-locator.app.js' | asset_url }}\"\n  };\n</script>\n\n<script src=\"{{ 'fh-store-locator-embed.js' | asset_url }}\" defer></script>",
+            "code": "<style>\n  /* Provide marker image URLs via Shopify asset pipeline */\n  #fh-store-locator {\n    --MARKER_ICON_URL: url(\"{{ 'fh-store-locator-marker.png' | asset_url }}\");\n    --MARKER_ICON_ACTIVE_URL: url(\"{{ 'fh-store-locator-marker-active.png' | asset_url }}\");\n  }\n</style>\n\n<script>\n  /* Provide absolute theme-asset URLs to the loader */\n  window.FH_STORE_LOCATOR_ASSETS = {\n    css: \"{{ 'fh-store-locator.embed.css' | asset_url }}\",\n    stores: \"{{ 'fh-store-locator-stores.js' | asset_url }}\",\n    app: \"{{ 'fh-store-locator-app.js' | asset_url }}\"\n  };\n</script>\n\n<script src=\"{{ 'fh-store-locator-embed.js' | asset_url }}\" defer></script>",
             "width": "100%",
             "alignment": "center"
           }
