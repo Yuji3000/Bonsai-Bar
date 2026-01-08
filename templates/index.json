@@ -85,7 +85,7 @@
         "text_Wwr8qU"
       ],
       "custom_css": [
-        "div {position: relative; border-radius: 50px; background-color: #ffa238; padding-bottom: 20px; width: 100%;}",
+        "div {position: relative; border-radius: 50px; background-color: #ffa238; padding-bottom: 20px; width: 100%; text-align: left;}",
         "h2 {padding-top: 20px;}"
       ],
       "settings": {
@@ -128,43 +128,6 @@
         "parallax_direction": "top"
       }
     },
-    "advanced_content_R38aNq": {
-      "type": "advanced-content",
-      "blocks": {
-        "liquid_gFhWCe": {
-          "type": "liquid",
-          "settings": {
-            "code": "",
-            "width": "100%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "liquid_gFhWCe"
-      ],
-      "name": "t:sections.advanced-content.presets.custom_content.name",
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
-    },
-    "175441603940c9f009": {
-      "type": "apps",
-      "blocks": {
-        "klaviyo_reviews_featured_reviews_carousel_6a6j9J": {
-          "type": "shopify://apps/klaviyo-reviews/blocks/featured-reviews-carousel/db20e365-d984-4ac4-9655-e1588d951ca9",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "klaviyo_reviews_featured_reviews_carousel_6a6j9J"
-      ],
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
-    },
     "5c3783e6-c40f-411c-a121-88ede66ee45c": {
       "type": "testimonials",
       "blocks": {
@@ -202,6 +165,15 @@
             "testimonial": "<p>We went to Bonsai Bar at Trident Booksellers on 10 FEB 2022.  We had a great time, thank you so much. I highly recommend doing this.  Tim and Ben made it relaxing, funny and they were super helpful.</p>",
             "author": "Thomas",
             "author_info": "Middleton, MA"
+          }
+        },
+        "testimonial_NKDnEX": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
           }
         },
         "0fc758d5-36b3-463d-bd0d-13340be5efe4": {
@@ -246,6 +218,7 @@
         "2c268a08-d0ad-4e9d-a2d9-7011d70b2c0c",
         "16901e2d-26c7-49f6-abf2-957994d690b5",
         "972d4c45-0bfa-4804-bddc-b735a7e712a7",
+        "testimonial_NKDnEX",
         "0fc758d5-36b3-463d-bd0d-13340be5efe4",
         "048a1a4e-49be-40bc-964f-7eec3d35e190",
         "c64da953-e3ce-4e57-8ba4-2695cfed5887",
@@ -265,8 +238,6 @@
     "rich_text_G6wdAL",
     "0d9f85ca-456c-4038-a25e-e424dd6dc8f5",
     "background-image-text",
-    "advanced_content_R38aNq",
-    "175441603940c9f009",
     "5c3783e6-c40f-411c-a121-88ede66ee45c"
   ]
 }
