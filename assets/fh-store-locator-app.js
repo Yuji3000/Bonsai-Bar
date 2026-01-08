@@ -17,7 +17,7 @@ window.BBStoreLocatorInit = function ({ root, baseUrl }) {
   function initMap() {
     map = new mapboxgl.Map({
       container: mapEl,
-      center: [-96.9, 43.8],
+      center: [-96.9, 40.8],
       zoom: 3.5,
       config: {
         basemap: { theme: 'default' }
