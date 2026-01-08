@@ -53,7 +53,7 @@
         "liquid_m8dgJi": {
           "type": "liquid",
           "settings": {
-            "code": "{%- assign flow = '1509844' -%}\n\n{%- case collection.handle -%}\n  {%- when 'collection-ca' -%}{%- assign flow = '1515280' -%}\n  {%- when 'colorado' -%}{%- assign flow = '1515273' -%}\n  {%- when 'collection-ct' -%}{%- assign flow = '1515276' -%}\n  {%- when 'florida' -%}{%- assign flow = '1515274' -%}\n  {%- when 'collection-la' -%}{%- assign flow = '1515275' -%}\n  {%- when 'collection-ma' -%}{%- assign flow = '1534520' -%}\n  {%- when 'collection-me' -%}{%- assign flow = '1534521' -%}\n  {%- when 'collection-nj' -%}{%- assign flow = '1515279' -%}\n  {%- when 'ma-repotting' -%}{%- assign flow = '1509844' -%}\n  {%- when 'ri-repotting' -%}{%- assign flow = '1509844' -%}\n  {%- when 'tx-repotting' -%}{%- assign flow = '1509844' -%}\n  {%- when 'ca-repotting' -%}{%- assign flow = '1509844' -%}\n{%- endcase -%}\n\n<div class=\"fareharbor-state-embed\">\n  <script src=\"https://fareharbor.com/embeds/script/items/bonsaibar/?full-items=yes&fallback=simple&flow={{ flow }}\" defer></script>\n</div>",
+            "code": "{%- assign flow = collection.metafields.custom.fareharbor_flow | default: '1509844' -%}\n\n<div class=\"fareharbor-state-embed\">\n  <script\n    src=\"https://fareharbor.com/embeds/script/items/bonsaibar/?full-items=yes&fallback=simple&flow={{ flow }}\"\n    defer>\n  </script>\n</div>",
             "width": "100%",
             "alignment": "center"
           }
