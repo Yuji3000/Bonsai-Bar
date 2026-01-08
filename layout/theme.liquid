@@ -9,64 +9,7 @@
     visibility: hidden !important;
   }
     </style>
-    <script>
-(function () {
-  function pickFlowFromPath(path) {
-    path = (path || '').toLowerCase();
-
-    return (
-      path.includes('/collections/collection-ca') ? '1515280' :
-      path.includes('/collections/colorado') ? '1515273' :
-      path.includes('/collections/collection-ct') ? '1515276' :
-      path.includes('/collections/florida') ? '1515274' :
-      path.includes('/collections/collection-la') ? '1515275' :
-      path.includes('/collections/collection-ma') ? '1534520' :
-      path.includes('/collections/collection-me') ? '1534521' :
-      path.includes('/collections/collection-nj') ? '1515279' :
-      path.includes('/collections/ma-repotting') ? '1509844' :
-      path.includes('/collections/ri-repotting') ? '1509844' :
-      path.includes('/collections/tx-repotting') ? '1509844' :
-      path.includes('/collections/ca-repotting') ? '1509844' :
-      '1509844'
-    );
-  }
-
-  function injectFareHarbor() {
-    // Prevent double inject (Shopify can re-run scripts)
-    if (window.__FH_EMBED_INJECTED__) return;
-    window.__FH_EMBED_INJECTED__ = true;
-
-    var holder = document.getElementById('fh-embed-holder');
-    if (!holder) {
-      console.error('FH embed holder not found: #fh-embed-holder');
-      return;
-    }
-
-    var flow = pickFlowFromPath(window.location.pathname);
-    var src =
-      'https://fareharbor.com/embeds/script/items/bonsaibar/?full-items=yes&fallback=simple&flow=' +
-      encodeURIComponent(flow);
-
-    var s = document.createElement('script');
-    s.src = src;
-
-    // Important: for dynamically inserted scripts, async defaults to true.
-    // Set async=false so it behaves more like a normal inline placement.
-    s.async = false;
-
-    s.onload = function () { console.log('FareHarbor embed loaded:', src); };
-    s.onerror = function () { console.error('FareHarbor embed failed to load:', src); };
-
-    holder.appendChild(s);
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', injectFareHarbor);
-  } else {
-    injectFareHarbor();
-  }
-})();
-</script>
+    
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11316296772"></script>
   <script>
