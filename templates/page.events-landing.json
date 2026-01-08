@@ -96,7 +96,7 @@
         "liquid_U8jRha": {
           "type": "liquid",
           "settings": {
-            "code": "<!-- FareHarbor item grid of flow #1509844 -->\n<script src=\"https://fareharbor.com/embeds/script/items/bonsaibar/?full-items=yes&fallback=simple&flow=1509844\"></script>",
+            "code": "",
             "width": "100%",
             "alignment": "center"
           }
