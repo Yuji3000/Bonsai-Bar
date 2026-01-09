@@ -48,10 +48,10 @@
         "autoplay_speed": 5
       }
     },
-    "rich_text_44rE66": {
+    "rich_text_BNbmbC": {
       "type": "rich-text",
       "blocks": {
-        "text_Xw4pUX": {
+        "text_ByX68G": {
           "type": "text",
           "settings": {
             "enlarge_text": true,
@@ -60,63 +60,170 @@
         }
       },
       "block_order": [
-        "text_Xw4pUX"
+        "text_ByX68G"
       ],
-      "name": "t:sections.rich-text.presets.rich_text.name",
       "settings": {
         "align_text": "center",
         "narrow_column": true,
         "divider": false
       }
     },
-    "advanced_content_LGDdjH": {
-      "type": "advanced-content",
+    "featured_collections_ehCn78": {
+      "type": "featured-collections",
       "blocks": {
-        "liquid_tkfg78": {
-          "type": "liquid",
+        "collection_n9Ydbp": {
+          "type": "collection",
           "settings": {
-            "code": "",
-            "width": "100%",
-            "alignment": "center"
+            "collection": "socal",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_zEtKKf": {
+          "type": "collection",
+          "settings": {
+            "collection": "colorado",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_Y763iK": {
+          "type": "collection",
+          "settings": {
+            "collection": "florida",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_yETtrh": {
+          "type": "collection",
+          "settings": {
+            "collection": "collection-ct",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_nWxzfb": {
+          "type": "collection",
+          "settings": {
+            "collection": "collection-la",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_FPzR4A": {
+          "type": "collection",
+          "settings": {
+            "collection": "collection-ma",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_DfQ7Vm": {
+          "type": "collection",
+          "settings": {
+            "collection": "collection-me",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_4fTzBm": {
+          "type": "collection",
+          "settings": {
+            "collection": "collection-nh",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_ANwHLw": {
+          "type": "collection",
+          "settings": {
+            "collection": "collection-nj",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_c8xxbT": {
+          "type": "collection",
+          "settings": {
+            "collection": "nyc-collection",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_QWyYfL": {
+          "type": "collection",
+          "settings": {
+            "collection": "collection-ny-state",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_xjbNjy": {
+          "type": "collection",
+          "settings": {
+            "collection": "collection-pa",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_rDyDUE": {
+          "type": "collection",
+          "settings": {
+            "collection": "collection-ri",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_Pdmkb8": {
+          "type": "collection",
+          "settings": {
+            "collection": "collection-tx",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_MkPPC3": {
+          "type": "collection",
+          "settings": {
+            "collection": "washington",
+            "focal_point": "center center",
+            "size": "wide"
           }
         }
       },
       "block_order": [
-        "liquid_tkfg78"
+        "collection_n9Ydbp",
+        "collection_zEtKKf",
+        "collection_Y763iK",
+        "collection_yETtrh",
+        "collection_nWxzfb",
+        "collection_FPzR4A",
+        "collection_DfQ7Vm",
+        "collection_4fTzBm",
+        "collection_ANwHLw",
+        "collection_c8xxbT",
+        "collection_QWyYfL",
+        "collection_xjbNjy",
+        "collection_rDyDUE",
+        "collection_Pdmkb8",
+        "collection_MkPPC3"
       ],
-      "name": "t:sections.advanced-content.presets.custom_content.name",
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
-    },
-    "advanced_content_FWRDab": {
-      "type": "advanced-content",
-      "blocks": {
-        "liquid_U8jRha": {
-          "type": "liquid",
-          "settings": {
-            "code": "",
-            "width": "100%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "liquid_U8jRha"
+      "custom_css": [
+        "h2 {font-family: arial; font-size: medium;}"
       ],
-      "name": "t:sections.advanced-content.presets.custom_content.name",
       "settings": {
-        "full_width": false,
-        "space_around": true
+        "card_style": "product",
+        "title": "",
+        "divider": false,
+        "enable_gutter": false
       }
     }
   },
   "order": [
     "main",
     "slideshow_irnnKe",
-    "rich_text_44rE66",
-    "advanced_content_LGDdjH",
-    "advanced_content_FWRDab"
+    "rich_text_BNbmbC",
+    "featured_collections_ehCn78"
   ]
 }
