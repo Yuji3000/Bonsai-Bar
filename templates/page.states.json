@@ -39,6 +39,7 @@
       "block_order": [
         "image_8xqeXH"
       ],
+      "disabled": true,
       "settings": {
         "section_height": "natural",
         "mobile_height": "250px",
@@ -46,34 +47,6 @@
         "style": "arrows",
         "autoplay": true,
         "autoplay_speed": 5
-      }
-    },
-    "rich_text_BNbmbC": {
-      "type": "rich-text",
-      "blocks": {
-        "text_8rF7Ma": {
-          "type": "text",
-          "settings": {
-            "enlarge_text": true,
-            "text": "<p><br/></p>"
-          }
-        },
-        "text_ByX68G": {
-          "type": "text",
-          "settings": {
-            "enlarge_text": true,
-            "text": "<p>Join our <strong>Beginner Bonsai Workshops</strong> for a hands-on experience that teaches you the basics of bonsai care, pruning, and styling. Create your own tree, gain expert tips, and leave with the skills to keep your bonsai thriving while learning from expert instructors. </p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_8rF7Ma",
-        "text_ByX68G"
-      ],
-      "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "divider": false
       }
     },
     "advanced_content_EjMTMT": {
@@ -96,12 +69,32 @@
         "full_width": false,
         "space_around": true
       }
+    },
+    "rich_text_BNbmbC": {
+      "type": "rich-text",
+      "blocks": {
+        "text_ByX68G": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Join our <strong>Beginner Bonsai Workshops</strong> for a hands-on experience that teaches you the basics of bonsai care, pruning, and styling. Create your own tree, gain expert tips, and leave with the skills to keep your bonsai thriving while learning from expert instructors. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_ByX68G"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
     }
   },
   "order": [
     "main",
     "slideshow_irnnKe",
-    "rich_text_BNbmbC",
-    "advanced_content_EjMTMT"
+    "advanced_content_EjMTMT",
+    "rich_text_BNbmbC"
   ]
 }
