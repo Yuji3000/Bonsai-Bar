@@ -75,11 +75,33 @@
         "narrow_column": true,
         "divider": false
       }
+    },
+    "advanced_content_EjMTMT": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_Q9r9aX": {
+          "type": "liquid",
+          "settings": {
+            "code": "<!-- FareHarbor item grid of flow #1509844 -->\n<script src=\"https://fareharbor.com/embeds/script/items/bonsaibar/?full-items=yes&fallback=simple&flow=1509844\"></script>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_Q9r9aX"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
     }
   },
   "order": [
     "main",
     "slideshow_irnnKe",
-    "rich_text_BNbmbC"
+    "rich_text_BNbmbC",
+    "advanced_content_EjMTMT"
   ]
 }
