@@ -178,7 +178,7 @@
         "collection_Pdmkb8": {
           "type": "collection",
           "settings": {
-            "collection": "collection-tx",
+            "collection": "collection-tx-old",
             "focal_point": "center center",
             "size": "wide"
           }
