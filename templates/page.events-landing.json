@@ -82,7 +82,7 @@
         "collection_zEtKKf": {
           "type": "collection",
           "settings": {
-            "collection": "colorado",
+            "collection": "colorado-old",
             "focal_point": "center center",
             "size": "square-small"
           }
