@@ -146,7 +146,7 @@
         "collection_c8xxbT": {
           "type": "collection",
           "settings": {
-            "collection": "nyc-collection",
+            "collection": "nyc-collection-old",
             "focal_point": "center center",
             "size": "wide"
           }
