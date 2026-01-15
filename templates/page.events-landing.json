@@ -186,7 +186,7 @@
         "collection_MkPPC3": {
           "type": "collection",
           "settings": {
-            "collection": "washington",
+            "collection": "washington-old",
             "focal_point": "center center",
             "size": "wide"
           }
