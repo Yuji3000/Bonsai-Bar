@@ -98,7 +98,7 @@
         "collection_yETtrh": {
           "type": "collection",
           "settings": {
-            "collection": "connecticut",
+            "collection": "connecticut-old",
             "focal_point": "center center",
             "size": "wide"
           }
