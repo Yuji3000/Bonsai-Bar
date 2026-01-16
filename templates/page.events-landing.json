@@ -170,7 +170,7 @@
         "collection_rDyDUE": {
           "type": "collection",
           "settings": {
-            "collection": "rhode-island",
+            "collection": "rhode-island-old",
             "focal_point": "center center",
             "size": "wide"
           }
